@@ -1,5 +1,5 @@
 // Typography
-$base-font-family: "effra", sans-serif;
+$base-font-family: "futura-pt", sans-serif;
 
 // Base Font Sizes for body, changing for different screen sizes
 $body-font-size-sm: 0.88em;
@@ -39,16 +39,13 @@ $spacing-xxl: modular-scale(6);
 
 
 // Colors
-$blue: #1C4563;
-$turquois: #1595A3;
-$orange: #EB6E44;
-
-$offwhite: #FCFFF7;
-$dark-grey: #35444F;
+$dark-grey: #4C4947;
+$white: #fff;
+$orange: #E5AB24;
 
 
 // Font Colors
-$base-font-color: $offwhite;
+$base-font-color: $dark-grey;
 
 
 $hover-transition: all 0.1s ease-out;

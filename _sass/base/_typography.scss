@@ -46,12 +46,12 @@ p {
 
 a {
   text-decoration: none;
-  color: $offwhite;
+  color: $dark-grey;
   transition: $hover-transition;
 
   &:active,
   &:focus,
   &:hover {
-    color: $turquois;
+    color: $orange;
   }
 }

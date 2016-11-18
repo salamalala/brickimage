@@ -27,8 +27,8 @@ textarea {
 #{$all-text-inputs},
 select[multiple] {
   appearance: none;
-  background-color: $offwhite;
-  border: solid 2px $blue;
+  background-color: $white;
+  border: solid 2px $dark-grey;
   border-radius: $base-border-radius;
   box-sizing: border-box;
   padding: $spacing-sm;
@@ -36,16 +36,16 @@ select[multiple] {
   width: 100%;
 
   &:hover {
-    border-color: shade($turquois, 20%);
+    border-color: shade($orange, 20%);
   }
 
   &:focus {
-    border-color: $turquois;
+    border-color: $orange;
     outline: none;
   }
 
   &:disabled {
-    background-color: shade($offwhite, 5%);
+    background-color: shade($white, 5%);
     cursor: not-allowed;
 
     &:hover {
@@ -54,7 +54,7 @@ select[multiple] {
   }
 
   &::placeholder {
-    color: shade($offwhite, 40%);
+    color: shade($white, 40%);
   }
 }
 
