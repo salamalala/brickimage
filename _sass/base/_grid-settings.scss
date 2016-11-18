@@ -1,0 +1,23 @@
+@import "../bourbon/bourbon";
+@import "../neat/neat-helpers";
+
+// Neat Overrides
+$column: 90px;
+$gutter: 60px;
+$grid-columns: 12;
+
+//ems in media queries, react to the browser font size
+$max-width: 74em;
+
+// Main Breakpoints
+//(480px)
+$small-screen: 30em;
+//(744px)
+$medium-screen: 46.5em;
+//(1184px)
+$large-screen: 74em;
+
+
+// Minor Breakpoints
+//(600px)
+$small-medium-screen: 37.5em;

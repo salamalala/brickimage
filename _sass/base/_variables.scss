@@ -1,0 +1,54 @@
+// Typography
+$base-font-family: "effra", sans-serif;
+
+// Base Font Sizes for body, changing for different screen sizes
+$body-font-size-sm: 0.88em;
+$body-font-size-base: 0.9em;
+$body-font-size-md: 1.05em;
+
+// Modular scale for different font headings (the perfect fourth bourbon.io/docs/#modular-scale)
+$modular-scale-base: 1em;
+
+$font-size-sm: modular-scale(-1);
+$font-size-base: modular-scale(0);
+$font-size-md: modular-scale(1);
+$font-size-lg: modular-scale(2);
+$font-size-xl: modular-scale(3);
+$font-size-xxl: modular-scale(4);
+
+// Line height
+$base-line-height: 1.5;
+$heading-line-height: 1.2;
+
+//Letter spacing:
+$letter-spacing-base: 1.04px;
+$letter-spacing-lg: 1.1px;
+
+// Other Sizes
+$base-border-radius: 8px;
+$base-z-index: 0;
+
+//Spacing with modular scales
+$spacing-xs: modular-scale(-3);
+$spacing-sm: modular-scale(-1);
+$spacing-base: modular-scale(0);
+$spacing-md: modular-scale(1);
+$spacing-lg: modular-scale(2);
+$spacing-xl: modular-scale(4);
+$spacing-xxl: modular-scale(6);
+
+
+// Colors
+$blue: #1C4563;
+$turquois: #1595A3;
+$orange: #EB6E44;
+
+$offwhite: #FCFFF7;
+$dark-grey: #35444F;
+
+
+// Font Colors
+$base-font-color: $offwhite;
+
+
+$hover-transition: all 0.1s ease-out;
