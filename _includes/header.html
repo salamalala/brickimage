@@ -1,20 +1,40 @@
 <header class="header">
 
-  <div class="wrapper">
+  <div class="wrapper header__wrapper">
     <a class="header__logo" href="{{ site.baseurl }}/">{% include logo.svg %}</a>
 
-
-    <div class="header__lang">
-      <a href="">EN</a>
-      <a href="">NL</a>
-    </div>
-
+    <ul class="lang">
+      <li class="lang__item lang__item--active"> <a class="lang__link" href="#">EN</a> </li>
+      <li class="lang__item"> <a class="lang__link" href="#">NL</a> </li>
+    </ul>
   </div>
 
-  <nav class="site-nav">
-
-  </nav>
-
-
+  <div class="header__lines">
+    <nav class="nav wrapper">
+      <div class="nav__spread">
+        <a{% if page.url == '/index.html' %} class="nav__link nav__active" {% endif %} href="/index.html" class="nav__link">
+          <span data-hover="Home">Home</span>
+        </a>
+        <a{% if page.url == '/examples.html' %} class="nav__link nav__active" {% endif %} href="/examples.html" class="nav__link">
+          <span data-hover="Examples">Examples</span>
+        </a>
+        <a{% if page.url == '/conservation.html' %} class="nav__link nav__active" {% endif %} href="#" class="nav__link">
+          <span data-hover="Conservation">Conservation</span>
+        </a>
+        <a{% if page.url == '/about.html' %} class="nav__link nav__active" {% endif %} href="#" class="nav__link">
+          <span data-hover="About">About</span>
+        </a>
+        <a{% if page.url == '/testimonials.html' %} class="nav__link nav__active" {% endif %} href="#" class="nav__link">
+          <span data-hover="Testimonials">Testimonials</span>
+        </a>
+        <a{% if page.url == '/guarantee.html' %} class="nav__link nav__active" {% endif %} href="#" class="nav__link">
+          <span data-hover="Guarantee">Guarantee</span>
+        </a>
+        <a{% if page.url == '/contact.html' %} class="nav__link nav__active" {% endif %} href="#" class="nav__link">
+          <span data-hover="Contact">Contact</span>
+        </a>
+      </div>
+    </nav>
+  </div>
 
 </header>

@@ -1,5 +1,6 @@
 // Typography
-$base-font-family: "futura-pt", sans-serif;
+$base-font-family: 	"proxima-nova", sans-serif;
+//weights: 400 - regular / 600 - semibold / 800 - extrabold
 
 // Base Font Sizes for body, changing for different screen sizes
 $body-font-size-sm: 0.88em;
@@ -40,6 +41,8 @@ $spacing-xxl: modular-scale(6);
 
 // Colors
 $dark-grey: #4C4947;
+$medium-grey: #9F9894;
+$light-grey: #F5F0ED;
 $white: #fff;
 $orange: #E5AB24;
 

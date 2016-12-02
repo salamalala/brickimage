@@ -1,0 +1,23 @@
+.header {
+
+  &__wrapper {
+    @include display(flex);
+    padding-top: $spacing-lg;
+    padding-bottom: $spacing-lg;
+  }
+
+  &__logo {
+    @include flex-grow(2);
+    height: 60px;
+
+    svg {
+      height: 60px;
+    }
+  }
+
+  &__lines {
+    border-top: $light-grey solid 1px;
+    border-bottom: $light-grey solid 1px;
+  }
+  
+}

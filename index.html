@@ -1,23 +1,21 @@
 ---
 layout: default
+permalink: /index.html
 ---
+
 
 <div class="home">
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="wrapper">
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div class="home__text">
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+      <h1 class="home__title">Tinting makes it possible to correct colours in brickwork, stone and concrete</h1>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+      <p class="home__paragraph">By creating bespoke tints and applying them with a keen eye for detail, we are able to disguise ugly repairs, re-unite extensions with the original building or perhaps even create a whole new appearance throughout. As well as providing a very natural result, the process is permanent and comes with a 25 year guarantee. We always begin with a considered assessment of the situation as unsightly masonry may be affected by more than simply colour differences. With considerable experience in building repair and conservation, we are able to refer you to other services (such as repointing or repairs) if tinting is not the solution or only part of it. Once you have seen some examples of our work, please feel free to get in touch and send us some photos - we’ll come back to you with an honest appraisal of the possible options.</p>
+
+    </div>
+
+  </div>
 
 </div>

@@ -1,0 +1,31 @@
+.home {
+  @include calc(height, "100vh - 120px - (2 * #{$spacing-lg})");
+  background-color: #F5F5FA;
+  background-image: url(../images/home_sm.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+
+  @include media($medium-screen) {
+    background-image: url(../images/home_md.jpg);
+  }
+
+  @include media($large-screen) {
+    background-image: url(../images/home.jpg);
+  }
+
+  &__text {
+    text-align: right;
+    padding-top: $spacing-xl;
+
+  }
+
+  &__title {
+    color: $orange;
+    margin-left: 30%;
+    font-weight: 800;
+  }
+
+  &__paragraph {
+    margin-left: 40%;
+  }
+}

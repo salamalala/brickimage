@@ -399,7 +399,7 @@ button {
   border: none;
   cursor: pointer;
   display: inline-block;
-  font-family: "futura-pt", sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-size: 1em;
   font-weight: 500;
   text-transform: uppercase;
@@ -433,7 +433,7 @@ input,
 select,
 textarea {
   display: block;
-  font-family: "futura-pt", sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-size: 1em; }
 
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
@@ -500,7 +500,7 @@ picture {
 
 body {
   color: #4C4947;
-  font-family: "futura-pt", sans-serif;
+  font-family: "proxima-nova", sans-serif;
   font-weight: 400;
   letter-spacing: 1.04px;
   line-height: 1.5;
@@ -523,8 +523,9 @@ h6 {
   letter-spacing: 1.1px; }
 
 h1 {
-  font-weight: 500;
-  font-size: 2.368593037em; }
+  font-weight: 800;
+  font-size: 2.368593037em;
+  color: #E5AB24; }
 
 h2 {
   font-size: 1.776889em; }
@@ -542,5 +543,209 @@ a {
   transition: all 0.1s ease-out; }
   a:active, a:focus, a:hover {
     color: #E5AB24; }
+
+.wrapper {
+  max-width: 74em;
+  margin-left: auto;
+  margin-right: auto; }
+  .wrapper::after {
+    clear: both;
+    content: "";
+    display: table; }
+  .wrapper__main {
+    padding-top: 5.6102329749em; }
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1.776889em;
+  padding-bottom: 1.776889em; }
+
+.header__logo {
+  -webkit-flex-grow: 2;
+  -moz-flex-grow: 2;
+  flex-grow: 2;
+  -ms-flex-positive: 2;
+  height: 60px; }
+  .header__logo svg {
+    height: 60px; }
+
+.header__lines {
+  border-top: #F5F0ED solid 1px;
+  border-bottom: #F5F0ED solid 1px; }
+
+.nav {
+  display: -webkit-box;
+  display: -moz-box;
+  display: box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  box-orient: vertical;
+  -webkit-box-direction: normal;
+  -moz-box-direction: normal;
+  box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-direction: column;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  box-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  -o-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center;
+  height: 60px; }
+  .nav__spread {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    -ms-justify-content: space-between;
+    -o-justify-content: space-between;
+    justify-content: space-between;
+    -ms-flex-pack: justify; }
+  .nav__link {
+    text-transform: uppercase;
+    color: #9F9894;
+    font-weight: 600;
+    transition: color 0.5s;
+    line-height: 1;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    padding-right: 8px; }
+    .nav__link:last-child {
+      padding-right: 0; }
+    .nav__link:hover, .nav__link:focus {
+      color: #4C4947; }
+    .nav__link span {
+      position: relative;
+      display: inline-block;
+      transition: transform 0.5s; }
+      .nav__link span:before {
+        position: absolute;
+        top: 100%;
+        content: attr(data-hover);
+        font-weight: 800;
+        transform: translate3d(0, 0, 0); }
+    .nav__link:hover span,
+    .nav__link:focus span {
+      transform: translateY(-100%); }
+  .nav__active {
+    color: #E5AB24; }
+    .nav__active:hover {
+      color: #E5AB24; }
+      .nav__active:hover span {
+        transform: none; }
+
+.lang {
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  box-align: end;
+  -webkit-align-items: flex-end;
+  -moz-align-items: flex-end;
+  -ms-align-items: flex-end;
+  -o-align-items: flex-end;
+  align-items: flex-end;
+  -ms-flex-align: end;
+  height: 60px; }
+  .lang__item {
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+    background: #4C4947;
+    transition: all 0.1s ease-out; }
+    .lang__item--active {
+      background: #E5AB24; }
+    .lang__item:hover {
+      background: #E5AB24; }
+    .lang__item:last-child {
+      margin-left: 0.4221915645em; }
+  .lang__link {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    font-size: 0.7501875469em; }
+
+.subnav {
+  float: left;
+  display: block;
+  margin-right: 3.4482758621%;
+  width: 13.7931034483%; }
+  .subnav:last-child {
+    margin-right: 0; }
+  .subnav__link {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 0.7501875469em;
+    color: #9F9894; }
+
+.content-right {
+  float: left;
+  display: block;
+  margin-right: 3.4482758621%;
+  width: 82.7586206897%; }
+  .content-right:last-child {
+    margin-right: 0; }
+  .content-right__heading {
+    text-align: right; }
+  .content-right__column {
+    float: left;
+    display: block;
+    margin-right: 4.1666666667%;
+    width: 47.9166666667%;
+    margin-bottom: 1.776889em; }
+    .content-right__column:last-child {
+      margin-right: 0; }
+    .content-right__column:nth-child(odd) {
+      margin-right: 0; }
+
+.home {
+  height: -webkit-calc(100vh - 120px - (2 * 1.776889em));
+  height: calc(100vh - 120px - (2 * 1.776889em));
+  background-color: #F5F5FA;
+  background-image: url(../images/home_sm.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom left; }
+  @media screen and (min-width: 46.5em) {
+    .home {
+      background-image: url(../images/home_md.jpg); } }
+  @media screen and (min-width: 74em) {
+    .home {
+      background-image: url(../images/home.jpg); } }
+  .home__text {
+    text-align: right;
+    padding-top: 3.1573345183em; }
+  .home__title {
+    color: #E5AB24;
+    margin-left: 30%;
+    font-weight: 800; }
+  .home__paragraph {
+    margin-left: 40%; }
 
 /*# sourceMappingURL=main.css.map */

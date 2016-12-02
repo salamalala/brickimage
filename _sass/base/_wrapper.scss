@@ -1,0 +1,7 @@
+.wrapper {
+  @include outer-container();
+
+  &__main {
+    padding-top: $spacing-xxl;
+  }
+}

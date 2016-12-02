@@ -1,0 +1,16 @@
+.content-right {
+  @include span-columns(10);
+
+  &__heading {
+    text-align: right;
+  }
+
+  &__column {
+    @include span-columns(5 of 10);
+    margin-bottom: $spacing-lg;
+
+    &:nth-child(odd) {
+      @include omega();
+    }
+  }
+}

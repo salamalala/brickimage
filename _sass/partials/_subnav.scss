@@ -1,0 +1,11 @@
+.subnav {
+  @include span-columns(2);
+
+  &__link {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: $font-size-sm;
+    color: $medium-grey;
+  }
+}

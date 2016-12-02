@@ -6,8 +6,16 @@
 $visual-grid: false;
 $visual-grid-color: yellow;
 $visual-grid-index: front;
-$visual-grid-opacity: 0.1;
+$visual-grid-opacity: 0.2;
 @import "base/grid-settings";
 @import "neat/neat";
 
-@import "base/base"
+@import "base/base";
+
+@import "partials/header";
+@import "partials/nav";
+@import "partials/lang";
+@import "partials/subnav";
+@import "partials/content-right";
+
+@import "pages/home";
