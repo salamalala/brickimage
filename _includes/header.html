@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="header">
 
   <div class="wrapper header__wrapper">
     <a class="header__logo" href="{{ site.baseurl }}/">{% include logo.svg %}</a>
@@ -12,12 +12,15 @@
   <div class="header__lines">
     <nav class="nav wrapper">
       <div class="nav__spread">
+
         <a{% if page.url == '/index.html' %} class="nav__link nav__active" {% endif %} href="/index.html" class="nav__link">
           <span data-hover="Home">Home</span>
         </a>
+
         <a{% if page.url == '/examples.html' %} class="nav__link nav__active" {% endif %} href="/examples.html" class="nav__link">
           <span data-hover="Examples">Examples</span>
         </a>
+
         <a{% if page.url == '/conservation.html' %} class="nav__link nav__active" {% endif %} href="#" class="nav__link">
           <span data-hover="Conservation">Conservation</span>
         </a>

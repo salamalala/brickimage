@@ -499,7 +499,7 @@ picture {
   max-width: 100%; }
 
 body {
-  color: #4C4947;
+  color: #736E6B;
   font-family: "proxima-nova", sans-serif;
   font-weight: 400;
   letter-spacing: 1.04px;
@@ -510,7 +510,7 @@ body {
       font-size: 0.9em; } }
   @media screen and (min-width: 74em) {
     body {
-      font-size: 1.05em; } }
+      font-size: 1.1em; } }
 
 h1,
 h2,
@@ -535,7 +535,9 @@ h3 {
 
 p {
   font-size: 1em;
-  margin: 0 0 0.7501875469em; }
+  margin: 0 0 0.7501875469em;
+  font-family: "mrs-eaves-xl-serif", serif;
+  font-weight: 400; }
 
 a {
   text-decoration: none;
@@ -553,7 +555,7 @@ a {
     content: "";
     display: table; }
   .wrapper__main {
-    padding-top: 5.6102329749em; }
+    padding-top: 3.1573345183em; }
 
 .header__wrapper {
   display: -webkit-box;
@@ -628,7 +630,7 @@ a {
     text-transform: uppercase;
     color: #9F9894;
     font-weight: 600;
-    transition: color 0.5s;
+    transition: color 0.6s;
     line-height: 1;
     position: relative;
     display: inline-block;
@@ -641,7 +643,7 @@ a {
     .nav__link span {
       position: relative;
       display: inline-block;
-      transition: transform 0.5s; }
+      transition: transform 0.6s; }
       .nav__link span:before {
         position: absolute;
         top: 100%;
@@ -690,6 +692,8 @@ a {
     text-align: center;
     color: #fff;
     font-size: 0.7501875469em; }
+    .lang__link:hover {
+      color: #fff; }
 
 .subnav {
   float: left;
@@ -703,7 +707,8 @@ a {
     text-transform: uppercase;
     font-weight: 600;
     font-size: 0.7501875469em;
-    color: #9F9894; }
+    color: #9F9894;
+    margin-bottom: 1em; }
 
 .content-right {
   float: left;
@@ -724,6 +729,10 @@ a {
       margin-right: 0; }
     .content-right__column:nth-child(odd) {
       margin-right: 0; }
+  .content-right article::after {
+    clear: both;
+    content: "";
+    display: table; }
 
 .home {
   height: -webkit-calc(100vh - 120px - (2 * 1.776889em));
@@ -740,7 +749,7 @@ a {
       background-image: url(../images/home.jpg); } }
   .home__text {
     text-align: right;
-    padding-top: 3.1573345183em; }
+    padding-top: 2.368593037em; }
   .home__title {
     color: #E5AB24;
     margin-left: 30%;

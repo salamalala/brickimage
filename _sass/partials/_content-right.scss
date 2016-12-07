@@ -13,4 +13,8 @@
       @include omega();
     }
   }
+
+  article {
+    @include clearfix;
+  }
 }

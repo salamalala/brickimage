@@ -17,6 +17,7 @@
 
     &:hover {
       background: $orange;
+
     }
 
     &:last-child {
@@ -32,5 +33,9 @@
     text-align: center;
     color: $white;
     font-size: $font-size-sm;
+
+    &:hover {
+      color: $white;
+    }
   }
 }
