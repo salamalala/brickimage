@@ -9,4 +9,10 @@
     color: $light-grey;
     margin-bottom: $spacing-base;
   }
+
+  &__wrapper.fixed {
+    @include span-columns(2);
+    @include calc(top, "#{$spacing-xxl} + 60px");
+    position: fixed;
+  }
 }

@@ -2,6 +2,7 @@
   @include outer-container();
 
   &__main {
+    position: relative;
     padding-top: $spacing-xxl;
   }
 }

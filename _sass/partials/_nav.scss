@@ -1,9 +1,15 @@
 .nav {
-  @include display(flex);
-  @include flex-direction(column);
-  @include justify-content(center);
-  height: 60px;
-  // in order to know the height for the main
+  border-top: $dark-white solid 1px;
+  border-bottom: $dark-white solid 1px;
+  background-color: $white;
+
+  &__wrapper {
+    @include display(flex);
+    @include flex-direction(column);
+    @include justify-content(center);
+    // in order to know the height for the main
+    height: 60px;
+  }
 
   &__spread {
     @include display(flex);
@@ -60,7 +66,13 @@
         transform: none;
       }
     }
+  }
 
-
+  &.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
   }
 }

@@ -1,9 +1,10 @@
 .header {
+  height: 180px;
 
   &__wrapper {
     @include display(flex);
-    padding-top: $spacing-lg;
-    padding-bottom: $spacing-lg;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   &__logo {
@@ -13,11 +14,6 @@
     svg {
       height: 60px;
     }
-  }
-
-  &__lines {
-    border-top: $dark-white solid 1px;
-    border-bottom: $dark-white solid 1px;
   }
 
 }
