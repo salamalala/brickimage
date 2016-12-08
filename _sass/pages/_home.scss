@@ -27,5 +27,11 @@
 
   &__paragraph {
     margin-left: 40%;
+
+    &--bold {
+      // font-size: $font-size-md;
+      // font-weight: bold;
+      color: $orange;
+    }
   }
 }

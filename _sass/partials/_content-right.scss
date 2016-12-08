@@ -2,26 +2,26 @@
   @include span-columns(9);
   @include shift(1);
 
-  &__heading {
-    text-align: right;
+  &__article {
+    @include clearfix;
+    &:not(:first-child) {
+      margin-top: $spacing-xxl;
+    }
   }
 
   &__column {
     @include span-columns(5 of 10);
     margin-bottom: $spacing-lg;
-
-    &:nth-child(odd) {
-      @include omega();
-    }
   }
 
-  article {
-    @include clearfix;
-
-    &:not(:first-child) {
-      margin-top: $spacing-xxl;
-    }
+  &__item {
+    margin-bottom: $spacing-md;
   }
+
+  &__heading {
+    text-align: right;
+  }
+
 
   &__paragraph {
     &:first-letter {
