@@ -1,0 +1,22 @@
+---
+layout: default
+permalink: /testimonials.html
+---
+
+
+<div class="testimonial">
+
+  {% for testimonial in site.data.testimonials %}
+
+    <figure class="testimonial__item">
+      <img class="testimonial__img" src="images/testimonial/{{ testimonial.src }}" alt={{ testimonial.alt }}/>
+      <div class="gallery__text">
+        <figcaption class="gallery__caption"> {{testimonial.name}}</figcaption>
+        <h3 class="gallery__function">{{testimonial.project}} </h3>
+        <p class="gallery__paragraph">{{testimonial.quote}}</p>
+      </div>
+    </figure>
+
+  {% endfor %}
+
+</div>
