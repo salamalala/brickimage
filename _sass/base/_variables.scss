@@ -5,7 +5,7 @@ $base-font-family: 	"proxima-nova", sans-serif;
 // Base Font Sizes for body, changing for different screen sizes
 $body-font-size-sm: 0.88em;
 $body-font-size-base: 0.9em;
-$body-font-size-md: 1.1em;
+$body-font-size-md: 1em;
 
 // Modular scale for different font headings (the perfect fourth bourbon.io/docs/#modular-scale)
 $modular-scale-base: 1em;
@@ -43,6 +43,7 @@ $spacing-xxxl: modular-scale(6);
 // Colors
 $dark-grey: #4C4947;
 $medium-grey: #736E6B;
+$medium-grey: #7F7A77;
 $light-grey: #9F9894;
 $dark-white: #F5F0ED;
 $white: #fff;

@@ -499,7 +499,7 @@ picture {
   max-width: 100%; }
 
 body {
-  color: #736E6B;
+  color: #7F7A77;
   font-family: "proxima-nova", sans-serif;
   font-weight: 400;
   letter-spacing: 1.04px;
@@ -510,7 +510,7 @@ body {
       font-size: 0.9em; } }
   @media screen and (min-width: 74em) {
     body {
-      font-size: 1.1em; } }
+      font-size: 1em; } }
 
 h1,
 h2,
@@ -519,12 +519,13 @@ h4,
 h5,
 h6 {
   line-height: 1;
-  margin: 0 0 0.7501875469em;
+  margin: 0 0 1em;
   letter-spacing: 1.1px; }
 
 h1 {
   font-weight: 700;
-  font-size: 2.368593037em;
+  font-size: 1.776889em;
+  text-transform: uppercase;
   color: #E5AB24; }
 
 h2 {
@@ -556,7 +557,7 @@ a {
     display: table; }
   .wrapper__main {
     position: relative;
-    padding-top: 4.2087269129em; }
+    padding-top: 2.368593037em; }
 
 .header {
   height: 180px; }
@@ -732,7 +733,8 @@ a {
   float: left;
   display: block;
   margin-right: 3.4482758621%;
-  width: 82.7586206897%; }
+  width: 74.1379310345%;
+  margin-left: 8.6206896552%; }
   .content-right:last-child {
     margin-right: 0; }
   .content-right__heading {
@@ -751,6 +753,14 @@ a {
     clear: both;
     content: "";
     display: table; }
+  .content-right article:not(:first-child) {
+    margin-top: 4.2087269129em; }
+  .content-right__paragraph:first-letter {
+    font-size: 1.776889em;
+    font-weight: 400;
+    float: left;
+    line-height: 70%;
+    margin: .04em .02em 0 0; }
 
 .home {
   height: -webkit-calc(100vh - 120px - (2 * 1.776889em));

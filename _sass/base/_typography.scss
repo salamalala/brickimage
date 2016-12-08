@@ -22,13 +22,14 @@ h4,
 h5,
 h6 {
   line-height: 1;
-  margin: 0 0 $spacing-sm;
+  margin: 0 0 $spacing-base;
   letter-spacing: $letter-spacing-lg;
 }
 
 h1 {
   font-weight: 700;
-  font-size: $font-size-xl;
+  font-size: $font-size-lg;
+  text-transform: uppercase;
   color: $orange;
 }
 

@@ -1,5 +1,6 @@
 .content-right {
-  @include span-columns(10);
+  @include span-columns(9);
+  @include shift(1);
 
   &__heading {
     text-align: right;
@@ -16,5 +17,19 @@
 
   article {
     @include clearfix;
+
+    &:not(:first-child) {
+      margin-top: $spacing-xxl;
+    }
+  }
+
+  &__paragraph {
+    &:first-letter {
+      font-size: $font-size-lg;
+      font-weight: 400;
+      float: left;
+      line-height: 70%;
+      margin: .04em .02em 0 0;
+    }
   }
 }
