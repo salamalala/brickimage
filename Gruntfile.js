@@ -87,7 +87,7 @@ module.exports = function (grunt) {
                 tasks: ['uglify']
             },
             jekyll: {
-                files: ['_layouts/*.html', '_includes/*.html', '*.html', '_sass/**/*.{scss, sass}', '_includes/*.svg'],
+                files: ['_layouts/*.html', '_includes/*.html', '_data/*.yml', '*.html', '_sass/**/*.{scss, sass}', '_includes/*.svg'],
                 tasks: ['jekyll']
             }
         },

@@ -1,10 +1,10 @@
 .subnav {
-  @include span-columns(2);
+  @include span-columns(3);
 
   &__link {
     display: block;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
     font-size: $font-size-sm;
     color: $light-grey;
     margin-bottom: $spacing-base;

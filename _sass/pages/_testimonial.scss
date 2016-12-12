@@ -1,0 +1,28 @@
+.testimonial {
+  @include display(flex);
+  @include flex-wrap(wrap);
+
+  &__item {
+    @include omega-reset(2n);
+    @include span-columns(3 of 12);
+    @include omega(4n);
+  }
+
+  &__img-box {
+    @include display(flex);
+    @include flex-direction(column);
+    @include justify-content(center);
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: $spacing-md;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__name {
+    color: $orange;
+  }
+
+}
