@@ -1,3 +1,5 @@
+// < medium-screen: mobile navigation
+
 .nav {
   position: relative;
   z-index: 2;
@@ -13,23 +15,52 @@
     height: 60px;
   }
 
-  &__spread {
-    @include display(flex);
-    @include justify-content(space-between);
+  &__mobile {
+    text-transform: uppercase;
+
+    @include media($medium-screen) {
+      display: none;
+    }
+  }
+
+  &__items {
+    display: block;
+    background-color: transparentize($dark-grey, 0.05);
+	  max-width: 200px;
+    @include calc(height, "100vh - 180px - 10px");
+	  width: 100%;
+    position: absolute;
+    left: -100%;
+    top: 60px;
+    transform: none;
+	  transition: all 0.5s ease-in-out;
+
+    @include media($medium-screen) {
+      @include display(flex);
+      @include justify-content(space-between);
+    }
   }
 
   &__link {
+    display: block;
     text-transform: uppercase;
     color: $light-grey;
     font-weight: 500;
-    // font-size: $font-size-sm;
     transition: color 0.6s;
     line-height: 1;
     font-size: 90%;
     position: relative;
-    display: inline-block;
     overflow: hidden;
+    margin-top: $spacing-xl;
+    padding-left: $spacing-md;
+    //to cope with the different weights of font when hover
     padding-right: 8px;
+
+    @include media($medium-screen) {
+      display: inline-block;
+      margin-top: none;
+    }
+
 
     &:last-child {
       padding-right: 0;
@@ -37,7 +68,9 @@
 
     &:hover,
     &:focus {
-      color: $dark-grey;
+      @include media($medium-screen) {
+        color: $dark-grey;
+      }
     }
 
     span {

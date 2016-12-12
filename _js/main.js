@@ -30,8 +30,6 @@ var stickyHeaderElements = function(el, scrollPos) {
 };
 
 
-
-
 $(function() {
   if ( $('.subnav').length ) {
     smoothScroll();
@@ -40,4 +38,21 @@ $(function() {
 
   stickyHeaderElements('.nav', 120);
 
+  var menu = "close";
+  $("#nav-mobile-js").click(function() {
+
+    if (menu === "close") {
+      	$(this).next().css({"position": "absolute", "left": "0"});
+     	 menu = "open";
+    } else {
+      	$(this).next().css({"position": "absolute", "left": "-100%"});
+      	menu = "close";
+    }
+  });
+
 });
+
+// } else {
+//     $(this).next().css("transform", "translate(-100%, 0)");
+//     menu = "close";
+// }

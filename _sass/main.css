@@ -597,7 +597,10 @@ a {
     -ms-flex-positive: 2;
     height: 60px; }
     .header__logo svg {
-      height: 60px; }
+      height: 35px; }
+      @media screen and (min-width: 30em) {
+        .header__logo svg {
+          height: 60px; } }
 
 .nav {
   position: relative;
@@ -633,24 +636,43 @@ a {
     justify-content: center;
     -ms-flex-pack: center;
     height: 60px; }
-  .nav__spread {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
-    -o-justify-content: space-between;
-    justify-content: space-between;
-    -ms-flex-pack: justify; }
+  .nav__mobile {
+    text-transform: uppercase; }
+    @media screen and (min-width: 46.5em) {
+      .nav__mobile {
+        display: none; } }
+  .nav__items {
+    display: block;
+    background-color: rgba(76, 73, 71, 0.95);
+    max-width: 200px;
+    height: -webkit-calc(100vh - 180px - 10px);
+    height: calc(100vh - 180px - 10px);
+    width: 100%;
+    position: absolute;
+    left: -100%;
+    top: 60px;
+    transform: none;
+    transition: all 0.5s ease-in-out; }
+    @media screen and (min-width: 46.5em) {
+      .nav__items {
+        display: -webkit-box;
+        display: -moz-box;
+        display: box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -moz-box-pack: justify;
+        box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+        -ms-flex-pack: justify; } }
   .nav__link {
+    display: block;
     text-transform: uppercase;
     color: #9F9894;
     font-weight: 500;
@@ -658,13 +680,19 @@ a {
     line-height: 1;
     font-size: 90%;
     position: relative;
-    display: inline-block;
     overflow: hidden;
+    margin-top: 2.368593037em;
+    padding-left: 1.333em;
     padding-right: 8px; }
+    @media screen and (min-width: 46.5em) {
+      .nav__link {
+        display: inline-block;
+        margin-top: none; } }
     .nav__link:last-child {
       padding-right: 0; }
-    .nav__link:hover, .nav__link:focus {
-      color: #4C4947; }
+    @media screen and (min-width: 46.5em) {
+      .nav__link:hover, .nav__link:focus {
+        color: #4C4947; } }
     .nav__link span {
       position: relative;
       display: inline-block;
