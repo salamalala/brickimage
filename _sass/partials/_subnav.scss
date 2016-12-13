@@ -1,5 +1,9 @@
 .subnav {
-  @include span-columns(3);
+  @include span-columns(4);  
+
+  @include media($small-screen) {
+    @include span-columns(3);
+  }
 
   &__link {
     display: block;

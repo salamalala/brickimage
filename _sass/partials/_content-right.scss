@@ -1,5 +1,9 @@
 .content-right {
-  @include span-columns(9);
+  @include span-columns(8);
+
+  @include media($small-screen) {
+    @include span-columns(9);
+  }
 
   &__article {
     @include clearfix;
@@ -9,8 +13,12 @@
   }
 
   &__column {
-    @include span-columns(5 of 10);
-    margin-bottom: $spacing-lg;
+    @include span-columns(8 of 8);
+
+    @include media($medium-screen) {
+      @include span-columns(5 of 10);
+    }
+
   }
 
   &__item {
@@ -18,7 +26,9 @@
   }
 
   &__heading {
-    text-align: right;
+    @include media($medium-screen) {
+      text-align: right;
+    }
   }
 
 
