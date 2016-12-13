@@ -1060,17 +1060,61 @@ a {
     float: left;
     display: block;
     margin-right: 3.4482758621%;
-    width: 22.4137931034%; }
-    .testimonial__item:nth-child(2n) {
-      margin-right: 3.4482758621%; }
-    .testimonial__item:nth-child(2n+1) {
-      clear: none; }
+    width: 100%; }
     .testimonial__item:last-child {
       margin-right: 0; }
-    .testimonial__item:nth-child(4n) {
+    .testimonial__item:nth-child(1n) {
       margin-right: 0; }
-    .testimonial__item:nth-child(4n+1) {
+    .testimonial__item:nth-child(1n+1) {
       clear: left; }
+    @media screen and (min-width: 30em) {
+      .testimonial__item {
+        float: left;
+        display: block;
+        margin-right: 3.4482758621%;
+        width: 48.275862069%; }
+        .testimonial__item:nth-child(1n) {
+          margin-right: 3.4482758621%; }
+        .testimonial__item:nth-child(1n+1) {
+          clear: none; }
+        .testimonial__item:last-child {
+          margin-right: 0; }
+        .testimonial__item:nth-child(2n) {
+          margin-right: 0; }
+        .testimonial__item:nth-child(2n+1) {
+          clear: left; } }
+    @media screen and (min-width: 46.5em) {
+      .testimonial__item {
+        float: left;
+        display: block;
+        margin-right: 3.4482758621%;
+        width: 31.0344827586%; }
+        .testimonial__item:nth-child(2n) {
+          margin-right: 3.4482758621%; }
+        .testimonial__item:nth-child(2n+1) {
+          clear: none; }
+        .testimonial__item:last-child {
+          margin-right: 0; }
+        .testimonial__item:nth-child(3n) {
+          margin-right: 0; }
+        .testimonial__item:nth-child(3n+1) {
+          clear: left; } }
+    @media screen and (min-width: 74em) {
+      .testimonial__item {
+        float: left;
+        display: block;
+        margin-right: 3.4482758621%;
+        width: 22.4137931034%; }
+        .testimonial__item:nth-child(3n) {
+          margin-right: 3.4482758621%; }
+        .testimonial__item:nth-child(3n+1) {
+          clear: none; }
+        .testimonial__item:last-child {
+          margin-right: 0; }
+        .testimonial__item:nth-child(4n) {
+          margin-right: 0; }
+        .testimonial__item:nth-child(4n+1) {
+          clear: left; } }
   .testimonial__img-box {
     display: -webkit-box;
     display: -moz-box;
