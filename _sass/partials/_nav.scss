@@ -20,13 +20,12 @@
     transition: 0.1s transform linear;
     position: relative;
     background: 0;
-    height: 16px;
+    height: 20px;
     width: 100px;
     z-index: 1;
     outline: 0;
     padding: 0;
     border: 0;
-    // background: yellow;
 
     @include media($medium-screen) {
       display: none;
@@ -35,6 +34,8 @@
     &__bar {
       height: 16px;
       width: 20px;
+
+      //to build the three bars
     	&, &::before, &::after {
     		position: absolute;
     		background: $medium-grey;
@@ -90,6 +91,7 @@
 
     &__text {
       margin-left: 25px;
+      color: $medium-grey;
       font-weight: 600;
     }
   }
@@ -109,7 +111,7 @@
     @include media($medium-screen) {
       @include display(flex);
       @include justify-content(space-between);
-      //to restore styles from mobile nav: 
+      //to restore styles from mobile nav:
       background-color: transparent;
       max-width: none;
       height: auto;

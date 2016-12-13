@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body {% if page.url == '/index.html' %} class="body__home" {% endif %}π>
 
     {% include header.html %}
 
