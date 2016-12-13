@@ -1,0 +1,52 @@
+.contact {
+  @include display(flex);
+  margin-top: $spacing-xxxl;
+
+  &__box {
+    @include span-columns(4 of 12);
+    @include shift(2);
+    position: relative;
+    z-index: 2;
+
+    &:first-child {
+      text-align: right;
+    }
+
+    &:last-child{
+      @include omega()
+      @include shift(0);;
+    }
+  }
+
+  &__country{
+    position: absolute;
+    top: -30%;
+    z-index: -3;
+    font-size: $font-size-xxxl;
+    color: transparentize($orange, 0.6);
+  }
+
+  &__uk .contact__country {
+    left: -10%;
+  }
+
+  &__nl .contact__country {
+    right: -10%;
+  }
+
+
+
+  &__address {
+    @include display(flex);
+    @include flex-direction(column);
+    font-size: $font-size-md;
+  }
+
+  &__post {
+    @include flex-grow(2);
+  }
+
+  &__link {
+    display: block;
+  }
+}
