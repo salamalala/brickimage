@@ -15,19 +15,90 @@
     height: 60px;
   }
 
-  &__mobile {
+  .mobile {
     text-transform: uppercase;
+    transition: 0.1s transform linear;
+    position: relative;
+    background: 0;
+    height: 16px;
+    width: 100px;
+    z-index: 1;
+    outline: 0;
+    padding: 0;
+    border: 0;
+    // background: yellow;
 
     @include media($medium-screen) {
       display: none;
     }
+
+    &__bar {
+      height: 16px;
+      width: 20px;
+    	&, &::before, &::after {
+    		position: absolute;
+    		background: $medium-grey;
+    		margin: auto;
+    		width: 20px;
+    		height: 3px;
+    		content: '';
+    		top: 50%;
+    		left: 0;
+        transition: 0.2s background linear 0.1s, 0.2s top linear 0.2s, 0.2s transform linear;
+    	}
+
+    	& {
+    		margin-top: -1px;
+    	}
+
+    	&::before {
+    		top: -6px;
+    	}
+
+    	&::after {
+    		top: 6px;
+    	}
+
+    	&::before,
+    	&::after {
+    		transform: rotate(0deg);
+    	}
+    }
+
+    &.active .mobile__bar {
+		background: 0;
+
+		&::before {
+			transform: rotate(45deg);
+		}
+
+		&::after {
+			transform: rotate(-45deg);
+		}
+
+		&::before,
+		&::after {
+			top: 0;
+		}
+
+		&,
+		&::before,
+		&::after {
+			transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s;
+		}
+    }
+
+    &__text {
+      margin-left: 25px;
+      font-weight: 600;
+    }
   }
 
   &__items {
+    @include calc(height, "100vh - 180px - 10px");
     display: block;
     background-color: transparentize($dark-grey, 0.05);
 	  max-width: 200px;
-    @include calc(height, "100vh - 180px - 10px");
 	  width: 100%;
     position: absolute;
     left: -100%;
@@ -38,6 +109,15 @@
     @include media($medium-screen) {
       @include display(flex);
       @include justify-content(space-between);
+      //to restore styles from mobile nav: 
+      background-color: transparent;
+      max-width: none;
+      height: auto;
+      position:inherit;
+      transform: none;
+      transition: none;
+      left:auto;
+      top:auto;
     }
   }
 
@@ -58,7 +138,8 @@
 
     @include media($medium-screen) {
       display: inline-block;
-      margin-top: none;
+      margin-top: 0;
+      padding-left: 0;
     }
 
 

@@ -43,16 +43,13 @@ $(function() {
 
     if (menu === "close") {
       	$(this).next().css({"position": "absolute", "left": "0"});
+        $(this).addClass('active');
      	 menu = "open";
     } else {
       	$(this).next().css({"position": "absolute", "left": "-100%"});
       	menu = "close";
+        $(this).removeClass('active');
     }
   });
 
 });
-
-// } else {
-//     $(this).next().css("transform", "translate(-100%, 0)");
-//     menu = "close";
-// }
