@@ -160,7 +160,7 @@
     &:hover,
     &:focus {
       @include media($medium-screen) {
-        color: $dark-grey;
+        color: $orange;
       }
     }
 
@@ -173,7 +173,6 @@
         position: absolute;
         top: 100%;
         content: attr(data-hover);
-        font-weight: 600;
         transform: translate3d(0,0,0);
       }
     }

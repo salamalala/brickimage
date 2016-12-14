@@ -1,5 +1,5 @@
 .subnav {
-  @include span-columns(4);  
+  @include span-columns(4);
 
   @include media($small-screen) {
     @include span-columns(3);
@@ -11,7 +11,7 @@
     font-weight: 500;
     font-size: $font-size-sm;
     color: $light-grey;
-    margin-bottom: $spacing-base;
+    margin-bottom: $spacing-md;
   }
 
   &__wrapper.fixed {

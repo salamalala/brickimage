@@ -576,7 +576,7 @@ a {
         display: table; } }
   .wrapper__main {
     position: relative;
-    padding-top: 2.368593037em; }
+    margin-top: 4.2087269129em; }
 
 .body__home {
   background-image: url(../images/home/home_sm.jpg);
@@ -772,7 +772,7 @@ a {
       padding-right: 0; }
     @media screen and (min-width: 46.5em) {
       .nav__link:hover, .nav__link:focus {
-        color: #4C4947; } }
+        color: #E5AB24; } }
     .nav__link span {
       position: relative;
       display: inline-block;
@@ -781,7 +781,6 @@ a {
         position: absolute;
         top: 100%;
         content: attr(data-hover);
-        font-weight: 600;
         transform: translate3d(0, 0, 0); }
     .nav__link:hover span,
     .nav__link:focus span {
@@ -868,7 +867,7 @@ a {
     font-weight: 500;
     font-size: 0.7501875469em;
     color: #9F9894;
-    margin-bottom: 1em; }
+    margin-bottom: 1.333em; }
   .subnav__wrapper.fixed {
     float: left;
     display: block;
@@ -927,6 +926,20 @@ a {
     float: left;
     line-height: 70%;
     margin: .04em .02em 0 0; }
+
+.content-middle {
+  float: left;
+  display: block;
+  margin-right: 3.4482758621%;
+  width: 48.275862069%;
+  margin-left: 25.8620689655%; }
+  .content-middle:last-child {
+    margin-right: 0; }
+  .content-middle__img {
+    width: 100%;
+    height: auto;
+    margin-top: 1.333em;
+    margin-bottom: 1.333em; }
 
 .home__text {
   padding-top: 4.2087269129em; }
