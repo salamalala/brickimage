@@ -518,23 +518,26 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1;
-  letter-spacing: 1.1px; }
+  letter-spacing: 1.1px;
+  margin: 0 0 1em; }
 
 h1 {
   font-weight: 700;
   font-size: 1.776889em;
+  line-height: 1;
   text-transform: uppercase;
-  color: #E5AB24;
-  margin: 0 0 1em; }
+  color: #E5AB24; }
 
 h2 {
-  font-size: 1.776889em; }
+  font-size: 1.333em;
+  line-height: 1.2;
+  font-weight: 500; }
 
 h3 {
-  font-size: 1.333em;
-  margin-bottom: 0.4221915645em;
-  margin-top: 0.4221915645em; }
+  font-size: 1em;
+  font-weight: 600;
+  color: #E5AB24;
+  text-transform: uppercase; }
 
 p {
   font-size: 1em;
@@ -940,6 +943,41 @@ a {
     height: auto;
     margin-top: 1.333em;
     margin-bottom: 1.333em; }
+
+.art__describtion {
+  float: left;
+  display: block;
+  margin-right: 4.6511627907%;
+  width: 76.7441860465%; }
+  .art__describtion:last-child {
+    margin-right: 0; }
+
+.art__img {
+  float: left;
+  display: block;
+  margin-right: 4.6511627907%;
+  width: 18.6046511628%;
+  margin-right: 0; }
+  .art__img:last-child {
+    margin-right: 0; }
+  .art__img::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.art__quote figure {
+  margin-bottom: 1.776889em;
+  border-left: #E5E3E1 7px solid; }
+
+.art__quote blockquote {
+  margin-bottom: 0;
+  margin-left: 1em; }
+
+.art__quote figcaption {
+  text-align: right;
+  color: #E5AB24;
+  font-weight: 500;
+  font-size: 0.7501875469em; }
 
 .home__text {
   padding-top: 4.2087269129em; }

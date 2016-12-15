@@ -1,0 +1,33 @@
+.art {
+
+  &__describtion {
+    @include span-columns(7 of 9);
+  }
+
+  &__img {
+    @include span-columns(2 of 9);
+    @include omega();
+    @include clearfix;
+  }
+
+  &__quote {
+
+    figure {
+      margin-bottom: $spacing-lg;
+      border-left: $dark-white 7px solid;
+    }
+
+    blockquote {
+      margin-bottom: 0;
+      margin-left: $spacing-base;
+    }
+
+    figcaption {
+      text-align: right;
+      color: $orange;
+      font-weight: 500;
+      font-size: $font-size-sm;
+    }
+
+  }
+}

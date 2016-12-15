@@ -21,26 +21,29 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: 1;
   letter-spacing: $letter-spacing-lg;
+  margin: 0 0 $spacing-base;
 }
 
 h1 {
   font-weight: 700;
   font-size: $font-size-lg;
+  line-height: 1;
   text-transform: uppercase;
   color: $orange;
-  margin: 0 0 $spacing-base;
 }
 
 h2 {
-  font-size: $font-size-lg;
+  font-size: $font-size-md;
+  line-height: 1.2;
+  font-weight: 500;
 }
 
 h3 {
-  font-size: $font-size-md;
-  margin-bottom: $spacing-xs;
-  margin-top: $spacing-xs;
+  font-size: $font-size-base;
+  font-weight: 600;
+  color: $orange;
+  text-transform: uppercase;
 }
 
 p {
