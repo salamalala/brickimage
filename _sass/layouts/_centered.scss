@@ -1,5 +1,4 @@
 .centered {
   @include shift(3);
   @include span-columns(6);
-  @include clearfix;
 }

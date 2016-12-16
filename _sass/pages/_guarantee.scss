@@ -1,0 +1,41 @@
+.guarantee {
+
+  li {
+    // padding-left: $spacing-base;
+    // border-left: $dark-white 7px solid;
+    margin-bottom: $spacing-md;
+  }
+
+  &__list-heading{
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  &__declaration {
+    background: $medium-grey;
+    margin-top: $spacing-xl;
+    margin-bottom: $spacing-xxl;
+    padding: $spacing-xl;
+    text-align: center;
+    border-radius: 2px;
+
+    h1 {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 35%;
+        background-color: $orange;
+        width: 30%;
+        height: 3px;
+      }
+    }
+
+    p {
+      color: $white;
+      margin-bottom: 0;
+    }
+  }
+}
