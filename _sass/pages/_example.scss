@@ -1,0 +1,17 @@
+.example {
+
+  &__article {
+
+    @include clearfix;
+    &:not(:first-child) {
+      margin-top: $spacing-xxl;
+    }
+  }
+
+  &__heading {
+    @include media($medium-screen) {
+      text-align: right;
+    }
+  }
+
+}

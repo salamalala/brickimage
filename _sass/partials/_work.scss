@@ -1,16 +1,4 @@
-.content-right {
-  @include span-columns(8);
-
-  @include media($small-screen) {
-    @include span-columns(9);
-  }
-
-  &__article {
-    @include clearfix;
-    &:not(:first-child) {
-      margin-top: $spacing-xxl;
-    }
-  }
+.work {
 
   &__column {
     @include span-columns(8 of 8);
@@ -18,19 +6,11 @@
     @include media($medium-screen) {
       @include span-columns(5 of 10);
     }
-
   }
 
   &__item {
     margin-bottom: $spacing-md;
   }
-
-  &__heading {
-    @include media($medium-screen) {
-      text-align: right;
-    }
-  }
-
 
   &__paragraph {
     &:first-letter {
@@ -41,4 +21,5 @@
       margin: .04em .02em 0 0;
     }
   }
+
 }

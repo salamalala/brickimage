@@ -374,6 +374,25 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
+body:before {
+  background-image: -webkit-linear-gradient(left, transparent 0, yellow 0, yellow 5.1724137931%, transparent 5.1724137931%, transparent 8.6206896552%, yellow 8.6206896552%, yellow 13.7931034483%, transparent 13.7931034483%, transparent 17.2413793103%, yellow 17.2413793103%, yellow 22.4137931034%, transparent 22.4137931034%, transparent 25.8620689655%, yellow 25.8620689655%, yellow 31.0344827586%, transparent 31.0344827586%, transparent 34.4827586207%, yellow 34.4827586207%, yellow 39.6551724138%, transparent 39.6551724138%, transparent 43.1034482759%, yellow 43.1034482759%, yellow 48.275862069%, transparent 48.275862069%, transparent 51.724137931%, yellow 51.724137931%, yellow 56.8965517241%, transparent 56.8965517241%, transparent 60.3448275862%, yellow 60.3448275862%, yellow 65.5172413793%, transparent 65.5172413793%, transparent 68.9655172414%, yellow 68.9655172414%, yellow 74.1379310345%, transparent 74.1379310345%, transparent 77.5862068966%, yellow 77.5862068966%, yellow 82.7586206897%, transparent 82.7586206897%, transparent 86.2068965517%, yellow 86.2068965517%, yellow 91.3793103448%, transparent 91.3793103448%, transparent 94.8275862069%, yellow 94.8275862069%, yellow 100%, transparent 100%);
+  background-image: -moz-linear-gradient(left, transparent 0, yellow 0, yellow 5.1724137931%, transparent 5.1724137931%, transparent 8.6206896552%, yellow 8.6206896552%, yellow 13.7931034483%, transparent 13.7931034483%, transparent 17.2413793103%, yellow 17.2413793103%, yellow 22.4137931034%, transparent 22.4137931034%, transparent 25.8620689655%, yellow 25.8620689655%, yellow 31.0344827586%, transparent 31.0344827586%, transparent 34.4827586207%, yellow 34.4827586207%, yellow 39.6551724138%, transparent 39.6551724138%, transparent 43.1034482759%, yellow 43.1034482759%, yellow 48.275862069%, transparent 48.275862069%, transparent 51.724137931%, yellow 51.724137931%, yellow 56.8965517241%, transparent 56.8965517241%, transparent 60.3448275862%, yellow 60.3448275862%, yellow 65.5172413793%, transparent 65.5172413793%, transparent 68.9655172414%, yellow 68.9655172414%, yellow 74.1379310345%, transparent 74.1379310345%, transparent 77.5862068966%, yellow 77.5862068966%, yellow 82.7586206897%, transparent 82.7586206897%, transparent 86.2068965517%, yellow 86.2068965517%, yellow 91.3793103448%, transparent 91.3793103448%, transparent 94.8275862069%, yellow 94.8275862069%, yellow 100%, transparent 100%);
+  background-image: -ms-linear-gradient(left, transparent 0, yellow 0, yellow 5.1724137931%, transparent 5.1724137931%, transparent 8.6206896552%, yellow 8.6206896552%, yellow 13.7931034483%, transparent 13.7931034483%, transparent 17.2413793103%, yellow 17.2413793103%, yellow 22.4137931034%, transparent 22.4137931034%, transparent 25.8620689655%, yellow 25.8620689655%, yellow 31.0344827586%, transparent 31.0344827586%, transparent 34.4827586207%, yellow 34.4827586207%, yellow 39.6551724138%, transparent 39.6551724138%, transparent 43.1034482759%, yellow 43.1034482759%, yellow 48.275862069%, transparent 48.275862069%, transparent 51.724137931%, yellow 51.724137931%, yellow 56.8965517241%, transparent 56.8965517241%, transparent 60.3448275862%, yellow 60.3448275862%, yellow 65.5172413793%, transparent 65.5172413793%, transparent 68.9655172414%, yellow 68.9655172414%, yellow 74.1379310345%, transparent 74.1379310345%, transparent 77.5862068966%, yellow 77.5862068966%, yellow 82.7586206897%, transparent 82.7586206897%, transparent 86.2068965517%, yellow 86.2068965517%, yellow 91.3793103448%, transparent 91.3793103448%, transparent 94.8275862069%, yellow 94.8275862069%, yellow 100%, transparent 100%);
+  background-image: -o-linear-gradient(left, transparent 0, yellow 0, yellow 5.1724137931%, transparent 5.1724137931%, transparent 8.6206896552%, yellow 8.6206896552%, yellow 13.7931034483%, transparent 13.7931034483%, transparent 17.2413793103%, yellow 17.2413793103%, yellow 22.4137931034%, transparent 22.4137931034%, transparent 25.8620689655%, yellow 25.8620689655%, yellow 31.0344827586%, transparent 31.0344827586%, transparent 34.4827586207%, yellow 34.4827586207%, yellow 39.6551724138%, transparent 39.6551724138%, transparent 43.1034482759%, yellow 43.1034482759%, yellow 48.275862069%, transparent 48.275862069%, transparent 51.724137931%, yellow 51.724137931%, yellow 56.8965517241%, transparent 56.8965517241%, transparent 60.3448275862%, yellow 60.3448275862%, yellow 65.5172413793%, transparent 65.5172413793%, transparent 68.9655172414%, yellow 68.9655172414%, yellow 74.1379310345%, transparent 74.1379310345%, transparent 77.5862068966%, yellow 77.5862068966%, yellow 82.7586206897%, transparent 82.7586206897%, transparent 86.2068965517%, yellow 86.2068965517%, yellow 91.3793103448%, transparent 91.3793103448%, transparent 94.8275862069%, yellow 94.8275862069%, yellow 100%, transparent 100%);
+  background-image: linear-gradient(to left, transparent 0, yellow 0, yellow 5.1724137931%, transparent 5.1724137931%, transparent 8.6206896552%, yellow 8.6206896552%, yellow 13.7931034483%, transparent 13.7931034483%, transparent 17.2413793103%, yellow 17.2413793103%, yellow 22.4137931034%, transparent 22.4137931034%, transparent 25.8620689655%, yellow 25.8620689655%, yellow 31.0344827586%, transparent 31.0344827586%, transparent 34.4827586207%, yellow 34.4827586207%, yellow 39.6551724138%, transparent 39.6551724138%, transparent 43.1034482759%, yellow 43.1034482759%, yellow 48.275862069%, transparent 48.275862069%, transparent 51.724137931%, yellow 51.724137931%, yellow 56.8965517241%, transparent 56.8965517241%, transparent 60.3448275862%, yellow 60.3448275862%, yellow 65.5172413793%, transparent 65.5172413793%, transparent 68.9655172414%, yellow 68.9655172414%, yellow 74.1379310345%, transparent 74.1379310345%, transparent 77.5862068966%, yellow 77.5862068966%, yellow 82.7586206897%, transparent 82.7586206897%, transparent 86.2068965517%, yellow 86.2068965517%, yellow 91.3793103448%, transparent 91.3793103448%, transparent 94.8275862069%, yellow 94.8275862069%, yellow 100%, transparent 100%);
+  content: "";
+  display: inline-block;
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 74em;
+  opacity: 0.2;
+  pointer-events: none;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  z-index: 9999; }
+
 html {
   box-sizing: border-box; }
 
@@ -580,6 +599,67 @@ a {
   .wrapper__main {
     position: relative;
     margin-top: 4.2087269129em; }
+
+.centered {
+  margin-left: 25.8620689655%;
+  float: left;
+  display: block;
+  margin-right: 3.4482758621%;
+  width: 48.275862069%; }
+  .centered:last-child {
+    margin-right: 0; }
+  .centered::after {
+    clear: both;
+    content: "";
+    display: table; }
+
+.two-third__narrow {
+  float: left;
+  display: block;
+  margin-right: 3.4482758621%;
+  width: 31.0344827586%; }
+  .two-third__narrow:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 30em) {
+    .two-third__narrow {
+      float: left;
+      display: block;
+      margin-right: 3.4482758621%;
+      width: 22.4137931034%; }
+      .two-third__narrow:last-child {
+        margin-right: 0; } }
+
+.two-third__wide {
+  float: left;
+  display: block;
+  margin-right: 3.4482758621%;
+  width: 65.5172413793%; }
+  .two-third__wide:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 30em) {
+    .two-third__wide {
+      float: left;
+      display: block;
+      margin-right: 3.4482758621%;
+      width: 74.1379310345%; }
+      .two-third__wide:last-child {
+        margin-right: 0; } }
+
+.three-third__left {
+  float: left;
+  display: block;
+  margin-right: 3.4482758621%;
+  width: 22.4137931034%; }
+  .three-third__left:last-child {
+    margin-right: 0; }
+
+.three-third__middle {
+  float: left;
+  display: block;
+  margin-right: 3.4482758621%;
+  width: 48.275862069%; }
+  .three-third__middle:last-child {
+    margin-right: 0; }
 
 .body__home {
   background-image: url(../images/home/home_sm.jpg);
@@ -849,100 +929,30 @@ a {
     .lang__link:hover {
       color: #fff; }
 
-.subnav {
-  float: left;
+.subnav__link {
   display: block;
-  margin-right: 3.4482758621%;
-  width: 31.0344827586%; }
-  .subnav:last-child {
-    margin-right: 0; }
-  @media screen and (min-width: 30em) {
-    .subnav {
-      float: left;
-      display: block;
-      margin-right: 3.4482758621%;
-      width: 22.4137931034%; }
-      .subnav:last-child {
-        margin-right: 0; } }
-  .subnav__link {
-    display: block;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 0.7501875469em;
-    color: #9F9894;
-    margin-bottom: 1.333em; }
-  .subnav__wrapper.fixed {
-    float: left;
-    display: block;
-    margin-right: 3.4482758621%;
-    width: 13.7931034483%;
-    top: -webkit-calc(4.2087269129em + 60px);
-    top: calc(4.2087269129em + 60px);
-    position: fixed; }
-    .subnav__wrapper.fixed:last-child {
-      margin-right: 0; }
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.7501875469em;
+  color: #9F9894;
+  margin-bottom: 1.333em; }
 
-.content-right {
+.subnav__wrapper.fixed {
   float: left;
   display: block;
   margin-right: 3.4482758621%;
-  width: 65.5172413793%; }
-  .content-right:last-child {
+  width: 13.7931034483%;
+  top: -webkit-calc(4.2087269129em + 60px);
+  top: calc(4.2087269129em + 60px);
+  position: fixed; }
+  .subnav__wrapper.fixed:last-child {
     margin-right: 0; }
-  @media screen and (min-width: 30em) {
-    .content-right {
-      float: left;
-      display: block;
-      margin-right: 3.4482758621%;
-      width: 74.1379310345%; }
-      .content-right:last-child {
-        margin-right: 0; } }
-  .content-right__article::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .content-right__article:not(:first-child) {
-    margin-top: 4.2087269129em; }
-  .content-right__column {
-    float: left;
-    display: block;
-    margin-right: 5.2631578947%;
-    width: 100%; }
-    .content-right__column:last-child {
-      margin-right: 0; }
-    @media screen and (min-width: 46.5em) {
-      .content-right__column {
-        float: left;
-        display: block;
-        margin-right: 4.1666666667%;
-        width: 47.9166666667%; }
-        .content-right__column:last-child {
-          margin-right: 0; } }
-  .content-right__item {
-    margin-bottom: 1.333em; }
-  @media screen and (min-width: 46.5em) {
-    .content-right__heading {
-      text-align: right; } }
-  .content-right__paragraph:first-letter {
-    font-size: 1.776889em;
-    font-weight: 400;
-    float: left;
-    line-height: 70%;
-    margin: .04em .02em 0 0; }
 
-.content-middle {
-  float: left;
-  display: block;
-  margin-right: 3.4482758621%;
-  width: 48.275862069%;
-  margin-left: 25.8620689655%; }
-  .content-middle:last-child {
-    margin-right: 0; }
-  .content-middle__img {
-    width: 100%;
-    height: auto;
-    margin-top: 1.333em;
-    margin-bottom: 1.333em; }
+.article__img {
+  width: 100%;
+  height: auto;
+  margin-top: 1.333em;
+  margin-bottom: 1.333em; }
 
 .art__describtion {
   float: left;
@@ -978,6 +988,32 @@ a {
   color: #E5AB24;
   font-weight: 500;
   font-size: 0.7501875469em; }
+
+.work__column {
+  float: left;
+  display: block;
+  margin-right: 5.2631578947%;
+  width: 100%; }
+  .work__column:last-child {
+    margin-right: 0; }
+  @media screen and (min-width: 46.5em) {
+    .work__column {
+      float: left;
+      display: block;
+      margin-right: 4.1666666667%;
+      width: 47.9166666667%; }
+      .work__column:last-child {
+        margin-right: 0; } }
+
+.work__item {
+  margin-bottom: 1.333em; }
+
+.work__paragraph:first-letter {
+  font-size: 1.776889em;
+  font-weight: 400;
+  float: left;
+  line-height: 70%;
+  margin: .04em .02em 0 0; }
 
 .home__text {
   padding-top: 4.2087269129em; }
@@ -1092,6 +1128,18 @@ a {
       margin-left: 41.6666666667%; }
       .home p:last-child:last-child {
         margin-right: 0; } }
+
+.example__article::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.example__article:not(:first-child) {
+  margin-top: 4.2087269129em; }
+
+@media screen and (min-width: 46.5em) {
+  .example__heading {
+    text-align: right; } }
 
 .testimonial {
   display: -webkit-box;

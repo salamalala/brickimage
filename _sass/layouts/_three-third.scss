@@ -1,0 +1,9 @@
+.three-third {
+  &__left {
+    @include span-columns(3);
+  }
+
+  &__middle {
+    @include span-columns(6);
+  }
+}

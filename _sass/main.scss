@@ -3,7 +3,7 @@
 
 // bourbon, customized bitters and bourbon grid system
 @import "bourbon/bourbon";
-$visual-grid: false;
+$visual-grid: true;
 $visual-grid-color: yellow;
 $visual-grid-index: front;
 $visual-grid-opacity: 0.2;
@@ -12,15 +12,22 @@ $visual-grid-opacity: 0.2;
 
 @import "base/base";
 
+@import "layouts/centered";
+@import "layouts/two-third";
+@import "layouts/three-third";
+
 @import "partials/body";
 @import "partials/header";
 @import "partials/nav";
 @import "partials/lang";
 @import "partials/subnav";
-@import "partials/content-right";
-@import "partials/content-middle";
+@import "partials/article";
 @import "partials/art";
+@import "partials/work";
+
 
 @import "pages/home";
+@import "pages/example";
 @import "pages/testimonial";
+@import "pages/about";
 @import "pages/contact";
