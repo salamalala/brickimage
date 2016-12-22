@@ -1,5 +1,5 @@
 .home {
-  
+
   &__text {
     padding-top: $spacing-xxl;
 
@@ -11,8 +11,7 @@
   &__title {
     @include span-columns(12);
     text-transform: none;
-    color: $orange;
-    font-weight: 600;
+    font-size: $font-size-xl;
 
     @include media($medium-screen) {
       @include span-columns(10);
@@ -20,13 +19,14 @@
     }
 
     @include media($large-screen) {
-      @include span-columns(12);
-      @include shift(0);
+      @include span-columns(11);
+      @include shift(1);
     }
   }
 
   &__paragraph {
     @include span-columns(12);
+    font-size: 120%;
 
     @include media($medium-screen) {
       @include span-columns(8);
@@ -34,13 +34,8 @@
     }
 
     @include media($large-screen) {
-      @include span-columns(11);
-      @include shift(1);
-    }
-
-    &--bold {
-      color: $orange;
-      font-weight: 500;
+      @include span-columns(9);
+      @include shift(3);
     }
   }
 
@@ -48,26 +43,17 @@
     @include span-columns(12);
 
     @include media($medium-screen) {
-      @include span-columns(10 of 10);
+      @include span-columns(9 of 9);
     }
   }
 
-
-  p:nth-child(2){
-    @include span-columns(12);
-
-    @include media($medium-screen) {
-      @include span-columns(8 of 10);
-      @include shift(2);
-    }
-  }
 
   p:last-child{
     @include span-columns(12);
 
     @include media($medium-screen) {
-      @include span-columns(6 of 10);
-      @include shift(4);
+      @include span-columns(7 of 9);
+      @include shift(2);
     }
   }
 }

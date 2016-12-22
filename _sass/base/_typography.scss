@@ -27,9 +27,8 @@ h6 {
 
 h1 {
   font-weight: 700;
-  font-size: $font-size-lg;
+  font-size: $font-size-xl;
   line-height: 1;
-  text-transform: uppercase;
   color: $orange;
 }
 
@@ -50,13 +49,12 @@ p {
   font-size: $font-size-base;
   margin: 0 0 $spacing-sm;
   font-weight: 400;
-  // font-family: "mrs-eaves-xl-serif", serif;
-  // font-weight: 400;
 }
 
 a {
   text-decoration: none;
-  color: $dark-grey;
+  color: $orange;
+  font-weight: 500;
   transition: $hover-transition;
 
   &:active,

@@ -4,22 +4,12 @@
     @include span-columns(8 of 8);
 
     @include media($medium-screen) {
-      @include span-columns(5 of 10);
+      @include span-columns(3 of 6);
     }
   }
 
   &__item {
-    margin-bottom: $spacing-md;
-  }
-
-  &__paragraph {
-    &:first-letter {
-      font-size: $font-size-lg;
-      font-weight: 400;
-      float: left;
-      line-height: 70%;
-      margin: .04em .02em 0 0;
-    }
+    margin-bottom: $spacing-lg;
   }
 
 }

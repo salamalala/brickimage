@@ -9,9 +9,11 @@
   }
 
   &__heading {
+    margin-bottom: $spacing-md;
     @include media($medium-screen) {
       text-align: right;
     }
+
   }
 
 }

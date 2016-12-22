@@ -11,6 +11,15 @@
     @include display(flex);
     padding-top: 30px;
     padding-bottom: 30px;
+    @include outer-container(90%);
+
+    @include media($small-screen) {
+      @include outer-container(95%);
+    }
+
+    @include media($large-screen) {
+      @include outer-container(80em);
+    }
   }
 
   &__logo {
