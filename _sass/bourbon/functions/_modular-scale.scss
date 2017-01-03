@@ -17,7 +17,7 @@ $major-eleventh:   2.667;
 $major-twelfth:    3;
 $double-octave:    4;
 
-$modular-scale-ratio: $perfect-fourth !default;
+$modular-scale-ratio: $minor-third !default;
 $modular-scale-base: em($em-base) !default;
 
 @function modular-scale($increment, $value: $modular-scale-base, $ratio: $modular-scale-ratio) {

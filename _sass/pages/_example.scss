@@ -1,18 +1,29 @@
 .example {
+  position: relative;
 
   &__article {
 
     @include clearfix;
     &:not(:first-child) {
-      margin-top: $spacing-xxl;
+      margin-top: $spacing-lg;
     }
   }
 
   &__heading {
-    margin-bottom: $spacing-md;
-    @include media($medium-screen) {
-      text-align: right;
+    margin-bottom: $spacing-sm;
+    color: $orange;
+    position: relative;
+    //text-transform: uppercase;
+    /*&:after {
+      content: '';
+      position: absolute;
+      width: 46%;
+      height: 1px;
+      bottom: -10px;
+      left: 0;
+      background-color: $orange;
     }
+    */
 
   }
 

@@ -17,18 +17,16 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   letter-spacing: $letter-spacing-lg;
   margin: 0 0 $spacing-base;
 }
 
 h1 {
-  font-weight: 700;
-  font-size: $font-size-xl;
+  font-weight: 600;
+  font-size: $font-size-lg;
   line-height: 1;
+  //text-transform: uppercase;
   color: $orange;
 }
 
@@ -62,4 +60,15 @@ a {
   &:hover {
     color: $orange;
   }
+}
+
+.site-title {
+  position: absolute;
+  z-index: -3;
+  font-size: 5em;
+  right: 0;
+  top: -50px;
+  color: transparentize($orange, 0.85);
+  text-transform: uppercase;
+  font-weight: 800;
 }

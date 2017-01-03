@@ -1,4 +1,4 @@
-// medium-screen: mobile navigation
+// omedium-screen: mobile navigation
 
 .nav {
   position: relative;
@@ -147,10 +147,10 @@
         content: "";
         position: absolute;
         width: 100%;
-        height: 2px;
-        bottom: -5px;
+        height: 1px;
+        bottom: -7px;
         left: 0;
-        background-color: $dark-white;
+        background-color: transparentize($light-grey, 0.2);
         visibility: hidden;
         transform: scaleX(0);
         transition: all 0.2s ease-in-out 0s;

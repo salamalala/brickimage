@@ -13,10 +13,10 @@ $modular-scale-base: 1em;
 $font-size-sm: modular-scale(-1);
 $font-size-base: modular-scale(0);
 $font-size-md: modular-scale(1);
-$font-size-lg: modular-scale(2);
-$font-size-xl: modular-scale(3);
-$font-size-xxl: modular-scale(4);
-$font-size-xxxl: modular-scale(9);
+$font-size-lg: modular-scale(3);
+$font-size-xl: modular-scale(5);
+$font-size-xxl: modular-scale(7);
+$font-size-xxxl: modular-scale(15);
 
 // Line height
 $base-line-height: 1.5;
@@ -38,7 +38,7 @@ $spacing-md: modular-scale(1);
 $spacing-lg: modular-scale(2);
 $spacing-xl: modular-scale(3);
 $spacing-xxl: modular-scale(5);
-$spacing-xxxl: modular-scale(8);
+$spacing-xxxl: modular-scale(10);
 
 
 // Colors
