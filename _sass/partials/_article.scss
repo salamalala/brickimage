@@ -1,9 +1,37 @@
 .article {
 
-  &__img {
-    width: 100%;
-    height: auto;
-    margin-top: $spacing-md;
+  &__intro {
+    font-weight: 600;
     margin-bottom: $spacing-md;
+  }
+
+  &__img {
+    max-width: 40%;
+    margin-bottom: $spacing-base;
+
+    @include media($small-screen) {
+      max-width: 30%;
+    }
+
+    &--left {
+      float: left;
+      margin-right: $spacing-md;
+    }
+
+    &--right {
+      float: right;
+      margin-left: $spacing-md;
+    }
+  }
+
+  figure:nth-of-type(2) {
+    clear:right;
+  }
+
+  &__caption {
+    font-size: $font-size-sm;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.3;
   }
 }
