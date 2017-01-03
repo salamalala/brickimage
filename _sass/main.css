@@ -966,15 +966,9 @@ a {
   margin-bottom: 1.2em; }
 
 .subnav__wrapper.fixed {
-  float: left;
-  display: block;
-  margin-right: 3.4482758621%;
-  width: 13.7931034483%;
   top: -webkit-calc(2.48832em + 60px);
   top: calc(2.48832em + 60px);
   position: fixed; }
-  .subnav__wrapper.fixed:last-child {
-    margin-right: 0; }
 
 .article__intro {
   font-weight: 600;
@@ -1025,7 +1019,7 @@ a {
 
 .special-project__quote figure {
   margin-bottom: 1.44em;
-  border-left: #E5E3E1 7px solid; }
+  border-left: #E5E3E1 5px solid; }
 
 .special-project__quote blockquote {
   margin-bottom: 0;

@@ -10,7 +10,6 @@
   }
 
   &__wrapper.fixed {
-    @include span-columns(2);
     @include calc(top, "#{$spacing-xxl} + 60px");
     position: fixed;
   }
