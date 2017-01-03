@@ -5,7 +5,7 @@ permalink: /examples.html
 
 <div class="wrapper wrapper__main two-third example">
 
-  <nav class="subnav two-third__narrow">
+  <nav class="subnav two-third__narrow" id="subnav-examples">
     <div class="subnav__wrapper">
       <a href="#brick-tinting" class="subnav__link" id="subnav_brick">Brick & Mortar Tinting</a>
       <a href="#stone-tinting" class="subnav__link" id="subnav_stone">Stone & Concrete Tinting</a>
@@ -72,10 +72,13 @@ permalink: /examples.html
 
     <article class="example__article special-project">
       <h1 class="example__heading" id="special-projects">Special Projects</h1>
-      <h2>SHIBBOLETH AT THE TATE MODERN</h2>
-      <p class="special-project__describtion">It was an impressive sight to behold. Doris Salcedo created ‘Shibboleth’, a chasm that ran the entire length of the Turbine Hall with the aim of drawing attention to divisions in modern day society.
+
+      <img class="special-project__img special-project__left"src="images/special_project/shibboleth.jpg" alt="Picture from the project">
+
+      <h2>Shibboleth at the tate mordern</h2>
+
+      <p>It was an impressive sight to behold. Doris Salcedo created ‘Shibboleth’, a chasm that ran the entire length of the Turbine Hall with the aim of drawing attention to divisions in modern day society.
       Ms Salcedo and Tate Modern did not wish to elaborate on how the piece was made, however it is sufficient to say that Brick Image Ltd were appointed to camouflage the new concrete used for the installation. Reactions from the press following the launch confirmed just how convincing our work had been.</p>
-      <img class="special-project__img "src="images/special_project/shibboleth.jpg" alt="">
 
       <div class="special-project__quote">
         <h3>Quote from the artist:</h3>
@@ -87,6 +90,7 @@ permalink: /examples.html
         </figure>
 
         <h3>Quotes from the press:</h3>
+        <img class="special-project__img special-project__right "src="images/special_project/g2_article.jpg" alt="Guardian article">
         {% for special-project-quote in site.data.special-project-quotes %}
           <figure>
             <blockquote cite="{{ special-project-quote.link }}">

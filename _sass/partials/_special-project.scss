@@ -1,15 +1,19 @@
 .special-project {
-  &__describtion {
-    @include span-columns(7 of 9);
+
+  &__left {
+    float: left;
+    margin-right: $spacing-base;
+    margin-bottom: $spacing-base;
   }
 
-  &__img {
-    @include span-columns(2 of 9);
-    @include omega();
-    @include clearfix;
+  &__right {
+    float: right;
+    margin-left: $spacing-base;
+    margin-bottom: $spacing-base;
   }
 
   &__quote {
+    clear: left;
 
     figure {
       margin-bottom: $spacing-lg;
