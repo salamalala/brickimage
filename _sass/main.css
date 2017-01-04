@@ -1219,7 +1219,8 @@ a {
     overflow: hidden;
     margin-bottom: 1em; }
   .testimonial__img {
-    width: 100%; }
+    width: 100%;
+    flex: 0 0 auto; }
   .testimonial__name {
     color: #E5AB24;
     font-size: 0.8333333333em; }
