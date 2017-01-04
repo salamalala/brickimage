@@ -1,18 +1,10 @@
 .example {
-  position: relative;
 
   &__article {
-
     @include clearfix;
-    &:not(:first-child) {
-      margin-top: $spacing-lg;
-    }
   }
 
   &__heading {
-    margin-bottom: $spacing-sm;
     color: $orange;
-    position: relative;
   }
-
 }

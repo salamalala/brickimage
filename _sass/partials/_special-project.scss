@@ -15,18 +15,22 @@
   &__quote {
     clear: left;
 
+    h3 {
+      margin-top: $spacing-lg;
+    }
+
     figure {
       margin-bottom: $spacing-lg;
       border-left: $dark-white 5px solid;
+      padding-left: $spacing-base;
     }
 
     blockquote {
-      margin-bottom: 0;
-      margin-left: $spacing-base;
+      margin: 0;
     }
 
     figcaption {
-      text-align: right;
+      margin-top: $spacing-sm;
       color: $orange;
       font-weight: 500;
       font-size: $font-size-sm;

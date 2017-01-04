@@ -515,14 +515,17 @@ body {
 h1,
 h2,
 h3 {
-  letter-spacing: 1.1px;
+  letter-spacing: 1.1px; }
+
+h2, h3 {
   margin: 0 0 1em; }
 
 h1 {
   font-weight: 600;
   font-size: 1.728em;
   line-height: 1;
-  color: #E5AB24; }
+  color: #E5AB24;
+  margin: 0 0 0.8333333333em; }
 
 h2 {
   font-size: 1.2em;
@@ -587,7 +590,7 @@ a {
         display: table; } }
   .wrapper__main {
     position: relative;
-    margin-top: 2.48832em;
+    margin-top: 2.985984em;
     margin-bottom: 2.48832em; }
 
 .centered {
@@ -632,6 +635,7 @@ a {
   box-shadow: inset 0 0 0 1000px rgba(245, 245, 250, 0.75);
   position: relative;
   z-index: 0;
+  height: 100vh;
   min-height: 100vh; }
   @media screen and (min-width: 46.5em) {
     .body__home {
@@ -940,6 +944,12 @@ a {
     top: calc(2.48832em + 60px);
     position: fixed; }
 
+#subnav-brick {
+  color: #E5AB24; }
+
+#subnav-tinting {
+  color: #E5AB24; }
+
 .article__intro {
   font-weight: 600;
   margin-bottom: 1.2em; }
@@ -966,8 +976,8 @@ a {
   font-weight: 300;
   line-height: 1.3; }
 
-.article:nth-child(2) {
-  margin-top: 2.48832em; }
+.article:not(:first-child) {
+  margin-top: 2.985984em; }
 
 .special-project__left {
   float: left;
@@ -981,14 +991,16 @@ a {
 
 .special-project__quote {
   clear: left; }
+  .special-project__quote h3 {
+    margin-top: 1.44em; }
   .special-project__quote figure {
     margin-bottom: 1.44em;
-    border-left: #E5E3E1 5px solid; }
+    border-left: #E5E3E1 5px solid;
+    padding-left: 1em; }
   .special-project__quote blockquote {
-    margin-bottom: 0;
-    margin-left: 1em; }
+    margin: 0; }
   .special-project__quote figcaption {
-    text-align: right;
+    margin-top: 0.8333333333em;
     color: #E5AB24;
     font-weight: 500;
     font-size: 0.8333333333em; }
@@ -1013,7 +1025,7 @@ a {
   margin-bottom: 1.44em; }
 
 .home__text {
-  padding-top: 3.5831808em; }
+  padding-top: 2.985984em; }
   @media screen and (min-width: 46.5em) {
     .home__text {
       text-align: right; } }
@@ -1107,18 +1119,13 @@ a {
       .home p:last-child:last-child {
         margin-right: 0; } }
 
-.example {
-  position: relative; }
-  .example__article::after {
-    clear: both;
-    content: "";
-    display: table; }
-  .example__article:not(:first-child) {
-    margin-top: 1.44em; }
-  .example__heading {
-    margin-bottom: 0.8333333333em;
-    color: #E5AB24;
-    position: relative; }
+.example__article::after {
+  clear: both;
+  content: "";
+  display: table; }
+
+.example__heading {
+  color: #E5AB24; }
 
 .conservation .journal-cover {
   height: 80%; }
@@ -1231,7 +1238,6 @@ a {
   .testimonial__img {
     width: 100%; }
   .testimonial__name {
-    margin-bottom: 0.5787037037em;
     color: #E5AB24;
     font-size: 0.8333333333em; }
   .testimonial__project {
@@ -1248,7 +1254,7 @@ a {
       left: 0; }
 
 .about {
-  margin-bottom: 3.5831808em; }
+  margin-bottom: 10em; }
 
 .guarantee li {
   margin-bottom: 1.2em; }
