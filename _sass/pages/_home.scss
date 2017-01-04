@@ -12,6 +12,7 @@
     @include span-columns(12);
     text-transform: none;
     font-size: $font-size-xl;
+    margin-bottom: $spacing-xs;
 
     @include media($medium-screen) {
       @include span-columns(10);

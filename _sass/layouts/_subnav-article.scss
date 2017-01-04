@@ -1,0 +1,7 @@
+.subnav-article {
+  @include span-columns(12)
+
+  @include media($medium-screen) {
+    @include span-columns(8);
+  }
+}

@@ -57,17 +57,14 @@ var subnavExamplesColor = function() {
         $('#subnav_special').css({"color":"#E5AB24"});
         $('#subnav_brick').css({"color":"#9F9894"});
         $('#subnav_stone').css({"color":"#9F9894"});
-        console.log("special-projects");
       } else if ( $w.scrollTop() > stoneTinting ){
         $('#subnav_stone').css({"color":"#E5AB24"});
         $('#subnav_brick').css({"color":"#9F9894"});
         $('#subnav_special').css({"color":"#9F9894"});
-        console.log("stone-projects");
       } else if ( $w.scrollTop() > brickTinting ) {
         $('#subnav_brick').css({"color":"#E5AB24"});
         $('#subnav_stone').css({"color":"#9F9894"});
         $('#subnav_special').css({"color":"#9F9894"});
-        console.log("brick-projects");
       }
   });
 }
@@ -96,7 +93,7 @@ $(function() {
   }
 
   if ( $('#subnav-examples').length ) {
-    subnavChangeColor();
+    subnavExamplesColor();
   }
 
   if ( $('#subnav-about').length ) {

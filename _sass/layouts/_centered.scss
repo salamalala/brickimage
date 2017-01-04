@@ -1,11 +1,6 @@
 .centered {
   @include span-columns(12 of 12);
 
-  @include media($small-screen) {
-    @include shift(1);
-    @include span-columns(10 of 12);
-  }
-
   @include media($medium-screen) {
     @include shift(2);
     @include span-columns(8 of 12);

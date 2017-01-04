@@ -1,9 +1,5 @@
 .contact {
-  margin-top: $spacing-xxxl;
-
-  @include media($small-screen) {
-    margin-top: $spacing-xxxl;
-  }
+  margin-top:10em;  
 
   &__box {
     position: relative;

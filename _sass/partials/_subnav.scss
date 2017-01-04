@@ -1,4 +1,9 @@
 .subnav {
+  display: none;
+
+  @include media($medium-screen) {
+    @include span-columns(2);
+  }
 
   &__link {
     display: block;
