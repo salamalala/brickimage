@@ -1,5 +1,5 @@
 .lang {
-  @include align-items(flex-end);
+  float: right;
   height: 35px;
 
   @include media($small-screen) {

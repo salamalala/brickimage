@@ -8,7 +8,6 @@
 
 
   &__wrapper {
-    @include display(flex);
     padding-top: 30px;
     padding-bottom: 30px;
     @include outer-container(90%);
@@ -23,7 +22,6 @@
   }
 
   &__logo {
-    @include flex-grow(2);
     height: 35px;
 
     @include media($small-screen) {
@@ -32,9 +30,11 @@
 
     svg {
       height: 35px;
+      width: 189px;
 
       @include media($small-screen) {
         height: 60px;
+        width: 324px;
       }
     }
   }
