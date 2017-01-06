@@ -1,9 +1,10 @@
 .guarantee {
 
   li {
-    // padding-left: $spacing-base;
-    // border-left: $dark-white 7px solid;
+    padding-left: $spacing-base;
+    border-left: $dark-white 5px solid;
     margin-bottom: $spacing-md;
+    font-size: $font-size-sm;
   }
 
   &__list-heading{
@@ -12,30 +13,23 @@
   }
 
   &__declaration {
-    background: $medium-grey;
-    margin-top: $spacing-xl;
-    margin-bottom: $spacing-xxl;
-    padding: $spacing-xl;
+    margin-bottom: $spacing-xl;
+    padding: $spacing-xl $spacing-base;
     text-align: center;
     border-radius: 2px;
+    font-size: $font-size-md;
+    background: transparentize($orange, 0.2);
 
     h1 {
-      position: relative;
+      margin-bottom: $spacing-xxs;
+      color: $white;
+      text-transform: uppercase;
 
-      &:after {
-        content: '';
-        position: absolute;
-        bottom: -10px;
-        left: 35%;
-        background-color: $orange;
-        width: 30%;
-        height: 3px;
-      }
     }
 
     p {
-      color: $white;
       margin-bottom: 0;
+      color: $white;
     }
   }
 }

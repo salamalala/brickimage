@@ -31,6 +31,7 @@ $base-border-radius: 8px;
 $base-z-index: 0;
 
 //Spacing with modular scales
+$spacing-xxs: modular-scale(-7);
 $spacing-xs: modular-scale(-3);
 $spacing-sm: modular-scale(-1);
 $spacing-base: modular-scale(0);
@@ -47,7 +48,7 @@ $dark-grey: #4C4947;
 $medium-grey: #7F7A77;
 $light-grey: #9F9894;
 $dark-white: #E5E3E1;
-$offwhite: #FCFCFC;
+$offwhite: #FCFCFA;
 $white: #fff;
 $orange: #E5AB24;
 $skyblue: #F7FAFF;

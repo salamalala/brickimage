@@ -1,7 +1,7 @@
 .home {
 
   &__text {
-    padding-top: $spacing-xxxl;
+    padding-top: 4em;
 
     @include media($medium-screen) {
       text-align: right;
