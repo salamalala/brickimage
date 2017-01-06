@@ -10,7 +10,13 @@ permalink: /testimonials.html
 
     <figure class="testimonial__item">
       <div class="testimonial__img-box">
-        <img class="testimonial__img" src="images/testimonial/{{ testimonial.src }}" alt={{ testimonial.alt }}/>
+        {% if testimonial.link != nil %}
+          <a href="{{ testimonial.link }}" target="_blank">
+        {% endif %}
+          <img class="testimonial__img" src="images/testimonial/{{ testimonial.src }}" alt={{ testimonial.alt }}/>
+        {% if testimonial.link != nil %}
+          </a>
+        {% endif %}
       </div>
       <div class="testimonial__text">
         <figcaption class="testimonial__name"> {{testimonial.name}}</figcaption>
