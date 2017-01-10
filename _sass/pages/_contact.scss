@@ -1,5 +1,9 @@
 .contact {
-  margin-top:10em;  
+  margin-top:$spacing-xxl;
+
+  @include media($small-screen){
+     margin-top:10em;
+  }
 
   &__box {
     position: relative;
@@ -47,7 +51,7 @@
   }
 
   &__uk .contact__country {
-    right: 20px;
+    left: 20px;
 
     @include media($small-screen) {
       right: 50px;
@@ -55,7 +59,7 @@
   }
 
   &__nl .contact__country {
-    right: 20px;
+    left: 20px;
 
     @include media($small-screen) {
       left: 50px;

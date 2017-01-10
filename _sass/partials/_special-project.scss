@@ -7,9 +7,12 @@
   }
 
   &__right {
-    float: right;
-    margin-left: $spacing-base;
     margin-bottom: $spacing-base;
+
+    @include media($small-screen) {
+      float: right;
+      margin-left: $spacing-base;
+    }
   }
 
   &__quote {

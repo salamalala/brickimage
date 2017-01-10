@@ -30,9 +30,13 @@
     @include display(flex);
     @include flex-direction(column);
     @include justify-content(center);
-    height: 250px;
+    max-height: 250px;
     overflow: hidden;
     margin-bottom: $spacing-base;
+
+    @include media($small-screen) {
+      height: 250px;
+    }
   }
 
   &__img {

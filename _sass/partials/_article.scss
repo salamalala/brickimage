@@ -7,7 +7,7 @@
 
   &__img {
     max-width: 40%;
-    margin-bottom: $spacing-base;
+    margin-bottom: $spacing-xs;
 
     @include media($small-screen) {
       max-width: 30%;
@@ -25,7 +25,7 @@
   }
 
   &__clear {
-    clear:right;
+    clear:both;
   }
 
   &__caption {

@@ -1,19 +1,21 @@
 .header {
-  height: 155px;
+  height: 157px;
   background-color: $white;
 
   @include media($small-screen) {
-    height: 180px;
+    height: 182px;
   }
 
 
   &__wrapper {
+    @include outer-container(90%);
+    height: 95px;
     padding-top: 30px;
     padding-bottom: 30px;
-    @include outer-container(90%);
 
     @include media($small-screen) {
       @include outer-container(95%);
+      height: 120px;
     }
 
     @include media($large-screen) {
@@ -22,6 +24,7 @@
   }
 
   &__logo {
+    display: inline-block;
     height: 35px;
 
     @include media($small-screen) {
@@ -30,11 +33,11 @@
 
     svg {
       height: 35px;
-      width: 189px;
+      width: 173px;
 
       @include media($small-screen) {
         height: 60px;
-        width: 324px;
+        width: 297px;
       }
     }
   }
