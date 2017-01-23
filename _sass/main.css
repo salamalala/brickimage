@@ -877,6 +877,8 @@ a {
         margin-top: 15px; } }
     .lang__item--active {
       background: #E5AB24; }
+      .lang__item--active a {
+        color: #fff; }
     .lang__item:hover {
       background: #E5AB24; }
     .lang__item:last-child {

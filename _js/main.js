@@ -17,8 +17,7 @@ var mobileNavigation = function() {
 
 var langToggle = function() {
   $( ".lang__item" ).click(function() {
-    console.log("hello");
-    $(this).addClass('lang__item--active');
+    $(this).addClass('lang__item--active').siblings().removeClass('lang__item--active');;
   });
 }
 
