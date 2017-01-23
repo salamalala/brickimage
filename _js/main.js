@@ -15,6 +15,14 @@ var mobileNavigation = function() {
 };
 
 
+var langToggle = function() {
+  $( ".lang__item" ).click(function() {
+    console.log("hello");
+    $(this).addClass('lang__item--active');
+  });
+}
+
+
 var stickyHeaderElements = function(el, scrollPos) {
 
   $(window).scroll(function(){
@@ -133,6 +141,8 @@ $(function() {
   if ( $('#subnav-about').length ) {
     subnavAboutColor();
   }
+
+  langToggle();
 
   stickyHeaderElements('.nav', 120);
 

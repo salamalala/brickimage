@@ -2,6 +2,10 @@
   margin-top:$spacing-xxl;
 
   @include media($small-screen){
+     margin-top:5em;
+  }
+
+  @include media($medium-screen){
      margin-top:10em;
   }
 
@@ -9,10 +13,6 @@
     position: relative;
     z-index: 1;
     @include span-columns(12 of 12);
-
-    @include media($small-screen) {
-      @include span-columns(6 of 12);
-    }
 
     @include media($medium-screen) {
       @include span-columns(5 of 12);
@@ -27,7 +27,7 @@
     &:first-child {
       margin-bottom: $spacing-xxl;
 
-      @include media($small-screen) {
+      @include media($medium-screen) {
         text-align: right;
       }
     }
@@ -45,7 +45,7 @@
     font-size: $font-size-xxxl;
     color: transparentize($orange, 0.6);
 
-    @include media($small-screen) {
+    @include media($medium-screen) {
       top: -70px;
     }
   }
@@ -53,7 +53,7 @@
   &__uk .contact__country {
     left: 20px;
 
-    @include media($small-screen) {
+    @include media($medium-screen) {
       right: 50px;
     }
   }
@@ -61,7 +61,7 @@
   &__nl .contact__country {
     left: 20px;
 
-    @include media($small-screen) {
+    @include media($medium-screen) {
       left: 50px;
       right: 0;
     }
