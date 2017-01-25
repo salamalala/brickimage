@@ -24,7 +24,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    '_sass/main.css': '_sass/main.scss'
+                    'assets/main.css': '_sass/main.scss'
                 }
             }
         },
@@ -42,7 +42,7 @@ module.exports = function (grunt) {
             },
             dist: {
                 files: {
-                    '_site/css/main-min.css': '_sass/main.css'
+                    'assets/main-min.css': 'assets/main.css'
                 }
             }
         },
@@ -50,8 +50,8 @@ module.exports = function (grunt) {
         uglify: {
             dist: {
                 files: {
-                  '_site/js/main-min.js': [
-                    '_js/*.js'
+                  'assets/main-min.js': [
+                    'assets/main.js'
                     ]
                 }
             }
@@ -83,7 +83,7 @@ module.exports = function (grunt) {
                 tasks: ['sass', 'postcss']
             },
             js: {
-                files: ['_js/*.js'],
+                files: ['assets/main.js'],
                 tasks: ['uglify']
             },
             jekyll: {
