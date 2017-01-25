@@ -21,14 +21,6 @@
       margin-top: 15px;
     }
 
-    &--active {
-      background: $orange;
-
-      a {
-        color: $white;
-      }
-    }
-
     &:hover {
       background: $orange;
     }
@@ -46,6 +38,7 @@
     text-align: center;
     color: $white;
     font-size: $font-size-sm;
+    text-transform: uppercase;
 
     @include media($small-screen) {
       width: 30px;
@@ -56,5 +49,15 @@
     &:hover {
       color: $white;
     }
+  }
+}
+
+
+.en:lang(en),
+.nl:lang(nl){
+  background: $orange;
+
+  a {
+    color: $white;
   }
 }

@@ -16,7 +16,7 @@
     box-shadow: none;
   }
 
-  @include media($large-screen) {
+  @include media($xlarge-screen) {
     background-image: url(../images/home/home_transparent.png);
   }
 
