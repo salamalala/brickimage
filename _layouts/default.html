@@ -3,12 +3,12 @@
 
   {% include head.html %}
 
-  <body {% if page.url == '/index.html' or page.url == '/index_nl.html' %} class="body__home" {% endif %}π>
+  <body {% if page.url == '/' or page.url == '/nl/' %} class="body__home" {% endif %}π>
 
     {% include header.html %}
 
     <main>
-        {{ content }}
+      {{ content }}
     </main>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
