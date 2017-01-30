@@ -1,7 +1,11 @@
 <header class="header" id="header">
 
   <div class="header__wrapper">
-    <a class="header__logo" href="{{ site.baseurl }}/">{% include logo.svg %}</a>
+    {% if page.lang == 'en' %}
+      <a class="header__logo" href="{{ site.baseurl }}/">{% include logo.svg %}</a>
+    {% else %}
+      <a class="header__logo" href="{{ site.baseurl }}/nl/">{% include logo_nl.svg %}</a>
+    {% endif %}
 
     <ul class="lang">
       {% assign posts=site.posts | where:"ref", page.ref | sort: 'lang' %}
@@ -31,19 +35,39 @@
 
       <div class="nav__items" id="nav">
 
-        <a{% if page.url == '/' %} class="nav__link nav__active" {% endif %} href="/" class="nav__link ">Home</a>
+        {% if page.lang == 'en' %}
 
-        <a{% if page.url == '/examples.html' %} class="nav__link nav__active" {% endif %} href="/examples.html" class="nav__link">Examples</a>
+          <a{% if page.url == '/' %} class="nav__link nav__active" {% endif %} href="/" class="nav__link ">Home</a>
 
-        <a{% if page.url == '/about.html' %} class="nav__link nav__active" {% endif %} href="/about.html" class="nav__link">About</a>
+          <a{% if page.url == '/examples/' %} class="nav__link nav__active" {% endif %} href="/examples/" class="nav__link">Examples</a>
 
-        <a{% if page.url == '/conservation.html' %} class="nav__link nav__active" {% endif %} href="/conservation.html" class="nav__link">Conservation</a>
+          <a{% if page.url == '/about/' %} class="nav__link nav__active" {% endif %} href="/about/" class="nav__link">About</a>
 
-        <a{% if page.url == '/testimonials.html' %} class="nav__link nav__active" {% endif %} href="/testimonials.html" class="nav__link">Testimonials</a>
+          <a{% if page.url == '/conservation/' %} class="nav__link nav__active" {% endif %} href="/conservation/" class="nav__link">Conservation</a>
 
-        <a{% if page.url == '/guarantee.html' %} class="nav__link nav__active" {% endif %} href="/guarantee.html" class="nav__link">Guarantee</a>
+          <a{% if page.url == '/testimonials/' %} class="nav__link nav__active" {% endif %} href="/testimonials/" class="nav__link">Testimonials</a>
 
-        <a{% if page.url == '/contact.html' %} class="nav__link nav__active" {% endif %} href="/contact.html" class="nav__link">Contact</a>
+          <a{% if page.url == '/guarantee/' %} class="nav__link nav__active" {% endif %} href="/guarantee/" class="nav__link">Guarantee</a>
+
+          <a{% if page.url == '/contact/' %} class="nav__link nav__active" {% endif %} href="/contact/" class="nav__link">Contact</a>
+
+        {% else %}
+
+          <a{% if page.url == '/nl/' %} class="nav__link nav__active" {% endif %} href="/nl/" class="nav__link ">Home</a>
+
+          <a{% if page.url == '/nl/examples/' %} class="nav__link nav__active" {% endif %} href="/nl/examples/" class="nav__link">Voorbeelden</a>
+
+          <a{% if page.url == '/nl/about/' %} class="nav__link nav__active" {% endif %} href="/nl/about/" class="nav__link">Over ons</a>
+
+          <a{% if page.url == '/nl/conservation/' %} class="nav__link nav__active" {% endif %} href="/nl/conservation/" class="nav__link">Restauratie</a>
+
+          <a{% if page.url == '/nl/testimonials/' %} class="nav__link nav__active" {% endif %} href="/nl/testimonials/" class="nav__link">Referenties</a>
+
+          <a{% if page.url == '/nl/guarantee/' %} class="nav__link nav__active" {% endif %} href="/nl/guarantee/" class="nav__link">Garantie</a>
+
+          <a{% if page.url == '/nl/contact/' %} class="nav__link nav__active" {% endif %} href="/nl/contact/" class="nav__link">Contact</a>
+
+        {% endif %}
       </div>
     </div>
   </nav>
