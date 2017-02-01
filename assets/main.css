@@ -919,7 +919,13 @@ a {
   .subnav__wrapper.fixed {
     top: -webkit-calc(2.48832em + 60px);
     top: calc(2.48832em + 60px);
+    float: left;
+    display: block;
+    margin-right: 3.4482758621%;
+    width: 13.7931034483%;
     position: fixed; }
+    .subnav__wrapper.fixed:last-child {
+      margin-right: 0; }
 
 #subnav-brick {
   color: #E5AB24; }

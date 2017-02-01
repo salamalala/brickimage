@@ -133,7 +133,7 @@ $(function() {
   if ( $('#subnav-about').length ) {
     subnavAboutColor();
   }
-  
+
   stickyHeaderElements('.nav', 120);
 
   mobileNavigation();
