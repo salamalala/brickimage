@@ -8,17 +8,17 @@
 
   &__item {
     display: inline-block;
-    height: 25px;
-    width: 25px;
-    // to vertical center:
-    margin-top: 5px;
+    height: 30px;
+    width: 30px;
+    // // to vertical center:
+    // margin-top: 5px;
     background: $dark-grey;
     transition: $hover-transition;
 
     @include media($small-screen) {
-      height: 30px;
-      width: 30px;
-      margin-top: 15px;
+      height: 40px;
+      width: 40px;
+      margin-top: 5px;
     }
 
     &:hover {
@@ -32,18 +32,18 @@
 
   &__link {
     display: inline-block;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
     color: $white;
     font-size: $font-size-sm;
     text-transform: uppercase;
 
     @include media($small-screen) {
-      width: 30px;
-      height: 30px;
-      line-height: 30px;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
     }
 
     &:hover {

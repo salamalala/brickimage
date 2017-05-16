@@ -627,7 +627,7 @@ a {
         margin-right: 0; } }
 
 .body__home {
-  background-image: url(../images/home/blue_sky_background.jpg);
+  background-image: transparentize(url(../images/home/blue_sky_background.jpg),0.35);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;

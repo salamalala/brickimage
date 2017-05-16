@@ -861,34 +861,33 @@ a {
       height: 60px; } }
   .lang__item {
     display: inline-block;
-    height: 25px;
-    width: 25px;
-    margin-top: 5px;
+    height: 30px;
+    width: 30px;
     background: #4C4947;
     transition: all 0.1s ease-out; }
     @media screen and (min-width: 30em) {
       .lang__item {
-        height: 30px;
-        width: 30px;
-        margin-top: 15px; } }
+        height: 40px;
+        width: 40px;
+        margin-top: 5px; } }
     .lang__item:hover {
       background: #E5AB24; }
     .lang__item:last-child {
       margin-left: 0.5787037037em; }
   .lang__link {
     display: inline-block;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
     color: #fff;
     font-size: 0.8333333333em;
     text-transform: uppercase; }
     @media screen and (min-width: 30em) {
       .lang__link {
-        width: 30px;
-        height: 30px;
-        line-height: 30px; } }
+        width: 40px;
+        height: 40px;
+        line-height: 40px; } }
     .lang__link:hover {
       color: #fff; }
 
