@@ -13,7 +13,7 @@
 
   @include media($medium-screen) {
     background-image: url(../images/home/home_transparent_md.png);
-    // box-shadow: none;
+    box-shadow: none;
   }
 
   @include media($xlarge-screen) {
