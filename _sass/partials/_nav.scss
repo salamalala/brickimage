@@ -4,7 +4,6 @@
   position: relative;
   z-index: 6;
   background-color: $dark-grey;
-  color: $white;
 
   &__wrapper {
     @include display(flex);
@@ -37,7 +36,7 @@
       //to build the three bars
     	&, &::before, &::after {
     		position: absolute;
-    		background: $dark-white;
+    		background: $offwhite;
     		margin: auto;
     		width: 20px;
     		height: 3px;
@@ -89,13 +88,15 @@
     }
 
     &__text {
-      margin-left: 25px;
-      color: $dark-white;
+      font-family: $heading-font-family;
       font-weight: 600;
+      margin-left: 25px;
+      color: $offwhite;
     }
   }
 
   &__items {
+    font-family: $heading-font-family;
     display: block;
     background-color: transparentize($dark-grey, 0.05);
 	  max-width: 200px;
@@ -128,7 +129,7 @@
     margin-top: $spacing-xl;
     padding-left: $spacing-md;
     text-transform: uppercase;
-    color: $light-grey;
+    color: $offwhite;
     font-weight: 500;
     line-height: 1;
     font-size: 90%;

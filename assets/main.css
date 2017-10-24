@@ -375,7 +375,8 @@ html {
   box-sizing: inherit; }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-size: 16px; }
 
 *,
 *::before,
@@ -399,7 +400,7 @@ button {
   border: none;
   cursor: pointer;
   display: inline-block;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "minion-pro", serif;
   font-size: 1em;
   font-weight: 500;
   text-transform: uppercase;
@@ -433,7 +434,7 @@ input,
 select,
 textarea {
   display: block;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "minion-pro", serif;
   font-size: 1em; }
 
 input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
@@ -499,8 +500,8 @@ picture {
   max-width: 100%; }
 
 body {
-  color: #787A7F;
-  font-family: "proxima-nova", sans-serif;
+  color: #7F8287;
+  font-family: "minion-pro", serif;
   font-weight: 400;
   letter-spacing: 1.04px;
   line-height: 1.5;
@@ -508,24 +509,25 @@ body {
   @media screen and (min-width: 30em) {
     body {
       font-size: 0.9em; } }
-  @media screen and (min-width: 74em) {
+  @media screen and (min-width: 46.5em) {
     body {
-      font-size: 0.98em; } }
+      font-size: 1.05em; } }
 
 h1,
 h2,
 h3 {
-  letter-spacing: 1.1px; }
+  letter-spacing: 1.1px;
+  font-family: "proxima-nova", sans-serif; }
 
 h2, h3 {
   margin: 0 0 1em; }
 
 h1 {
-  font-weight: 600;
-  font-size: 1.728em;
+  font-weight: 800;
+  font-size: 2.0736em;
   line-height: 1;
-  color: #E5AB24;
-  margin: 0 0 0.8333333333em; }
+  color: #5A6069;
+  margin: 0 0 0.5787037037em; }
 
 h2 {
   font-size: 1.2em;
@@ -546,7 +548,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #E5AB24;
+  color: #5A6069;
   font-weight: 500;
   transition: all 0.1s ease-out; }
   a:active, a:focus, a:hover {
@@ -683,8 +685,7 @@ a {
 .nav {
   position: relative;
   z-index: 6;
-  background-color: #3D4147;
-  color: #fff; }
+  background-color: #3D4147; }
   .nav__wrapper {
     display: -webkit-box;
     display: -moz-box;
@@ -732,7 +733,7 @@ a {
       width: 20px; }
       .nav .mobile__bar, .nav .mobile__bar::before, .nav .mobile__bar::after {
         position: absolute;
-        background: #E1E2E5;
+        background: #C8CACC;
         margin: auto;
         width: 20px;
         height: 3px;
@@ -759,10 +760,12 @@ a {
       .nav .mobile.active .mobile__bar, .nav .mobile.active .mobile__bar::before, .nav .mobile.active .mobile__bar::after {
         transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s; }
     .nav .mobile__text {
+      font-family: "proxima-nova", sans-serif;
+      font-weight: 600;
       margin-left: 25px;
-      color: #E1E2E5;
-      font-weight: 600; }
+      color: #C8CACC; }
   .nav__items {
+    font-family: "proxima-nova", sans-serif;
     display: block;
     background-color: rgba(61, 65, 71, 0.95);
     max-width: 200px;
@@ -805,7 +808,7 @@ a {
     margin-top: 1.728em;
     padding-left: 1.2em;
     text-transform: uppercase;
-    color: #93979E;
+    color: #C8CACC;
     font-weight: 500;
     line-height: 1;
     font-size: 90%; }
@@ -848,7 +851,7 @@ a {
     display: inline-block;
     height: 30px;
     width: 30px;
-    background: #93979E;
+    background: #7F8287;
     transition: all 0.1s ease-out; }
     @media screen and (min-width: 30em) {
       .lang__item {
@@ -860,6 +863,7 @@ a {
     .lang__item:last-child {
       margin-left: 0.5787037037em; }
   .lang__link {
+    font-family: "proxima-nova", sans-serif;
     display: inline-block;
     width: 30px;
     height: 30px;
@@ -894,12 +898,16 @@ a {
       .subnav:last-child {
         margin-right: 0; } }
   .subnav__link {
+    font-family: "proxima-nova", sans-serif;
     display: block;
     text-transform: uppercase;
     font-weight: 500;
     font-size: 0.8333333333em;
-    color: #93979E;
-    margin-bottom: 1.2em; }
+    color: #5A6069;
+    margin-bottom: 1.2em;
+    transition: all 0.1s ease-out; }
+    .subnav__link:hover {
+      color: #3D4147; }
   .subnav__wrapper.fixed {
     top: -webkit-calc(2.48832em + 60px);
     top: calc(2.48832em + 60px);
@@ -964,7 +972,7 @@ a {
     margin-top: 1.44em; }
   .special-project__quote figure {
     margin-bottom: 1.44em;
-    border-left: #E1E2E5 5px solid;
+    border-left: #C8CACC 5px solid;
     padding-left: 1em; }
   .special-project__quote blockquote {
     margin: 0; }
@@ -997,7 +1005,7 @@ a {
   height: -webkit-calc(100vh - 157px);
   height: calc(100vh - 157px);
   background-image: url(../images/home/home_transparent_sm.png);
-  box-shadow: inset 0 0 0 1000px rgba(252, 252, 250, 0.65);
+  box-shadow: inset 0 0 0 1000px rgba(255, 255, 255, 0.65);
   background-repeat: no-repeat;
   background-position: bottom left;
   position: relative;
@@ -1110,9 +1118,6 @@ a {
   clear: both;
   content: "";
   display: table; }
-
-.example__heading {
-  color: #E5AB24; }
 
 .conservation .journal-cover {
   height: 80%; }
@@ -1234,13 +1239,13 @@ a {
   .testimonial__project {
     position: relative;
     margin-bottom: 0.8333333333em;
-    color: #787A7F; }
+    color: #3D4147; }
     .testimonial__project:after {
       content: '';
       position: absolute;
       width: 100%;
-      height: 1px;
-      background-color: #E5AB24;
+      height: 2px;
+      background-color: #3D4147;
       bottom: -3px;
       left: 0; }
 
@@ -1249,7 +1254,7 @@ a {
 
 .guarantee li {
   padding-left: 1em;
-  border-left: #E1E2E5 5px solid;
+  border-left: #C8CACC 5px solid;
   margin-bottom: 1.2em;
   font-size: 0.8333333333em; }
 
@@ -1367,7 +1372,7 @@ a {
     font-size: 1.2em; }
   .contact__link {
     display: block;
-    color: #787A7F;
+    color: #5A6069;
     font-weight: 500; }
 
 /*# sourceMappingURL=main.css.map */
