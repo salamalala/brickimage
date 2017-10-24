@@ -21,11 +21,15 @@ $visual-grid-opacity: 0.2;
 @import "partials/lang";
 @import "partials/subnav";
 @import "partials/article";
+@import "partials/home-banner";
+@import "partials/home-section";
+@import "partials/home-about";
+@import "partials/home-testimonials";
 @import "partials/special-project";
 @import "partials/work";
 
 
-@import "pages/home";
+
 @import "pages/example";
 @import "pages/conservation";
 @import "pages/testimonial";

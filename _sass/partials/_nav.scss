@@ -97,6 +97,7 @@
 
   &__items {
     font-family: $heading-font-family;
+    letter-spacing: $letter-spacing-lg;
     display: block;
     background-color: transparentize($dark-grey, 0.05);
 	  max-width: 200px;

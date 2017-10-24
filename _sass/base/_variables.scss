@@ -6,16 +6,17 @@ $base-font-family: "minion-pro", serif;
 // Base Font Sizes for body, changing for different screen sizes
 $body-font-size-sm: 0.88em;
 $body-font-size-base: 0.9em;
-$body-font-size-md: 1.05em;
+$body-font-size-md: 1em;
 
 // Modular scale for different font headings (the perfect fourth bourbon.io/docs/#modular-scale)
 $modular-scale-base: 1em;
 
+$font-size-xs: modular-scale(-2);
 $font-size-sm: modular-scale(-1);
 $font-size-base: modular-scale(0);
 $font-size-md: modular-scale(1);
 $font-size-lg: modular-scale(3);
-$font-size-xl: modular-scale(5);
+$font-size-xl: modular-scale(4);
 $font-size-xxl: modular-scale(15);
 
 // Line height
@@ -24,11 +25,8 @@ $heading-line-height: 1.2;
 
 //Letter spacing:
 $letter-spacing-base: 0.01em;
-$letter-spacing-lg: 0.02em;
+$letter-spacing-lg: 0.08em;
 
-// Other Sizes
-$base-border-radius: 8px;
-$base-z-index: 0;
 
 //Spacing with modular scales
 $spacing-xxs: modular-scale(-7);
@@ -39,7 +37,7 @@ $spacing-md: modular-scale(1);
 $spacing-lg: modular-scale(2);
 $spacing-xl: modular-scale(3);
 $spacing-xxl: modular-scale(5);
-$spacing-xxxl: modular-scale(6);
+$spacing-xxxl: modular-scale(7);
 $spacing-xxxxl: modular-scale(10);
 
 
@@ -50,10 +48,12 @@ $dark-grey: #3D4147;
 $medium-grey: #5A6069;
 //mainly for font
 $light-grey: #7F8287;
-$offwhite: #C8CACC;
+$offwhite: #D7D9DB;
+//for home testimonial background
+$white-blue: #E4EAF0;
 $white: #fff;
 $orange: #E5AB24;
-$skyblue: #F7FAFF;
+
 
 // Font Colors
 $base-font-color: $light-grey;

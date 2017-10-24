@@ -1,0 +1,35 @@
+.home-testimonials {
+  @include span-columns(5 of 12);
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.home-testimonial {
+  padding: $spacing-xxl;
+  margin: 0;
+  background-color: $white-blue;
+  color: $light-grey;
+  font-size: $font-size-md;
+
+  &:first-child {
+    margin-bottom: $spacing-xl;
+  }
+
+  &__author{
+    color: $light-grey;
+    text-transform: uppercase;
+    font-family: $heading-font-family;
+    font-size: $font-size-xs;
+  }
+
+  hr {
+    display: inline-block;
+    font-weight: 700;
+    border: 0;
+    height: 2px;
+    width: 25px;
+    vertical-align: middle;
+    background: $light-grey;
+  }
+}
