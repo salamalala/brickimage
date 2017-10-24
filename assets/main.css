@@ -440,7 +440,7 @@ input[type="color"], input[type="date"], input[type="datetime"], input[type="dat
 select[multiple] {
   appearance: none;
   background-color: #fff;
-  border: solid 2px #4C4947;
+  border: solid 2px #3D4147;
   border-radius: 8px;
   box-sizing: border-box;
   padding: 0.8333333333em;
@@ -459,7 +459,7 @@ select[multiple] {
     cursor: not-allowed; }
     input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
     select[multiple]:disabled:hover {
-      border: #4C4947; }
+      border: #3D4147; }
   input[type="color"]::placeholder, input[type="date"]::placeholder, input[type="datetime"]::placeholder, input[type="datetime-local"]::placeholder, input[type="email"]::placeholder, input[type="month"]::placeholder, input[type="number"]::placeholder, input[type="password"]::placeholder, input[type="search"]::placeholder, input[type="tel"]::placeholder, input[type="text"]::placeholder, input[type="time"]::placeholder, input[type="url"]::placeholder, input[type="week"]::placeholder, input:not([type])::placeholder, textarea::placeholder,
   select[multiple]::placeholder {
     color: #999999; }
@@ -499,7 +499,7 @@ picture {
   max-width: 100%; }
 
 body {
-  color: #7F7A77;
+  color: #787A7F;
   font-family: "proxima-nova", sans-serif;
   font-weight: 400;
   letter-spacing: 1.04px;
@@ -636,7 +636,7 @@ a {
 
 .header {
   height: 157px;
-  background-color: #fff; }
+  background-color: #3D4147; }
   @media screen and (min-width: 30em) {
     .header {
       height: 182px; } }
@@ -683,9 +683,8 @@ a {
 .nav {
   position: relative;
   z-index: 6;
-  border-top: #E5E3E1 solid 1px;
-  border-bottom: #E5E3E1 solid 1px;
-  background-color: #FCFCFA; }
+  background-color: #3D4147;
+  color: #fff; }
   .nav__wrapper {
     display: -webkit-box;
     display: -moz-box;
@@ -733,7 +732,7 @@ a {
       width: 20px; }
       .nav .mobile__bar, .nav .mobile__bar::before, .nav .mobile__bar::after {
         position: absolute;
-        background: #7F7A77;
+        background: #E1E2E5;
         margin: auto;
         width: 20px;
         height: 3px;
@@ -761,11 +760,11 @@ a {
         transition: 0.2s background linear 0.1s, 0.2s top linear, 0.2s transform linear 0.2s; }
     .nav .mobile__text {
       margin-left: 25px;
-      color: #7F7A77;
+      color: #E1E2E5;
       font-weight: 600; }
   .nav__items {
     display: block;
-    background-color: rgba(76, 73, 71, 0.95);
+    background-color: rgba(61, 65, 71, 0.95);
     max-width: 200px;
     width: 100%;
     position: absolute;
@@ -806,7 +805,7 @@ a {
     margin-top: 1.728em;
     padding-left: 1.2em;
     text-transform: uppercase;
-    color: #9F9894;
+    color: #93979E;
     font-weight: 500;
     line-height: 1;
     font-size: 90%; }
@@ -824,7 +823,7 @@ a {
       padding-right: 0; }
     @media screen and (min-width: 46.5em) {
       .nav__link:hover, .nav__link:focus {
-        color: #4C4947; } }
+        color: #fff; } }
   .nav__active {
     color: #E5AB24; }
     .nav__active:hover {
@@ -849,7 +848,7 @@ a {
     display: inline-block;
     height: 30px;
     width: 30px;
-    background: #4C4947;
+    background: #93979E;
     transition: all 0.1s ease-out; }
     @media screen and (min-width: 30em) {
       .lang__item {
@@ -899,7 +898,7 @@ a {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 0.8333333333em;
-    color: #9F9894;
+    color: #93979E;
     margin-bottom: 1.2em; }
   .subnav__wrapper.fixed {
     top: -webkit-calc(2.48832em + 60px);
@@ -965,7 +964,7 @@ a {
     margin-top: 1.44em; }
   .special-project__quote figure {
     margin-bottom: 1.44em;
-    border-left: #E5E3E1 5px solid;
+    border-left: #E1E2E5 5px solid;
     padding-left: 1em; }
   .special-project__quote blockquote {
     margin: 0; }
@@ -1235,7 +1234,7 @@ a {
   .testimonial__project {
     position: relative;
     margin-bottom: 0.8333333333em;
-    color: #7F7A77; }
+    color: #787A7F; }
     .testimonial__project:after {
       content: '';
       position: absolute;
@@ -1250,7 +1249,7 @@ a {
 
 .guarantee li {
   padding-left: 1em;
-  border-left: #E5E3E1 5px solid;
+  border-left: #E1E2E5 5px solid;
   margin-bottom: 1.2em;
   font-size: 0.8333333333em; }
 
@@ -1368,7 +1367,7 @@ a {
     font-size: 1.2em; }
   .contact__link {
     display: block;
-    color: #7F7A77;
+    color: #787A7F;
     font-weight: 500; }
 
 /*# sourceMappingURL=main.css.map */

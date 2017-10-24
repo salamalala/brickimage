@@ -1,6 +1,6 @@
 .header {
   height: 157px;
-  background-color: $white;
+  background-color: $dark-grey;
 
   @include media($small-screen) {
     height: 182px;

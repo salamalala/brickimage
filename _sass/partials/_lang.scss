@@ -10,9 +10,7 @@
     display: inline-block;
     height: 30px;
     width: 30px;
-    // // to vertical center:
-    // margin-top: 5px;
-    background: $dark-grey;
+    background: $light-grey;
     transition: $hover-transition;
 
     @include media($small-screen) {

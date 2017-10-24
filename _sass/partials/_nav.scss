@@ -1,11 +1,10 @@
-// omedium-screen: mobile navigation
+// medium-screen: mobile navigation
 
 .nav {
   position: relative;
   z-index: 6;
-  border-top: $dark-white solid 1px;
-  border-bottom: $dark-white solid 1px;
-  background-color: $offwhite;
+  background-color: $dark-grey;
+  color: $white;
 
   &__wrapper {
     @include display(flex);
@@ -38,7 +37,7 @@
       //to build the three bars
     	&, &::before, &::after {
     		position: absolute;
-    		background: $medium-grey;
+    		background: $dark-white;
     		margin: auto;
     		width: 20px;
     		height: 3px;
@@ -91,7 +90,7 @@
 
     &__text {
       margin-left: 25px;
-      color: $medium-grey;
+      color: $dark-white;
       font-weight: 600;
     }
   }
@@ -144,19 +143,6 @@
       padding-left: 0;
       transition: $hover-transition;
 
-      &:before {
-        // content: "";
-        // position: absolute;
-        // width: 100%;
-        // height: 1px;
-        // bottom: -7px;
-        // left: 0;
-        // background-color: transparentize($light-grey, 0.2);
-        // visibility: hidden;
-        // transform: scaleX(0);
-        // transition: all 0.2s ease-in-out 0s;
-      }
-
       &:last-child {
         margin-bottom: 0;
       }
@@ -170,15 +156,7 @@
     &:hover,
     &:focus {
       @include media($medium-screen) {
-        color: $dark-grey;
-      }
-    }
-
-    &:hover:before,
-    &:focus:before {
-      @include media($medium-screen) {
-        // visibility: visible;
-        // transform: scaleX(1);
+        color: $white;
       }
     }
   }
