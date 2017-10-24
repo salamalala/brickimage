@@ -42,7 +42,7 @@
     position: absolute;
     top: -40px;
     z-index: -3;
-    font-size: $font-size-xxxl;
+    font-size: $font-size-xxl;
     color: transparentize($orange, 0.6);
 
     @include media($medium-screen) {

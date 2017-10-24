@@ -14,18 +14,17 @@ $modular-scale-base: 1em;
 $font-size-sm: modular-scale(-1);
 $font-size-base: modular-scale(0);
 $font-size-md: modular-scale(1);
-$font-size-lg: modular-scale(4);
+$font-size-lg: modular-scale(3);
 $font-size-xl: modular-scale(5);
-$font-size-xxl: modular-scale(7);
-$font-size-xxxl: modular-scale(15);
+$font-size-xxl: modular-scale(15);
 
 // Line height
 $base-line-height: 1.5;
 $heading-line-height: 1.2;
 
 //Letter spacing:
-$letter-spacing-base: 1.04px;
-$letter-spacing-lg: 1.1px;
+$letter-spacing-base: 0.01em;
+$letter-spacing-lg: 0.02em;
 
 // Other Sizes
 $base-border-radius: 8px;
