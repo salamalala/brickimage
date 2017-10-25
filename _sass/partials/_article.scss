@@ -7,7 +7,12 @@
 
   &__img {
     max-width: 40%;
-    margin-bottom: $spacing-xs;
+    margin-bottom: $spacing-base;
+
+    //to stop gap between img and caption
+    img {
+      vertical-align: middle;
+    }
 
     @include media($small-screen) {
       max-width: 30%;
@@ -15,12 +20,12 @@
 
     &--left {
       float: left;
-      margin-right: $spacing-md;
+      margin-right: $spacing-lg;
     }
 
     &--right {
       float: right;
-      margin-left: $spacing-md;
+      margin-left: $spacing-lg;
     }
   }
 
@@ -30,9 +35,12 @@
 
   &__caption {
     font-size: $font-size-sm;
-    font-style: italic;
     font-weight: 300;
     line-height: 1.3;
+    margin-bottom: $spacing-base;
+    background-color: $white-blue;
+    padding: $spacing-sm;
+    margin-top: -#{$spacing-xxs}
   }
 
   &:not(:first-child) {

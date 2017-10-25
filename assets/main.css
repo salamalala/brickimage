@@ -453,7 +453,7 @@ p {
 
 a {
   text-decoration: none;
-  color: #5A6069;
+  color: #3D4147;
   font-weight: 500;
   transition: all 0.1s ease-out; }
   a:active, a:focus, a:hover {
@@ -855,25 +855,30 @@ a {
 
 .article__img {
   max-width: 40%;
-  margin-bottom: 0.5787037037em; }
+  margin-bottom: 1em; }
+  .article__img img {
+    vertical-align: middle; }
   @media screen and (min-width: 30em) {
     .article__img {
       max-width: 30%; } }
   .article__img--left {
     float: left;
-    margin-right: 1.2em; }
+    margin-right: 1.44em; }
   .article__img--right {
     float: right;
-    margin-left: 1.2em; }
+    margin-left: 1.44em; }
 
 .article__clear {
   clear: both; }
 
 .article__caption {
   font-size: 0.8333333333em;
-  font-style: italic;
   font-weight: 300;
-  line-height: 1.3; }
+  line-height: 1.3;
+  margin-bottom: 1em;
+  background-color: #E4EAF0;
+  padding: 0.8333333333em;
+  margin-top: -0.2790816472em; }
 
 .article:not(:first-child) {
   margin-top: 3.5831808em; }
@@ -881,7 +886,7 @@ a {
 .home-banner {
   position: relative;
   width: 100%;
-  height: 450px;
+  height: 500px;
   margin-bottom: 3.5831808em;
   background-image: url("../images/home/blue_sky_background3-5.jpg");
   background-repeat: no-repeat;
@@ -901,8 +906,7 @@ a {
     margin-bottom: 1.728em;
     width: 30%;
     font-family: "proxima-nova", sans-serif;
-    font-size: 1.2em;
-    color: #5A6069; }
+    font-size: 1.2em; }
   .home-banner__link {
     font-family: "proxima-nova", sans-serif;
     font-size: 0.8333333333em;
@@ -1167,31 +1171,6 @@ a {
 .about {
   margin-bottom: 10em; }
 
-.guarantee li {
-  padding-left: 1em;
-  border-left: #D7D9DB 5px solid;
-  margin-bottom: 1.2em;
-  font-size: 0.8333333333em; }
-
-.guarantee__list-heading {
-  display: inline-block;
-  margin-bottom: 0; }
-
-.guarantee__declaration {
-  margin-bottom: 1.728em;
-  padding: 1.728em 1em;
-  text-align: center;
-  border-radius: 2px;
-  font-size: 1.2em;
-  background: rgba(229, 171, 36, 0.7); }
-  .guarantee__declaration h1 {
-    margin-bottom: 0.2790816472em;
-    color: #fff;
-    text-transform: uppercase; }
-  .guarantee__declaration p {
-    margin-bottom: 0;
-    color: #fff; }
-
 .contact {
   margin-top: 2.48832em; }
   @media screen and (min-width: 30em) {
@@ -1287,7 +1266,7 @@ a {
     font-size: 1.2em; }
   .contact__link {
     display: block;
-    color: #5A6069;
+    color: #3D4147;
     font-weight: 500; }
 
 /*# sourceMappingURL=main.css.map */
