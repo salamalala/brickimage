@@ -424,20 +424,21 @@ h3 {
   font-family: "proxima-nova", sans-serif; }
 
 h2, h3 {
-  margin: 0 0 1em; }
+  margin: 0 0 0.8333333333em; }
 
 h1 {
   font-weight: 700;
   font-size: 1.728em;
   line-height: 1;
   color: #3D4147;
-  margin: 0 0 0.5787037037em; }
+  margin: 0 0 0.8333333333em; }
 
 h2 {
   font-size: 1.2em;
   line-height: 1.2;
   font-weight: 500;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #3D4147; }
 
 h3 {
   font-size: 1em;
@@ -584,6 +585,25 @@ a {
         .header__logo svg {
           height: 60px;
           width: 297px; } }
+
+.site-footer {
+  background-color: #3D4147;
+  margin-top: 1.728em;
+  padding-top: 3.5831808em;
+  padding-bottom: 3.5831808em; }
+  .site-footer__address-block {
+    display: inline-block;
+    width: 49%; }
+    .site-footer__address-block:nth-child(2) {
+      text-align: right; }
+  .site-footer__heading {
+    color: #D7D9DB;
+    font-size: 2.48832em;
+    margin-bottom: 0.2790816472em; }
+  .site-footer__link {
+    display: block;
+    font-family: "proxima-nova", sans-serif;
+    color: #7F8287; }
 
 .nav {
   position: relative;
@@ -873,7 +893,7 @@ a {
     transform: translateY(-50%);
     right: 1.2em; }
   .home-banner__title {
-    font-size: 2.0736em;
+    font-size: 2.48832em;
     color: #E5AB24;
     text-align: right; }
   .home-banner__paragraph {
@@ -907,7 +927,9 @@ a {
   .home-about:last-child {
     margin-right: 0; }
   .home-about__item {
-    margin-bottom: 1.2em; }
+    margin-bottom: 1.2em;
+    display: flex;
+    align-items: center; }
   .home-about__term {
     width: 205px;
     display: inline-block;

@@ -27,7 +27,7 @@ h3 {
 }
 
 h2, h3 {
-  margin: 0 0 $spacing-base;
+  margin: 0 0 $spacing-sm;
 }
 
 h1 {
@@ -35,7 +35,7 @@ h1 {
   font-size: $font-size-lg;
   line-height: 1;
   color: $dark-grey;
-  margin: 0 0 $spacing-xs;
+  margin: 0 0 $spacing-sm;
 }
 
 h2 {
@@ -43,6 +43,7 @@ h2 {
   line-height: 1.2;
   font-weight: 500;
   text-transform: uppercase;
+  color: $dark-grey;
 }
 
 h3 {

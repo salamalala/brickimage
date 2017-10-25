@@ -3,6 +3,8 @@
 
   &__item {
     margin-bottom: $spacing-md;
+    display: flex;
+    align-items: center;
   }
 
   &__term {

@@ -1,0 +1,27 @@
+.site-footer {
+  background-color: $dark-grey;
+  margin-top: $spacing-xl;
+  padding-top: $spacing-xxxl;
+  padding-bottom: $spacing-xxxl;
+
+  &__address-block {
+    display: inline-block;
+    width: 49%;
+
+    &:nth-child(2) {
+      text-align: right;
+    }
+  }
+
+  &__heading {
+    color: $offwhite;
+    font-size: $font-size-xl;
+    margin-bottom: $spacing-xxs;
+  }
+
+  &__link {
+    display: block;
+    font-family: $heading-font-family;
+    color: $light-grey;
+  }
+}
