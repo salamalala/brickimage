@@ -47,7 +47,8 @@
     color: $white;
     transition: $hover-transition;
 
-    &:hover {
+    &:hover,
+    &:focus {
       background-color: $white;
       color: $dark-grey;
     }

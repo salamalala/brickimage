@@ -923,7 +923,7 @@ a {
     border: #fff solid 2px;
     color: #fff;
     transition: all 0.1s ease-out; }
-    .home-banner__link:hover {
+    .home-banner__link:hover, .home-banner__link:focus {
       background-color: #fff;
       color: #3D4147; }
 
@@ -1008,29 +1008,26 @@ a {
   .special-project__quote blockquote {
     margin: 0; }
   .special-project__quote figcaption {
+    font-family: "proxima-nova", sans-serif;
     margin-top: 0.8333333333em;
     color: #E5AB24;
     font-weight: 500;
     font-size: 0.8333333333em; }
 
-.work__column {
-  float: left;
-  display: block;
-  margin-right: 5.2631578947%;
-  width: 100%; }
-  .work__column:last-child {
-    margin-right: 0; }
-  @media screen and (min-width: 46.5em) {
-    .work__column {
-      float: left;
-      display: block;
-      margin-right: 7.1428571429%;
-      width: 46.4285714286%; }
-      .work__column:last-child {
-        margin-right: 0; } }
+.gallery {
+  line-height: 0;
+  column-count: 2;
+  column-gap: 1.44em; }
+  .gallery__item {
+    display: block;
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 1.44em; }
 
-.work__item {
-  margin-bottom: 1.44em; }
+.flex-gallery {
+  display: flex;
+  flex-wrap: wrap; }
 
 .example__article::after {
   clear: both;

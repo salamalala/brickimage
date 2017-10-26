@@ -1,0 +1,19 @@
+.gallery {
+  line-height: 0;
+  column-count: 2;
+  column-gap: $spacing-lg;
+
+
+  &__item {
+    display: block;
+    /* Just in case there are inline attributes */
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: $spacing-lg;
+  }
+}
+
+.flex-gallery {
+  display: flex;
+  flex-wrap: wrap;
+}

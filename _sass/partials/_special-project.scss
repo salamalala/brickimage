@@ -33,6 +33,7 @@
     }
 
     figcaption {
+      font-family: $heading-font-family; 
       margin-top: $spacing-sm;
       color: $orange;
       font-weight: 500;
