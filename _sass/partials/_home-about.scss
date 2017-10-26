@@ -1,9 +1,14 @@
 .home-about {
-  width: 55%;
-  margin-bottom: $spacing-xxl;
+  width: 100%;
+  margin-top: $spacing-xxl;
+  margin-bottom: 0;
+
+  @include media($large-screen) {
+    margin-top: 0;
+    width: 55%;
+  }
 
   &__item {
-    padding-bottom: $spacing-xxl;
     display: flex;
     flex-direction: column;
 
@@ -13,11 +18,12 @@
 
     &:not(:last-child) {
       border-bottom: solid 2px $orange;
+      padding-bottom: $spacing-xxl;
     }
   }
 
   &__term {
-    margin-bottom: $spacing-md;
+    margin-bottom: $spacing-sm;
     color: $dark-grey;
     font-family: $heading-font-family;
     font-weight: 600;
@@ -26,6 +32,10 @@
   }
 
   &__description {
+    margin-left: 0;
 
+    @include media($large-screen) {
+      margin-left: $spacing-xxxl;
+    }
   }
 }

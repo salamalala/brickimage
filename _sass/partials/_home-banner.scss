@@ -10,23 +10,40 @@
   &__text {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    padding: $spacing-xxl;
-    width: 45%;
-    background-color: transparentize($orange, 0.3);
-    text-align: right;
+    width: 100%;
+    padding: $spacing-md;
+    background-color: transparentize($white-blue, 0.5);
+    text-align: center;
     color: $dark-grey;
+
+    @include media($medium-screen) {
+      justify-content: space-between;
+      background-color: transparentize($orange, 0.3);
+      color: $dark-grey;
+      padding: $spacing-xl;
+      width: 70%;
+      text-align: right;
+    }
+
+    @include media($large-screen) {
+      width: 45%;
+      padding: $spacing-xxl;
+    }
   }
 
   &__title {
-    font-size: $font-size-xl;
-    text-align: right;
-    color: $white;
     $letter-spacing-base: 0.01em;
+    color: $dark-grey;
+
+    @include media($medium-screen) {
+      font-size: $font-size-xl;
+      color: $white;
+    }
   }
 
   &__paragraph {
@@ -36,21 +53,34 @@
   }
 
   &__link {
-    align-self: flex-end;
     display: inline-block;
     padding: $spacing-xs $spacing-sm;
     font-family: $heading-font-family;
     font-size: $font-size-sm;
     text-transform: uppercase;
     letter-spacing: $letter-spacing-lg;
-    border: $white solid 2px;
+    border: $dark-grey solid 2px;
     color: $white;
+    background-color: $dark-grey;
     transition: $hover-transition;
 
     &:hover,
     &:focus {
-      background-color: $white;
+      background-color: transparent;
       color: $dark-grey;
+    }
+
+    @include media($medium-screen) {
+      align-self: flex-end;
+      background-color: transparent;
+      border: $white solid 2px;
+      color: $white;
+
+      &:hover,
+      &:focus {
+        background-color: $white;
+        color: $dark-grey;
+      }
     }
   }
 }

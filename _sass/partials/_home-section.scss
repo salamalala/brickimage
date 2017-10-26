@@ -2,4 +2,9 @@
   // to make about and testimonials same height
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+
+  @include media($large-screen) {
+    flex-direction: row;
+  }
 }

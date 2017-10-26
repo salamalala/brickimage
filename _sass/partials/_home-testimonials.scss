@@ -1,12 +1,17 @@
 .home-testimonials {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+
+  @include media($large-screen) {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 
 .home-testimonial {
   position: relative;
-  padding: $spacing-xxl;
+  padding: $spacing-xl;
   margin: 0;
   background-color: transparentize($white-blue, 0.4);
   color: $dark-grey;
@@ -14,6 +19,10 @@
 
   &:first-child {
     margin-bottom: $spacing-xl;
+  }
+
+  @include media($medium-screen) {
+    padding: $spacing-xxl;
   }
 
   &__quote {
@@ -25,7 +34,11 @@
     position: absolute;
     top: -#{$spacing-sm};
     left: -#{$spacing-sm};
-    width: 150px;
+    width: 100px;
+
+    @include media($medium-screen) {
+      width: 150px;
+    }
   }
 
   &__author{
