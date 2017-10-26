@@ -401,7 +401,7 @@ picture {
   max-width: 100%; }
 
 html {
-  font-size: 17px; }
+  font-size: 18px; }
 
 body {
   color: #7F8287;
@@ -420,7 +420,7 @@ body {
 h1,
 h2,
 h3 {
-  letter-spacing: 0.08em;
+  letter-spacing: 0.04em;
   font-family: "proxima-nova", sans-serif; }
 
 h2, h3 {
@@ -689,7 +689,7 @@ a {
       color: #D7D9DB; }
   .nav__items {
     font-family: "proxima-nova", sans-serif;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
     display: block;
     background-color: rgba(61, 65, 71, 0.95);
     max-width: 200px;
@@ -911,7 +911,7 @@ a {
     font-family: "proxima-nova", sans-serif;
     font-size: 0.8333333333em;
     text-transform: uppercase;
-    letter-spacing: 0.08em;
+    letter-spacing: 0.04em;
     padding: 0.5787037037em 0.8333333333em;
     border: #E5AB24 solid 2px;
     color: #E5AB24;
