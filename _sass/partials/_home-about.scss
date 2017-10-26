@@ -1,12 +1,24 @@
 .home-about {
+  width: 55%;
   margin-bottom: $spacing-xxl;
+
   &__item {
-    margin-bottom: $spacing-md;
+    padding-bottom: $spacing-xxl;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+
+    &:not(:first-child){
+      padding-top: $spacing-xxl;
+    }
+
+    &:not(:last-child) {
+      border-bottom: solid 2px $orange;
+    }
   }
 
   &__term {
+    margin-bottom: $spacing-md;
+    color: $dark-grey;
     font-family: $heading-font-family;
     font-weight: 600;
     font-size: $font-size-md;

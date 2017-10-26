@@ -21,53 +21,37 @@ lang: en
   </div>
 
   <div class="home-section">
-    <dl class="home-about">
-      <div class="home-about__item">
-        <dt class="home-about__term">
-          Natural & Permanent
-        </dt>
-        <dd class="home-about__description">We always use the best dyes and apply them with the upmoste. We always use the best dyes and apply them with the upmoste</dd>
-      </div>
-
-      <div class="home-about__item">
-        <dt class="home-about__term">
-          25 Year Guarantee
-        </dt>
-        <dd class="home-about__description">We always use the best dyes and apply them with the upmoste. We always use the best dyes and apply them with the upmoste</dd>
-      </div>
-
-      <div class="home-about__item">
-        <dt class="home-about__term">
-          Knowledge & Experience
-        </dt>
-        <dd class="home-about__description">We always use the best dyes and apply them with the upmoste. We always use the best dyes and apply them with the upmoste</dd>
-      </div>
-
-      <div class="home-about__item">
-        <dt class="home-about__term">
-          Artistic Approach
-        </dt>
-        <dd class="home-about__description">We always use the best dyes and apply them with the upmoste. We always use the best dyes and apply them with the upmoste</dd>
-      </div>
-    </dl>
 
     <div class="home-testimonials">
 
-      <blockquote class="home-testimonial">
-        <p>Just wanted to say that we are absolutely delighted with your work. It has totally transformed the front of our house and even on close examination you simply cannot tell the new bricks from the old. Wow! Wish we had known about your services years ago</p>
-
-        <footer class="home-testimonial__author"><hr/> A. Cuffe SUTTON SM2</footer>
-      </blockquote>
+      {% for home-testimonial in site.data.home-testimonials %}
 
       <blockquote class="home-testimonial">
+        <div class="home-testimonial__icon">{% include quotation.svg %}</div>
+        <p class="home-testimonial__quote">{{home-testimonial.quote}}</p>
 
-        <p>Peter has an artist‘s eye for detail and a perfectionist‘s dedication to quality. He works with enormous care and consideration and it shows in the end result. This level of service and skill is very hard to find these days and deserves recognition.</p>
-
-        <footer class="home-testimonial__author"><hr/> H & J Montgomery TUNBRIDGE WELLS TN7</footer>
-
+        <footer class="home-testimonial__author"><hr/> {{home-testimonial.author}}
+        </footer>
       </blockquote>
+
+      {% endfor %}
 
     </div>
+
+
+    <dl class="home-about">
+
+      {% for home-about in site.data.home-abouts %}
+
+        <div class="home-about__item">
+          <dt class="home-about__term">{{home-about.term}}</dt>
+          <dd class="home-about__description">{{home-about.description}}</dd>
+        </div>
+
+      {% endfor %}
+
+    </dl>
+
   </div>
 
 </div>

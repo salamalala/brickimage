@@ -886,69 +886,92 @@ a {
 .home-banner {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 530px;
   background-image: url("../images/home/blue_sky_background3-5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: 6.1917364224em; }
+  margin-bottom: 3.5831808em; }
   .home-banner__text {
-    background-color: rgba(229, 171, 36, 0.6);
-    width: 45%;
-    padding: 2.48832em;
-    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: absolute;
-    top: 2.48832em;
-    right: 1.44em;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding: 2.48832em;
+    width: 45%;
+    background-color: rgba(229, 171, 36, 0.7);
+    text-align: right;
     color: #3D4147; }
   .home-banner__title {
     font-size: 2.48832em;
-    text-align: right; }
+    text-align: right;
+    color: #fff; }
   .home-banner__paragraph {
     margin-bottom: 1.728em;
     font-family: "proxima-nova", sans-serif;
     font-size: 1.2em; }
   .home-banner__link {
+    align-self: flex-end;
     display: inline-block;
+    padding: 0.5787037037em 0.8333333333em;
     font-family: "proxima-nova", sans-serif;
     font-size: 0.8333333333em;
     text-transform: uppercase;
     letter-spacing: 0.04em;
-    padding: 0.5787037037em 0.8333333333em;
-    border: #3D4147 solid 2px;
-    color: #3D4147;
+    border: #fff solid 2px;
+    color: #fff;
     transition: all 0.1s ease-out; }
     .home-banner__link:hover {
-      background-color: #3D4147;
-      color: #fff; }
+      background-color: #fff;
+      color: #3D4147; }
+
+.home-section {
+  display: flex;
+  justify-content: space-between; }
 
 .home-about {
+  width: 55%;
   margin-bottom: 2.48832em; }
   .home-about__item {
-    margin-bottom: 1.2em;
+    padding-bottom: 2.48832em;
     display: flex;
-    align-items: center; }
+    flex-direction: column; }
+    .home-about__item:not(:first-child) {
+      padding-top: 2.48832em; }
+    .home-about__item:not(:last-child) {
+      border-bottom: solid 2px #E5AB24; }
   .home-about__term {
+    margin-bottom: 1.2em;
+    color: #3D4147;
     font-family: "proxima-nova", sans-serif;
     font-weight: 600;
     font-size: 1.2em;
     text-transform: uppercase; }
 
 .home-testimonials {
+  width: 40%;
   display: flex;
-  align-content: space-between; }
+  flex-direction: column; }
 
 .home-testimonial {
+  position: relative;
   padding: 2.48832em;
   margin: 0;
   box-shadow: inset 0 0 0 2000px rgba(228, 234, 240, 0.6);
   color: #3D4147;
   font-size: 1.2em; }
   .home-testimonial:first-child {
-    margin-right: 10px;
-    background-image: url(../images/testimonial/test_cuffe.jpg);
-    background-size: cover; }
-  .home-testimonial:nth-child(2) {
-    margin-left: 10px; }
+    margin-bottom: 1.728em; }
+  .home-testimonial__quote {
+    position: relative;
+    z-index: 2; }
+  .home-testimonial__icon {
+    position: absolute;
+    top: -0.8333333333em;
+    left: -0.8333333333em;
+    width: 150px; }
   .home-testimonial__author {
     text-transform: uppercase;
     font-family: "proxima-nova", sans-serif;
