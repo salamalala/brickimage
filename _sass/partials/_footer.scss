@@ -6,17 +6,29 @@
 
   &__address-block {
     display: inline-block;
-    width: 49%;
+    width: 100%;
 
     &:nth-child(2) {
-      text-align: right;
+      margin-top: $spacing-sm;
+    }
+
+    @include media($small-screen) {
+      width: 49%;
+
+      &:nth-child(2) {
+        text-align: right;
+      }
     }
   }
 
   &__heading {
     color: $offwhite;
-    font-size: $font-size-xl;
     margin-bottom: $spacing-xxs;
+    font-size: $font-size-lg;
+
+    @include media($small-screen) {
+      font-size: $font-size-xl;
+    }
   }
 
   &__link {

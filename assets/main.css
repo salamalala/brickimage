@@ -593,13 +593,21 @@ a {
   padding-bottom: 1.728em; }
   .site-footer__address-block {
     display: inline-block;
-    width: 49%; }
+    width: 100%; }
     .site-footer__address-block:nth-child(2) {
-      text-align: right; }
+      margin-top: 0.8333333333em; }
+    @media screen and (min-width: 30em) {
+      .site-footer__address-block {
+        width: 49%; }
+        .site-footer__address-block:nth-child(2) {
+          text-align: right; } }
   .site-footer__heading {
     color: #D7D9DB;
-    font-size: 2.48832em;
-    margin-bottom: 0.2790816472em; }
+    margin-bottom: 0.2790816472em;
+    font-size: 1.728em; }
+    @media screen and (min-width: 30em) {
+      .site-footer__heading {
+        font-size: 2.48832em; } }
   .site-footer__link {
     display: block;
     font-family: "proxima-nova", sans-serif;
