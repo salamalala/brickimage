@@ -1,5 +1,5 @@
 .home-about {
-
+  margin-bottom: $spacing-xxl;
   &__item {
     margin-bottom: $spacing-md;
     display: flex;
@@ -7,21 +7,13 @@
   }
 
   &__term {
-    width: 205px;
-    display: inline-block;
-    padding: $spacing-lg;
     font-family: $heading-font-family;
     font-weight: 600;
     font-size: $font-size-md;
-    text-align: center;
     text-transform: uppercase;
-    background-color: $dark-grey;
-    color: $offwhite;
   }
 
   &__description {
-    display: inline-block;
-    padding-left: $spacing-md;
-    margin-left: 0;
+
   }
 }
