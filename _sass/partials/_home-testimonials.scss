@@ -1,23 +1,26 @@
 .home-testimonials {
-  @include span-columns(5 of 12);
   display: flex;
-  flex-direction: column;
   align-content: space-between;
 }
 
 .home-testimonial {
   padding: $spacing-xxl;
   margin: 0;
-  background-color: $white-blue;
-  color: $light-grey;
+  box-shadow:inset 0 0 0 2000px transparentize($white-blue, 0.4);
+  color: $dark-grey;
   font-size: $font-size-md;
 
   &:first-child {
-    margin-bottom: $spacing-xl;
+    margin-right: 10px;
+    background-image: url(../images/testimonial/test_cuffe.jpg);
+    background-size: cover;
+  }
+
+  &:nth-child(2) {
+    margin-left: 10px;
   }
 
   &__author{
-    color: $light-grey;
     text-transform: uppercase;
     font-family: $heading-font-family;
     font-size: $font-size-xs;

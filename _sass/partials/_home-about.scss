@@ -1,5 +1,4 @@
 .home-about {
-  @include span-columns(7 of 12);
 
   &__item {
     margin-bottom: $spacing-md;
@@ -12,17 +11,12 @@
     display: inline-block;
     padding: $spacing-lg;
     font-family: $heading-font-family;
+    font-weight: 600;
+    font-size: $font-size-md;
     text-align: center;
     text-transform: uppercase;
     background-color: $dark-grey;
     color: $offwhite;
-  }
-
-  &__bold {
-    display: block;
-    font-weight: 600;
-    font-size: $font-size-md;
-    margin-bottom: $spacing-xxs;
   }
 
   &__description {

@@ -8,39 +8,40 @@
   background-size: cover;
 
   &__text {
+    background-color: transparentize($orange, 0.4);
+    width: 45%;
+    padding: $spacing-xxl;
     text-align: right;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: $spacing-md;
+    top: $spacing-xxl;
+    right: $spacing-lg;
+    color: $dark-grey;
   }
 
   &__title {
     font-size: $font-size-xl;
-    color: $orange;
     text-align: right;
   }
 
   &__paragraph {
-    margin-left: 70%;
     margin-bottom: $spacing-xl;
-    width: 30%;
     font-family: $heading-font-family;
     font-size: $font-size-md;
   }
 
   &__link {
+    display: inline-block;
     font-family: $heading-font-family;
     font-size: $font-size-sm;
     text-transform: uppercase;
     letter-spacing: $letter-spacing-lg;
     padding: $spacing-xs $spacing-sm;
-    border: $orange solid 2px;
-    color: $orange;
+    border: $dark-grey solid 2px;
+    color: $dark-grey;
     transition: $hover-transition;
 
     &:hover {
-      background-color: $orange;
+      background-color: $dark-grey;
       color: $white;
     }
   }
