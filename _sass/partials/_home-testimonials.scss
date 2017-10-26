@@ -8,7 +8,7 @@
   position: relative;
   padding: $spacing-xxl;
   margin: 0;
-  box-shadow:inset 0 0 0 2000px transparentize($white-blue, 0.4);
+  background-color: transparentize($white-blue, 0.4);
   color: $dark-grey;
   font-size: $font-size-md;
 

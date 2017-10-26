@@ -1,9 +1,15 @@
 .special-project {
 
-  &__left {
-    float: left;
+  &__intro {
+    display: flex;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__img {
     margin-right: $spacing-base;
-    margin-bottom: $spacing-base;
   }
 
   &__right {
@@ -15,11 +21,32 @@
     }
   }
 
+  &__artist-quote {
+    position: relative;
+    margin-top: $spacing-lg;
+    margin-bottom: $spacing-lg;
+    text-align: center;
+    padding: $spacing-base;
+    background-color: transparentize($orange, 0.4);
+    color: $white;
+    font-size: $font-size-md;
+
+    h3 {
+      color: $white;
+    }
+
+    figcaption {
+      font-family: $heading-font-family;
+      font-weight: 500;
+      font-size: $font-size-sm;
+    }
+  }
+
   &__quote {
     clear: left;
 
     h3 {
-      margin-top: $spacing-lg;
+      margin-top: $spacing-xl;
     }
 
     figure {
@@ -33,12 +60,11 @@
     }
 
     figcaption {
-      font-family: $heading-font-family; 
+      font-family: $heading-font-family;
       margin-top: $spacing-sm;
       color: $orange;
       font-weight: 500;
       font-size: $font-size-sm;
     }
-
   }
 }

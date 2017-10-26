@@ -34,16 +34,17 @@ h1 {
   font-weight: 700;
   font-size: $font-size-lg;
   line-height: 1;
-  color: $dark-grey;
+  color: $orange;
   margin: 0 0 $spacing-sm;
 }
 
 h2 {
+  // font-family: $base-font-family;
   font-size: $font-size-md;
   line-height: 1.2;
   font-weight: 500;
   text-transform: uppercase;
-  color: $dark-grey;
+  color: $medium-grey;
 }
 
 h3 {

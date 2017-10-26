@@ -56,8 +56,8 @@ lang: en
     </article>
 
 
-    <article class="example__article work article">
-      <h1 class="example__heading" id="stone-tinting">Stone & Concrete Tinting</h1>
+    <article class="article">
+      <h1 class="" id="stone-tinting">Stone & Concrete Tinting</h1>
       <p>It is possible to successfully tint other types of masonry including concrete, roof tiles, render and some types of stone. Colour inconsistencies in precast stone can usually be fixed in this way.</p>
 
       <div class="gallery">
@@ -70,35 +70,52 @@ lang: en
     </article>
 
 
-    <article class="example__article special-project article">
-      <h1 class="example__heading" id="special-projects">Special Projects</h1>
+    <article class="special-project article">
+      <h1 class="" id="special-projects">Special Projects</h1>
 
-      <img class="special-project__img special-project__left"src="../images/special_project/shibboleth.jpg" alt="Picture from the project">
+      <div class="special-project__intro">
 
-      <h2>Shibboleth at the tate modern</h2>
+        <img class="special-project__img" src="../images/special_project/shibboleth.jpg" alt="Picture from the project">
 
-      <p>It was an impressive sight to behold. Doris Salcedo created ‘Shibboleth’, a chasm that ran the entire length of the Turbine Hall with the aim of drawing attention to divisions in modern day society.
-      Ms Salcedo and Tate Modern did not wish to elaborate on how the piece was made, however it is sufficient to say that Brick Image Ltd were appointed to camouflage the new concrete used for the installation. Reactions from the press following the launch confirmed just how convincing our work had been.</p>
+        <!-- for flex container -->
+        <div>
+          <h2>Shibboleth at the tate modern</h2>
 
-      <div class="special-project__quote">
+          <p>It was an impressive sight to behold. Doris Salcedo created ‘Shibboleth’, a chasm that ran the entire length of the Turbine Hall with the aim of drawing attention to divisions in modern day society.
+          Ms Salcedo and Tate Modern did not wish to elaborate on how the piece was made, however it is sufficient to say that Brick Image Ltd were appointed to camouflage the new concrete used for the installation. Reactions from the press following the launch confirmed just how convincing our work had been.</p>
+        </div>
+
+      </div>
+
+      <div class="special-project__artist-quote">
+
         <h3>Quote from the artist:</h3>
-        <figure>
-          <blockquote cite="">
-            ‘I am deeply thankful for the great job you did, your work was very professional and much more. I really appreciate your knowledge, creativity, and the great attitude you had throughout those long days.’
-          </blockquote>
-          <figcaption>Doris Salcedo</figcaption>
-        </figure>
 
-        <h3>Quotes from the press:</h3>
-        <img class="special-project__img special-project__right "src="../images/special_project/g2_article.jpg" alt="Guardian article">
-        {% for special-project-quote in site.data.special-project-quotes %}
           <figure>
-            <blockquote cite="{{ special-project-quote.link }}">
-                {{ special-project-quote.quote }}
+            <blockquote cite="">
+              I am deeply thankful for the great job you did, your work was very professional and much more. I really appreciate your knowledge, creativity, and the great attitude you had throughout those long days.
             </blockquote>
-            <figcaption class="examples__quote-author">{{ special-project-quote.source }}</figcaption>
+            <figcaption>Doris Salcedo</figcaption>
           </figure>
-        {% endfor %}
+
+        </div>
+
+        <div class="special-project__quote">
+
+          <h3>Quotes from the press:</h3>
+
+          <img class="special-project__img special-project__right "src="../images/special_project/g2_article.jpg" alt="Guardian article">
+
+          {% for special-project-quote in site.data.special-project-quotes %}
+            <figure>
+              <blockquote cite="{{ special-project-quote.link }}">
+                  {{ special-project-quote.quote }}
+              </blockquote>
+              <figcaption class="examples__quote-author">{{ special-project-quote.source }}</figcaption>
+            </figure>
+          {% endfor %}
+
+        </div>
 
       </div>
 
