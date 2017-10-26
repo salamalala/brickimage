@@ -44,6 +44,10 @@
   }
 
   &:not(:first-child) {
-    margin-top: $spacing-xxxxl;
+    margin-top: $spacing-xxl;
+
+    @include media($medium-screen) {
+      margin-top: $spacing-xxxxl;
+    }
   }
 }

@@ -881,7 +881,10 @@ a {
   margin-top: -0.2790816472em; }
 
 .article:not(:first-child) {
-  margin-top: 6.1917364224em; }
+  margin-top: 2.48832em; }
+  @media screen and (min-width: 46.5em) {
+    .article:not(:first-child) {
+      margin-top: 6.1917364224em; } }
 
 .home-banner {
   position: relative;
@@ -1032,13 +1035,20 @@ a {
     vertical-align: middle;
     background: #7F8287; }
 
-.special-project__intro {
-  display: flex; }
-  .special-project__intro p {
-    margin: 0; }
+@media screen and (min-width: 46.5em) {
+  .special-project__intro {
+    display: flex; } }
+
+.special-project__intro p {
+  margin: 0; }
 
 .special-project__img {
-  margin-right: 1em; }
+  margin-right: 1em;
+  width: 100%;
+  height: auto; }
+  @media screen and (min-width: 46.5em) {
+    .special-project__img {
+      width: auto; } }
 
 .special-project__right {
   margin-bottom: 1em; }
@@ -1054,8 +1064,10 @@ a {
   text-align: center;
   padding: 1em;
   background-color: rgba(229, 171, 36, 0.6);
-  color: #fff;
-  font-size: 1.2em; }
+  color: #fff; }
+  @media screen and (min-width: 46.5em) {
+    .special-project__artist-quote {
+      font-size: 1.2em; } }
   .special-project__artist-quote h3 {
     color: #fff; }
   .special-project__artist-quote figcaption {
@@ -1083,17 +1095,19 @@ a {
 .gallery {
   line-height: 0;
   column-count: 2;
-  column-gap: 1.44em; }
+  column-gap: 0.8333333333em; }
+  @media screen and (min-width: 46.5em) {
+    .gallery {
+      column-gap: 1.44em; } }
   .gallery__item {
     display: block;
     /* Just in case there are inline attributes */
     width: 100% !important;
     height: auto !important;
-    margin-bottom: 1.44em; }
-
-.flex-gallery {
-  display: flex;
-  flex-wrap: wrap; }
+    margin-bottom: 0.8333333333em; }
+    @media screen and (min-width: 46.5em) {
+      .gallery__item {
+        margin-bottom: 1.44em; } }
 
 .conservation .journal-cover {
   height: 80%; }

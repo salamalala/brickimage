@@ -1,7 +1,9 @@
 .special-project {
 
   &__intro {
-    display: flex;
+    @include media($medium-screen) {
+      display: flex;
+    }
 
     p {
       margin: 0;
@@ -10,6 +12,12 @@
 
   &__img {
     margin-right: $spacing-base;
+    width: 100%;
+    height: auto;
+
+    @include media($medium-screen) {
+      width: auto;
+    }
   }
 
   &__right {
@@ -29,7 +37,10 @@
     padding: $spacing-base;
     background-color: transparentize($orange, 0.4);
     color: $white;
-    font-size: $font-size-md;
+
+    @include media($medium-screen) {
+      font-size: $font-size-md;
+    }
 
     h3 {
       color: $white;

@@ -1,19 +1,21 @@
 .gallery {
   line-height: 0;
   column-count: 2;
-  column-gap: $spacing-lg;
+  column-gap: $spacing-sm;
 
+  @include media($medium-screen) {
+    column-gap: $spacing-lg;
+  }
 
   &__item {
     display: block;
     /* Just in case there are inline attributes */
     width: 100% !important;
     height: auto !important;
-    margin-bottom: $spacing-lg;
-  }
-}
+    margin-bottom: $spacing-sm;
 
-.flex-gallery {
-  display: flex;
-  flex-wrap: wrap;
+    @include media($medium-screen) {
+      margin-bottom: $spacing-lg;
+    }
+  }
 }
