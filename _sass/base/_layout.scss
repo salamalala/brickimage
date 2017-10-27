@@ -10,5 +10,5 @@ html {
 }
 
 body {
-    background-color: $white;
+  background-color: transparentize($white-blue, 0.7);
 }
