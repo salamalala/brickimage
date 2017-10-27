@@ -6,21 +6,53 @@ lang: nl
 ---
 
 
-<div class="home">
+<div class="home wrapper wrapper__main">
 
-  <div class="wrapper">
+  <div class="home-banner">
 
-    <div class="home__text">
+    <div class="home-banner__text">
+      <h1 class="home-banner__title">Tinten corrigeert de kleur van bakstenen, steen en beton</h1>
 
-      <h1 class="home__title">Tinten corrigeert de kleur van bakstenen, steen en beton</h1>
+      <p class="home-banner__paragraph">Door het mengen van speciaal geselecteerde pigmenten en het zorgvuldig aanbrengen kunnen we lelijke reparaties verbergen, een aanbouw aan laten sluiten op het bestaande gebouw of een gebouw een geheel nieuw aanzicht geven. Dit proces zorgt voor een hele natuurlijke en permanente kleurverandering </p>
 
-      <div class="home__paragraph">
-        <p>Door het mengen van speciaal geselecteerde pigmenten en het zorgvuldig aanbrengen kunnen we lelijke reparaties verbergen, een aanbouw aan laten sluiten op het bestaande gebouw of een gebouw een geheel nieuw aanzicht geven. Dit proces zorgt voor een hele natuurlijke en permanente kleurverandering en wordt geleverd met 25 jaar garantie.</p>
-        <p>Met onze uitgebreide achtergrond in reparatie en restauratie beginnen we altijd met een zorgvuldig onderzoek van de situatie aangezien lelijk metselwerk door meer dan alleen kleurverschillen veroorzaakt kan worden. Bekijk <a href="/examples.html">een aantal voorbeelden van ons werk </a> en <a href="/nl/contact">neem contact met ons op </a>met een aantal foto’s van uw situatie.
-      </div>
-
+      <a href="{{ site.url }}examples" class="home-banner__link">See some examples</a>
     </div>
 
   </div>
+
+  <div class="home-section">
+
+    <div class="home-testimonials">
+
+      {% for home-testimonial in site.data.home-testimonials %}
+
+      <blockquote class="home-testimonial">
+        <div class="home-testimonial__icon">{% include quotation.svg %}</div>
+        <p class="home-testimonial__quote">{{home-testimonial.quote}}</p>
+
+        <footer class="home-testimonial__author"><hr/> {{home-testimonial.author}}
+        </footer>
+      </blockquote>
+
+      {% endfor %}
+
+    </div>
+
+
+    <dl class="home-about">
+
+      {% for home-about in site.data.home-abouts %}
+
+        <div class="home-about__item">
+          <dt class="home-about__term">{{home-about.term}}</dt>
+          <dd class="home-about__description">{{home-about.description}}</dd>
+        </div>
+
+      {% endfor %}
+
+    </dl>
+
+  </div>
+
 
 </div>

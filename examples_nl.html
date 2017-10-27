@@ -19,71 +19,74 @@ lang: nl
 
   <div class="subnav-article">
 
-    <article class="example__article work article">
+    <article class="example__article article">
 
-      <div class="work__column">
-        <h1 class="example__heading" id="brick-tinting">Bakstenen & Metselspecie Tinten</h1>
-        <p class="work__paragraph work__item">Te vaak worden voor aanbouwen of reparaties bakstenen gekozen die niet goed aansluiten met de rest van het metselwerk. Ook kunnen verschillen in de kleur van voegspecie een grote invloed hebben op het gehele aanzicht. Deze foto’s van ons werk laten zien dat zelfs in extreme gevallen er nog gecorrigeerd kan worden.
-        </p>
-        <img src="../../images/brick_mortar/ba_brick_tinting_small_1.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_med_1.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_lrg_3.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_xsmall_1.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_med_5.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_med_7.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_med_8.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_lrg_1.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_small_4.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_small_2.jpg" alt="" class="work__item">
+      <h1 class="example__heading" id="brick-tinting">Bakstenen & Metselspecie Tinten</h1>
+      <p class=" ">Te vaak worden voor aanbouwen of reparaties bakstenen gekozen die niet goed aansluiten met de rest van het metselwerk. Ook kunnen verschillen in de kleur van voegspecie een grote invloed hebben op het gehele aanzicht. Deze foto’s van ons werk laten zien dat zelfs in extreme gevallen er nog gecorrigeerd kan worden.
+      </p>
+
+      <div class="gallery">
+
+        {% for example-brick in site.data.example-bricks %}
+
+          <img src="../../images/brick_mortar/{{example-brick.image}}" alt="" class="gallery__item">
+
+        {% endfor %}
       </div>
 
-      <div class="work__column">
-        <img src="../../images/brick_mortar/ba_brick_tinting_med_2.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_med_3.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_small_3.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_lrg_4.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_med_10.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_lrg_2.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_med_6.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_med_4.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_small_5.jpg" alt="" class="work__item">
-        <img src="../../images/brick_mortar/ba_brick_tinting_med_9.jpg" alt="" class="work__item">
-      </div>
     </article>
 
 
-    <article class="example__article work article">
-      <div class="work__column">
-        <h1 class="example__heading" id="stone-tinting">Steen & Beton Tinten</h1>
-        <p class="work__paragraph work__item">Het is mogelijk om ook andere materialen zoals beton, dakpannen, pleisterwerk en sommigen typen steen te kleuren. Onregelmatigheden in de kleur van gegoten steen kunnen meestal op deze manier opgelost worden.</p>
-        <img src="/../../images/stone/ba_stone_tinting_xsmall_1.jpg" alt="" class="work__item">
-        <img src="/../../images/stone/ba_stone_tinting_med_1.jpg" alt="" class="work__item">
+    <article class="article">
+
+      <h1 class="" id="stone-tinting">Steen & Beton Tinten</h1>
+      <p class="work__paragraph ">Het is mogelijk om ook andere materialen zoals beton, dakpannen, pleisterwerk en sommigen typen steen te kleuren. Onregelmatigheden in de kleur van gegoten steen kunnen meestal op deze manier opgelost worden.</p>
+
+      <div class="gallery">
+
+        {% for example-stone in site.data.example-stones %}
+
+          <img src="../../images/stone/{{example-stone.image}}" alt="" class="gallery__item">
+
+        {% endfor %}
+
       </div>
-      <div class="work__column">
-        <img src="/../../images/stone/ba_stone_tinting_med_2.jpg" alt="" class="work__item">
-        <img src="/../../images/stone/ba_stone_tinting_med_3.jpg" alt="" class="work__item">
-        <img src="/../../images/stone/ba_stone_tinting_xxsmall_1.jpg" alt="" class="work__item">
-      </div>
+
     </article>
 
 
-    <article class="example__article special-project article">
-      <h1 class="example__heading" id="special-projects">Speciale Projecten</h1>
+    <article class="special-project article">
 
-      <img class="special-project__img special-project__left"src="/../../images/special_project/shibboleth.jpg" alt="Picture from the project">
+      <h1 class="" id="special-projects">Speciale Projecten</h1>
 
-      <h2>Shibboleth in de tate modern</h2>
+      <div class="special-project__intro">
 
-      <p>Het was een indrukwekkend gezicht. Met haar installatie ‘Shibboleth’ creëerde Doris Salcedo een scheur in de vloer van de ‘Turbine Hall’ om aandacht te vragen voor tegenstellingen in de hedendaagse samenleving. Mevrouw Salcedo en de Tate Modern wilde niet uitweiden over hoe het werk precies geproduceerd was. We kunnen echter wel vertellen dat Brick Image Ltd. aangesteld was voor het camoufleren van het nieuwe beton dat gebruikt is in het werk. Reacties van de media na de lancering maakten duidelijk hoe overtuigend ons werk was geweest.</p>
+        <img class="special-project__img special-project__left"src="/../../images/special_project/shibboleth.jpg" alt="Picture from the project">
 
-      <div class="special-project__quote">
+        <!-- for flex container -->
+        <div>
+
+          <h2>Shibboleth in de tate modern</h2>
+
+          <p>Het was een indrukwekkend gezicht. Met haar installatie ‘Shibboleth’ creëerde Doris Salcedo een scheur in de vloer van de ‘Turbine Hall’ om aandacht te vragen voor tegenstellingen in de hedendaagse samenleving. Mevrouw Salcedo en de Tate Modern wilde niet uitweiden over hoe het werk precies geproduceerd was. We kunnen echter wel vertellen dat Brick Image Ltd. aangesteld was voor het camoufleren van het nieuwe beton dat gebruikt is in het werk. Reacties van de media na de lancering maakten duidelijk hoe overtuigend ons werk was geweest.</p>
+
+        </div>
+
+      </div>
+
+      <div class="special-project__artist-quote">
+
         <h3>Quote van de kunstenaar:</h3>
+
         <figure>
           <blockquote cite="">
             ‘I am deeply thankful for the great job you did, your work was very professional and much more. I really appreciate your knowledge, creativity, and the great attitude you had throughout those long days.’
           </blockquote>
           <figcaption>Doris Salcedo</figcaption>
         </figure>
+      </div>
+
+      <div class="special-project__quote">
 
         <h3>Quotes van de media:</h3>
         <img class="special-project__img special-project__right "src="/../../images/special_project/g2_article.jpg" alt="Guardian article">
@@ -96,6 +99,7 @@ lang: nl
           </figure>
         {% endfor %}
 
+        </div>
       </div>
 
     </article>

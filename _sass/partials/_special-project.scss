@@ -35,15 +35,15 @@
     margin-bottom: $spacing-lg;
     text-align: center;
     padding: $spacing-base;
-    background-color: transparentize($orange, 0.4);
-    color: $white;
+    background-color: transparentize($white-blue, 0.4);
+    color: $medium-grey;
 
     @include media($medium-screen) {
       font-size: $font-size-md;
     }
 
     h3 {
-      color: $white;
+      color: $medium-grey;
     }
 
     figcaption {
@@ -62,7 +62,7 @@
 
     figure {
       margin-bottom: $spacing-lg;
-      border-left: $offwhite 5px solid;
+      border-left: $white-blue 5px solid;
       padding-left: $spacing-base;
     }
 

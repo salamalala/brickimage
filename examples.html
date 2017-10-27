@@ -22,50 +22,32 @@ lang: en
     <article class="example__article article">
 
       <h1 class="example__heading" id="brick-tinting">Brick & Mortar Tinting</h1>
-      <p class="work__paragraph gallery__item">Far too often new bricks selected for extensions or repair works fail to blend adequately with the surrounding brickwork. Likewise, differences in mortar colour can make a big difference to the overall appearance. The photos of our work below demonstrate that even in extreme cases, corrections can be made.
+      <p class="">Far too often new bricks selected for extensions or repair works fail to blend adequately with the surrounding brickwork. Likewise, differences in mortar colour can make a big difference to the overall appearance. The photos of our work below demonstrate that even in extreme cases, corrections can be made.
       </p>
 
-      <div class="flex-gallery">
       <div class="gallery">
-        <img src="../images/brick_mortar/ba_brick_tinting_small_1.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_small_3.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_xsmall_1.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_small_2.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_lrg_2.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_med_7.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_med_10.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_med_8.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_small_5.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_small_4.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_med_2.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_med_3.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_med_5.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_med_1.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_lrg_4.jpg" alt="" class="gallery__item">
 
+        {% for example-brick in site.data.example-bricks %}
 
-        <img src="../images/brick_mortar/ba_brick_tinting_med_6.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_med_4.jpg" alt="" class="gallery__item">
-        <img src="../images/brick_mortar/ba_brick_tinting_med_9.jpg" alt="" class="gallery__item">
+          <img src="../images/brick_mortar/{{example-brick.image}}" alt="" class="gallery__item">
 
-        <img src="../images/brick_mortar/ba_brick_tinting_lrg_1.jpg" alt="" class="gallery__item">
-      </div>
-
+        {% endfor %}
       </div>
 
     </article>
-
 
     <article class="article">
       <h1 class="" id="stone-tinting">Stone & Concrete Tinting</h1>
       <p>It is possible to successfully tint other types of masonry including concrete, roof tiles, render and some types of stone. Colour inconsistencies in precast stone can usually be fixed in this way.</p>
 
       <div class="gallery">
-        <img src="../images/stone/ba_stone_tinting_xsmall_1.jpg" alt="" class="gallery__item">
-        <img src="../images/stone/ba_stone_tinting_med_1.jpg" alt="" class="gallery__item">
-        <img src="../images/stone/ba_stone_tinting_xxsmall_1.jpg" alt="" class="gallery__item">
-        <img src="../images/stone/ba_stone_tinting_med_2.jpg" alt="" class="gallery__item">
-        <img src="../images/stone/ba_stone_tinting_med_3.jpg" alt="" class="gallery__item">
+
+        {% for example-stone in site.data.example-stones %}
+
+          <img src="../images/stone/{{example-stone.image}}" alt="" class="gallery__item">
+
+        {% endfor %}
+
       </div>
     </article>
 
