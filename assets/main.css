@@ -1232,18 +1232,19 @@ a {
     width: 100%;
     flex: 0 0 auto; }
   .testimonial__name {
+    font-family: "proxima-nova", sans-serif;
     color: #E5AB24;
     font-size: 0.8333333333em; }
   .testimonial__project {
     position: relative;
     margin-bottom: 0.8333333333em;
-    color: #3D4147; }
+    color: #7F8287; }
     .testimonial__project:after {
       content: '';
       position: absolute;
       width: 100%;
-      height: 2px;
-      background-color: #3D4147;
+      height: 1px;
+      background-color: #E5AB24;
       bottom: -3px;
       left: 0; }
 

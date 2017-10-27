@@ -45,6 +45,7 @@
   }
 
   &__name {
+    font-family: $heading-font-family;
     color: $orange;
     font-size: $font-size-sm;
   }
@@ -52,14 +53,14 @@
   &__project {
     position: relative;
     margin-bottom: $spacing-sm;
-    color: $dark-grey;
+    color: $light-grey;
 
     &:after {
       content: '';
       position: absolute;
       width: 100%;
-      height: 2px;
-      background-color: $dark-grey;
+      height: 1px;
+      background-color: $orange;
       bottom: -3px;
       left: 0;
     }
