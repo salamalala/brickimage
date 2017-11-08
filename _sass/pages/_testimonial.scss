@@ -6,7 +6,6 @@
   &__item {
     width: 100%;
     margin-bottom: $spacing-xl;
-    background-color: $white;
 
     @include media($small-screen) {
       width: 48%;
@@ -17,7 +16,7 @@
     }
 
     @include media($large-screen) {
-      width: 23%;
+      width: 21%;
     }
   }
 
@@ -29,7 +28,6 @@
     max-height: 250px;
     overflow: hidden;
     margin-bottom: $spacing-base;
-    border-bottom: solid $white-blue 1px;
 
     @include media($small-screen) {
       height: 250px;
@@ -63,9 +61,4 @@
       left: 0;
     }
   }
-
-  &__text {
-    padding: $spacing-sm;
-  }
-
 }

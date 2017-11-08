@@ -10,6 +10,7 @@ lang: nl
   <nav class="subnav" id="subnav-about">
     <div class="subnav__wrapper">
       <a href="#about-tinting" class="subnav__link" id="subnav-tinting">Over Tinten</a>
+      <a href="#about-dyes" class="subnav__link" id="subnav-dyes">Over Onze Kleurstoffen</a>
       <a href="#about-brick-image" class="subnav__link" id="subnav-brick-image">Over Brick Image</a>
     </div>
     &nbsp;
@@ -47,6 +48,20 @@ lang: nl
 
       <p>Tegenwoordig wordt het kleuren van bakstenen door huiseigenaren, architecten en aannemers niet alleen gebruikt voor het oplossen van lelijke verschillen in metselwerk, maar ook om een hele nieuwe aanblik te geven voor oudere bakstenen gebouwen of als decoratief element bij het gebruik van zichtbare baksteen in het interieur. Het proces om baksteen te kleuren wordt al lange tijd erkend door de  <a href="http://www.brick.org.uk/2011/03/tinting-brickwork-colour-variation-information/" target="_blank"> Brick Development Association </a>, de Britse vakorganisatie voor de baksteenindustrie.</p>
 
+    </article>
+
+    <article class="article article__clear">
+
+      <h1 id="about-dyes">De Eigenschappen van onze Kleurstoffen</h1>
+
+      <ul class="article__list">
+        {% for about-our-dye in site.data.nl-about-our-dyes %}
+        <li class="article__list-item">
+          <h2>{{about-our-dye.header }}</h2>
+          <span> {{about-our-dye.text }}</span>
+        </li>
+        {% endfor %}
+      </ul>
     </article>
 
     <article class="article article__clear">

@@ -27,11 +27,11 @@ h3 {
 }
 
 h2, h3 {
-  margin: 0 0 $spacing-sm;
+  margin: 0 0 $spacing-xs;
 }
 
 h1 {
-  font-weight: 700;
+  font-weight: 600;
   font-size: $font-size-lg;
   line-height: 1;
   color: $orange;
@@ -39,7 +39,6 @@ h1 {
 }
 
 h2 {
-  // font-family: $base-font-family;
   font-size: $font-size-md;
   line-height: 1.2;
   font-weight: 500;
@@ -62,7 +61,7 @@ p {
 
 a {
   text-decoration: none;
-  color: $dark-grey;
+  color: $medium-grey;
   font-weight: 500;
   transition: $hover-transition;
 
@@ -70,6 +69,10 @@ a {
   &:focus,
   &:hover {
     color: $orange;
+  }
+
+  &:visited {
+    color: $medium-grey;
   }
 }
 

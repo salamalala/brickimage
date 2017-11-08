@@ -43,10 +43,20 @@ lang: nl
 
       {% for home-about in site.data.home-abouts %}
 
-        <div class="home-about__item">
+      <hr class="home-about__line">
+
+      <div class="home-about__item">
+
+        <div class="home-about__icon">{{home-about.svg}}</div>
+
+        <div class="home-about__text">
           <dt class="home-about__term">{{home-about.term}}</dt>
           <dd class="home-about__description">{{home-about.description}}</dd>
         </div>
+
+      </div>
+
+      <hr class="home-about__line--bottom">
 
       {% endfor %}
 

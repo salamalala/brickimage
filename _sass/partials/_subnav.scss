@@ -14,10 +14,6 @@
     color: $medium-grey;
     margin-bottom: $spacing-md;
     transition: $hover-transition;
-
-    &:hover {
-      color: $dark-grey;
-    }
   }
 
   &__wrapper.fixed {

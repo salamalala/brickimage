@@ -45,7 +45,10 @@
       line-height: 40px;
     }
 
-    &:hover {
+    &:hover,
+    &:active,
+    &:focus,
+    &:visited {
       color: $white;
     }
   }

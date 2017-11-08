@@ -31,25 +31,30 @@
 
   &__artist-quote {
     position: relative;
-    margin-top: $spacing-lg;
-    margin-bottom: $spacing-lg;
+    margin-top: $spacing-xl;
+    margin-bottom: $spacing-xl;
     text-align: center;
-    padding: $spacing-base;
+    padding: $spacing-lg;
     background-color: transparentize($white-blue, 0.4);
     color: $medium-grey;
 
     @include media($medium-screen) {
-      font-size: $font-size-md;
+      padding: $spacing-lg $spacing-xxxl;
     }
 
     h3 {
       color: $medium-grey;
     }
 
+    blockquote {
+      margin: 0;
+    }
+
     figcaption {
       font-family: $heading-font-family;
-      font-weight: 500;
+      font-weight: 600;
       font-size: $font-size-sm;
+      margin-top: $spacing-base;
     }
   }
 

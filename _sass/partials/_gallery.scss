@@ -1,10 +1,11 @@
 .gallery {
+  margin-top: $spacing-xl;
   line-height: 0;
   column-count: 2;
-  column-gap: $spacing-sm;
+  column-gap: $spacing-xs;
 
   @include media($medium-screen) {
-    column-gap: $spacing-lg;
+    column-gap: $spacing-xxl;
   }
 
   &__item {
@@ -15,7 +16,7 @@
     margin-bottom: $spacing-sm;
 
     @include media($medium-screen) {
-      margin-bottom: $spacing-lg;
+      margin-bottom: $spacing-xxl;
     }
   }
 }

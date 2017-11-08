@@ -49,16 +49,16 @@ var subnavExamplesColor = function() {
       if ( currentPos != previousPosExamples){
         if (currentPos == "special") {
           $('#subnav-special').css({"color":"#E5AB24"});
-          $('#subnav-brick').css({"color":"#9F9894"});
-          $('#subnav-stone').css({"color":"#9F9894"});
+          $('#subnav-brick').css({"color":"#3D4147"});
+          $('#subnav-stone').css({"color":"#3D4147"});
         } else if (currentPos == "stone" ){
           $('#subnav-stone').css({"color":"#E5AB24"});
-          $('#subnav-brick').css({"color":"#9F9894"});
-          $('#subnav-special').css({"color":"#9F9894"});
+          $('#subnav-brick').css({"color":"#3D4147"});
+          $('#subnav-special').css({"color":"#3D4147"});
         } else if ( currentPos == "brick" ) {
           $('#subnav-brick').css({"color":"#E5AB24"});
-          $('#subnav-stone').css({"color":"#9F9894"});
-          $('#subnav-special').css({"color":"#9F9894"});
+          $('#subnav-stone').css({"color":"#3D4147"});
+          $('#subnav-special').css({"color":"#3D4147"});
         }
       }
       previousPosExamples == currentPos;
@@ -70,6 +70,7 @@ var previousPosAbout = "";
 var subnavAboutColor = function() {
 
   var aboutTinting = $("#about-tinting").offset().top + (-100);
+  var aboutDyes = $("#about-dyes").offset().top + (-100);
   var aboutBrickImage = $("#about-brick-image").offset().top + (-100);
   var currentPos = "";
 
@@ -77,15 +78,23 @@ var subnavAboutColor = function() {
       if ( $w.scrollTop() > aboutBrickImage ){
         currentPos = "brickImage";
       } else if ( $w.scrollTop() > aboutTinting ){
+        currentPos = "dyes";
+      } else if ( $w.scrollTop() > aboutTinting ){
         currentPos = "tinting";
       }
       if ( currentPos != previousPosAbout){
         if (currentPos == "brickImage") {
           $('#subnav-brick-image').css({"color":"#E5AB24"});
-          $('#subnav-tinting').css({"color":"#9F9894"});
+          $('#subnav-dyes').css({"color":"#3D4147"});
+          $('#subnav-tinting').css({"color":"#3D4147"});
+        } else if (currentPos == "dyes" ){
+          $('#subnav-dyes').css({"color":"#E5AB24"});
+          $('#subnav-brick-image').css({"color":"#3D4147"});
+          $('#subnav-tinting').css({"color":"#3D4147"});
         } else if (currentPos == "tinting" ){
           $('#subnav-tinting').css({"color":"#E5AB24"});
-          $('#subnav-brick-image').css({"color":"#9F9894"});
+          $('#subnav-dyes').css({"color":"#3D4147"});
+          $('#subnav-brick-image').css({"color":"#3D4147"});
         }
       }
       previousPosAbout == currentPos;

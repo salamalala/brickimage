@@ -11,7 +11,7 @@ lang: en
   <div class="home-banner">
 
     <div class="home-banner__text">
-      <h1 class="home-banner__title">Tinting corrects colours in brickwork, stone and concrete</h1>
+      <h1 class="home-banner__title">Tinting corrects colours in brickwork, stone and concrete.</h1>
 
       <p class="home-banner__paragraph">By creating bespoke tints and applying them with a keen eye, we are able to disguise ugly repairs, unite extensions with the original building or perhaps create a whole new appearance throughout. This process provides a very natural, permanent colour change. </p>
 
@@ -43,10 +43,20 @@ lang: en
 
       {% for home-about in site.data.home-abouts %}
 
-        <div class="home-about__item">
+      <hr class="home-about__line">
+
+      <div class="home-about__item">
+
+        <div class="home-about__icon">{{home-about.svg}}</div>
+
+        <div class="home-about__text">
           <dt class="home-about__term">{{home-about.term}}</dt>
           <dd class="home-about__description">{{home-about.description}}</dd>
         </div>
+
+      </div>
+
+      <hr class="home-about__line--bottom">
 
       {% endfor %}
 
