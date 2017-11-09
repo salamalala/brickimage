@@ -11,11 +11,13 @@
   }
 
   &__img {
-    margin-right: $spacing-base;
+    margin-bottom: $spacing-base;
     width: 100%;
     height: auto;
 
     @include media($medium-screen) {
+      margin-bottom: 0;
+      margin-right: $spacing-base;
       width: auto;
     }
   }

@@ -34,7 +34,7 @@
 
     &:last-child{
       @include omega()
-      @include shift(0);;
+      @include shift(0);
     }
   }
 
@@ -42,11 +42,12 @@
     position: absolute;
     top: -40px;
     z-index: -3;
-    font-size: $font-size-xxl;
+    font-size: 12em;
     color: transparentize($orange, 0.6);
 
     @include media($medium-screen) {
       top: -70px;
+      font-size: $font-size-xxl;
     }
   }
 
