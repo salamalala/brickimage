@@ -454,8 +454,6 @@ a {
   transition: all 0.1s ease-out; }
   a:active, a:focus, a:hover {
     color: #E5AB24; }
-  a:visited {
-    color: #5A6069; }
 
 .site-title {
   position: absolute;
@@ -494,8 +492,11 @@ a {
         content: "";
         display: table; } }
   .wrapper__main {
-    margin-top: 3.5831808em;
+    margin-top: 1.728em;
     margin-bottom: 2.48832em; }
+    @media screen and (min-width: 46.5em) {
+      .wrapper__main {
+        margin-top: 3.5831808em; } }
 
 .centered {
   float: left;
@@ -529,14 +530,6 @@ a {
       width: 65.5172413793%; }
       .subnav-article:last-child {
         margin-right: 0; } }
-
-.body__home {
-  background-image: url(../images/home/blue_sky_background3.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  z-index: 0;
-  min-height: 100vh; }
 
 .header {
   height: 157px;
@@ -907,8 +900,10 @@ a {
   height: 530px;
   background-image: url("../images/home/blue_sky_background3-5.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 3.5831808em; }
+  background-size: cover; }
+  @media screen and (min-width: 46.5em) {
+    .home-banner {
+      margin-bottom: 3.5831808em; } }
   .home-banner__text {
     display: flex;
     flex-direction: column;
@@ -919,7 +914,7 @@ a {
     bottom: 0;
     width: 100%;
     padding: 1.2em;
-    background-color: rgba(228, 234, 240, 0.5);
+    background-color: rgba(228, 234, 240, 0.7);
     text-align: center;
     color: #3D4147; }
     @media screen and (min-width: 46.5em) {
@@ -953,14 +948,16 @@ a {
     letter-spacing: 0.04em;
     border: #3D4147 solid 2px;
     background-color: #3D4147;
-    transition: all 0.1s ease-out; }
+    transition: all 0.1s ease-out;
+    color: #fff; }
     .home-banner__link:hover, .home-banner__link:focus {
       background-color: transparent;
       color: #3D4147; }
     @media screen and (min-width: 46.5em) {
       .home-banner__link {
         align-self: flex-end;
-        background-color: transparent; }
+        background-color: transparent;
+        color: #3D4147; }
         .home-banner__link:hover, .home-banner__link:focus {
           background-color: #3D4147;
           color: #fff; } }
@@ -969,16 +966,18 @@ a {
   display: flex;
   justify-content: space-between;
   flex-direction: column; }
-  @media screen and (min-width: 74em) {
+  @media screen and (min-width: 46.5em) {
     .home-section {
       flex-direction: row; } }
 
 .home-about {
   width: 100%;
   margin-top: 2.48832em;
-  margin-bottom: 0; }
-  @media screen and (min-width: 74em) {
+  margin-bottom: 0;
+  order: -1; }
+  @media screen and (min-width: 46.5em) {
     .home-about {
+      order: 0;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -988,10 +987,15 @@ a {
     position: relative;
     display: flex;
     align-items: center;
+    flex-direction: column;
     background-color: #fff; }
+    @media screen and (min-width: 74em) {
+      .home-about__item {
+        flex-direction: row; } }
   .home-about__line {
     width: 80%;
-    margin-left: 10%;
+    margin-top: 1.2em;
+    margin-bottom: 1.2em;
     border: 0;
     height: 2px;
     background: #fff;
@@ -1014,13 +1018,23 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     overflow: hidden;
-    margin-right: 1.728em;
+    margin-bottom: 1em;
     border: solid 1px #E5AB24; }
+    @media screen and (min-width: 74em) {
+      .home-about__icon {
+        width: 80px;
+        height: 80px;
+        margin-right: 1.728em;
+        margin-bottom: 0; } }
   .home-about__text {
-    width: 82%; }
+    text-align: center; }
+    @media screen and (min-width: 74em) {
+      .home-about__text {
+        width: 82%;
+        text-align: left; } }
   .home-about__term {
     margin-bottom: 0.2790816472em;
     color: #3D4147;
@@ -1032,9 +1046,11 @@ a {
     margin-left: 0; }
 
 .home-testimonials {
+  margin-top: 2.48832em;
   width: 100%; }
-  @media screen and (min-width: 74em) {
+  @media screen and (min-width: 46.5em) {
     .home-testimonials {
+      margin-top: 0;
       width: 38%;
       display: flex;
       flex-direction: column;

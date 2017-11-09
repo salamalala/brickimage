@@ -5,7 +5,10 @@
   background-image: url("../images/home/blue_sky_background3-5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  margin-bottom: $spacing-xxxl;
+
+  @include media($medium-screen) {
+    margin-bottom: $spacing-xxxl;
+  }
 
   &__text {
     display: flex;
@@ -17,7 +20,7 @@
     bottom: 0;
     width: 100%;
     padding: $spacing-md;
-    background-color: transparentize($white-blue, 0.5);
+    background-color: transparentize($white-blue, 0.3);
     text-align: center;
     color: $dark-grey;
 
@@ -62,6 +65,7 @@
     border: $dark-grey solid 2px;
     background-color: $dark-grey;
     transition: $hover-transition;
+    color: $white;
 
     &:hover,
     &:focus,  {
@@ -72,6 +76,7 @@
     @include media($medium-screen) {
       align-self: flex-end;
       background-color: transparent;
+      color: $dark-grey;
 
       &:hover,
       &:focus {

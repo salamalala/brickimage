@@ -11,7 +11,11 @@
   }
 
   &__main {
-    margin-top: $spacing-xxxl;
+    margin-top: $spacing-xl;
     margin-bottom: $spacing-xxl;
+
+    @include media($medium-screen) {
+      margin-top: $spacing-xxxl;
+    }
   }
 }

@@ -2,8 +2,10 @@
   width: 100%;
   margin-top: $spacing-xxl;
   margin-bottom: 0;
+  order: -1;
 
-  @include media($large-screen) {
+  @include media($medium-screen) {
+    order: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -15,12 +17,18 @@
     position: relative;
     display: flex;
     align-items: center;
+    flex-direction: column;
     background-color: $white;
+
+    @include media($large-screen) {
+      flex-direction: row;
+    }
   }
 
   &__line {
     width: 80%;
-    margin-left: 10%;
+    margin-top: $spacing-md;
+    margin-bottom: $spacing-md;
     border: 0;
     height: 2px;
     background: $white;
@@ -53,15 +61,27 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     overflow: hidden;
-    margin-right: $spacing-xl;
+    margin-bottom: $spacing-base;
     border: solid 1px $orange;
+
+    @include media($large-screen) {
+      width: 80px;
+      height: 80px;
+      margin-right: $spacing-xl;
+      margin-bottom: 0;
+    }
   }
 
   &__text {
-    width: 82%;
+    text-align: center;
+
+    @include media($large-screen) {
+      width: 82%;
+      text-align: left;
+    }
   }
 
   &__term {
