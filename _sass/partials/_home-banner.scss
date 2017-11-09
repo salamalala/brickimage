@@ -60,12 +60,11 @@
     text-transform: uppercase;
     letter-spacing: $letter-spacing-lg;
     border: $dark-grey solid 2px;
-    color: $white;
     background-color: $dark-grey;
     transition: $hover-transition;
 
     &:hover,
-    &:focus {
+    &:focus,  {
       background-color: transparent;
       color: $dark-grey;
     }
@@ -73,13 +72,11 @@
     @include media($medium-screen) {
       align-self: flex-end;
       background-color: transparent;
-      border: $white solid 2px;
-      color: $white;
 
       &:hover,
       &:focus {
-        background-color: $white;
-        color: $dark-grey;
+        background-color: $dark-grey;
+        color: $white;
       }
     }
   }

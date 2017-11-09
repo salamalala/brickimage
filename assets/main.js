@@ -14,6 +14,18 @@ var mobileNavigation = function() {
   });
 };
 
+//closing mobile nav when clicking outside of nav
+var clickingOutsideNav = function () {
+  //mobile uses touchstart rather than click
+  $(document).on('touchstart', function (e) {
+    var container = $("nav");
+
+    if (!container.is(e.target) && container.has(e.target).length === 0) {
+        $('.mobile').removeClass('active');
+        $('.nav__items').css({"position": "absolute", "left": "-100%"});
+    }
+  });
+}
 
 var stickyHeaderElements = function(el, scrollPos) {
 
@@ -146,5 +158,8 @@ $(function() {
   stickyHeaderElements('.nav', 120);
 
   mobileNavigation();
+
+  clickingOutsideNav();
+
 
 });

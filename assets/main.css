@@ -644,6 +644,8 @@ a {
     -ms-flex-pack: center;
     height: 60px; }
   .nav .mobile {
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
     transition: 0.1s transform linear;
     position: relative;
@@ -665,7 +667,7 @@ a {
         background: #D7D9DB;
         margin: auto;
         width: 20px;
-        height: 3px;
+        height: 2px;
         content: '';
         top: 50%;
         left: 0;
@@ -691,15 +693,16 @@ a {
     .nav .mobile__text {
       font-family: "proxima-nova", sans-serif;
       font-weight: 600;
-      margin-left: 25px;
+      margin-left: 30px;
       color: #D7D9DB; }
   .nav__items {
     font-family: "proxima-nova", sans-serif;
     letter-spacing: 0.04em;
     display: block;
-    background-color: rgba(61, 65, 71, 0.95);
+    background-color: rgba(61, 65, 71, 0.99);
     max-width: 200px;
     width: 100%;
+    height: 100vh;
     position: absolute;
     z-index: 10;
     left: -100%;
@@ -739,7 +742,7 @@ a {
     padding-left: 1.2em;
     text-transform: uppercase;
     color: #D7D9DB;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1;
     font-size: 90%; }
     .nav__link:last-child {
@@ -763,9 +766,6 @@ a {
     color: #E5AB24; }
     .nav__active:hover {
       color: #E5AB24; }
-      .nav__active:hover:before {
-        visibility: hidden;
-        transform: scaleX(0); }
   .nav.fixed {
     position: fixed;
     top: 0;
@@ -952,7 +952,6 @@ a {
     text-transform: uppercase;
     letter-spacing: 0.04em;
     border: #3D4147 solid 2px;
-    color: #fff;
     background-color: #3D4147;
     transition: all 0.1s ease-out; }
     .home-banner__link:hover, .home-banner__link:focus {
@@ -961,12 +960,10 @@ a {
     @media screen and (min-width: 46.5em) {
       .home-banner__link {
         align-self: flex-end;
-        background-color: transparent;
-        border: #fff solid 2px;
-        color: #fff; }
+        background-color: transparent; }
         .home-banner__link:hover, .home-banner__link:focus {
-          background-color: #fff;
-          color: #3D4147; } }
+          background-color: #3D4147;
+          color: #fff; } }
 
 .home-section {
   display: flex;
@@ -1001,6 +998,8 @@ a {
     background-image: linear-gradient(to right, #fff, #E4EAF0, #fff); }
     .home-about__line:last-child {
       display: none; }
+    .home-about__line:first-child {
+      margin-top: 0; }
     .home-about__line--bottom {
       display: none; }
       .home-about__line--bottom:last-child {
@@ -1009,6 +1008,7 @@ a {
         border: 0;
         height: 2px;
         background: #fff;
+        margin-bottom: 0;
         background-image: linear-gradient(to right, #fff, #E4EAF0, #fff); }
   .home-about__icon {
     display: flex;

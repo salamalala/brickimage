@@ -30,6 +30,10 @@
       display: none;
     }
 
+    &:first-child {
+      margin-top: 0;
+    }
+
     &--bottom {
       display: none;
 
@@ -39,6 +43,7 @@
         border: 0;
         height: 2px;
         background: $white;
+        margin-bottom: 0;
         background-image: linear-gradient(to right, $white, $white-blue, $white);
       }
     }

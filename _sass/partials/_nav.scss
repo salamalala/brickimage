@@ -14,6 +14,8 @@
   }
 
   .mobile {
+    display: flex;
+    align-items: center;
     text-transform: uppercase;
     transition: 0.1s transform linear;
     position: relative;
@@ -39,7 +41,7 @@
     		background: $offwhite;
     		margin: auto;
     		width: 20px;
-    		height: 3px;
+    		height: 2px;
     		content: '';
     		top: 50%;
     		left: 0;
@@ -90,7 +92,7 @@
     &__text {
       font-family: $heading-font-family;
       font-weight: 600;
-      margin-left: 25px;
+      margin-left: 30px;
       color: $offwhite;
     }
   }
@@ -99,9 +101,10 @@
     font-family: $heading-font-family;
     letter-spacing: $letter-spacing-lg;
     display: block;
-    background-color: transparentize($dark-grey, 0.05);
+    background-color: transparentize($dark-grey, 0.01);
 	  max-width: 200px;
 	  width: 100%;
+    height: 100vh;
     position: absolute;
     z-index: 10;
     left: -100%;
@@ -131,7 +134,7 @@
     padding-left: $spacing-md;
     text-transform: uppercase;
     color: $offwhite;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 1;
     font-size: 90%;
 
@@ -172,11 +175,6 @@
 
     &:hover {
       color: $orange;
-
-      &:before {
-        visibility: hidden;
-        transform: scaleX(0);
-      }
     }
   }
 
