@@ -1305,6 +1305,7 @@ a {
     left: 20px; }
     @media screen and (min-width: 46.5em) {
       .contact__uk .contact__country {
+        left: auto;
         right: 50px; } }
   .contact__nl .contact__country {
     left: 20px; }

@@ -55,6 +55,7 @@
     left: 20px;
 
     @include media($medium-screen) {
+      left: auto;
       right: 50px;
     }
   }
