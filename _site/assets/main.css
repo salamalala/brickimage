@@ -895,10 +895,13 @@ a {
 .home-banner {
   position: relative;
   width: 100%;
-  height: 550px;
+  height: 600px;
   background-image: url("../images/home/blue_sky_background3-5.jpg");
   background-repeat: no-repeat;
   background-size: cover; }
+  @media screen and (min-width: 30em) {
+    .home-banner {
+      height: 550px; } }
   @media screen and (min-width: 46.5em) {
     .home-banner {
       margin-bottom: 3.5831808em; } }
@@ -1249,13 +1252,10 @@ a {
   margin-bottom: 10em; }
 
 .contact {
-  margin-top: 2.48832em; }
+  margin-top: 3.5831808em; }
   @media screen and (min-width: 30em) {
     .contact {
       margin-top: 5em; } }
-  @media screen and (min-width: 46.5em) {
-    .contact {
-      margin-top: 10em; } }
   .contact__box {
     position: relative;
     z-index: 1;

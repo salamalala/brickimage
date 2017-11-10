@@ -1,12 +1,8 @@
 .contact {
-  margin-top:$spacing-xxl;
+  margin-top:$spacing-xxxl;
 
   @include media($small-screen){
      margin-top:5em;
-  }
-
-  @include media($medium-screen){
-     margin-top:10em;
   }
 
   &__box {
