@@ -1,36 +1,36 @@
 .contact {
-  margin-top:$spacing-xxxl;
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 
-  @include media($small-screen){
-     margin-top:5em;
+  @include media($medium-screen) {
+    flex-direction: row;
+    align-items: center;
   }
 
   &__box {
     position: relative;
     z-index: 1;
-    @include span-columns(12 of 12);
+    margin-top: $spacing-xxxl;
 
     @include media($medium-screen) {
-      @include span-columns(5 of 12);
-      @include shift(1);
-    }
-
-    @include media($large-screen) {
-      @include span-columns(4 of 12);
-      @include shift(2);
+      margin-top: 0;
     }
 
     &:first-child {
-      margin-bottom: $spacing-xxl;
-
       @include media($medium-screen) {
+        margin-bottom: 0;
+        margin-right: $spacing-xl;
         text-align: right;
       }
     }
 
-    &:last-child{
-      @include omega()
-      @include shift(0);
+    &:nth-child(2) {
+      @include media($medium-screen) {
+        margin-left: $spacing-xl;
+      }
     }
   }
 
