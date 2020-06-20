@@ -79,13 +79,14 @@
 
     @include media($medium-screen) {
       align-self: flex-end;
-      background-color: transparent;
-      color: $dark-grey;
+      background-color: $dark-grey;
+      color: $white;
+
 
       &:hover,
       &:focus {
-        background-color: $dark-grey;
-        color: $white;
+        background-color: transparent;
+        color: $dark-grey;
       }
     }
   }

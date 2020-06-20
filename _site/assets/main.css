@@ -969,11 +969,11 @@ body {
     @media screen and (min-width: 46.5em) {
       .home-banner__link {
         align-self: flex-end;
-        background-color: transparent;
-        color: #3D4147; }
+        background-color: #3D4147;
+        color: #fff; }
         .home-banner__link:hover, .home-banner__link:focus {
-          background-color: #3D4147;
-          color: #fff; } }
+          background-color: transparent;
+          color: #3D4147; } }
 
 .home-section {
   display: flex;
