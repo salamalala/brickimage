@@ -29,7 +29,7 @@ lang: nl
 
         {% for example-brick in site.data.example-bricks %}
 
-          <img src="../../images/brick_mortar/{{example-brick.image}}" alt="" class="gallery__item">
+          <img src="../../assets/images/brick_mortar/{{example-brick.image}}" alt="" class="gallery__item">
 
         {% endfor %}
       </div>
@@ -46,7 +46,7 @@ lang: nl
 
         {% for example-stone in site.data.example-stones %}
 
-          <img src="../../images/stone/{{example-stone.image}}" alt="" class="gallery__item">
+          <img src="../../assets/images/stone/{{example-stone.image}}" alt="" class="gallery__item">
 
         {% endfor %}
 
@@ -61,7 +61,7 @@ lang: nl
 
       <div class="special-project__intro">
 
-        <img class="special-project__img special-project__left"src="/../../images/special_project/shibboleth.jpg" alt="Picture from the project">
+        <img class="special-project__img special-project__left"src="/../assets/images/special_project/shibboleth.jpg" alt="Picture from the project">
 
         <!-- for flex container -->
         <div>
@@ -89,7 +89,7 @@ lang: nl
       <div class="special-project__quote">
 
         <h3>Quotes van de media:</h3>
-        <img class="special-project__img special-project__right "src="/../../images/special_project/g2_article.jpg" alt="Guardian article">
+        <img class="special-project__img special-project__right "src="/../assets/images/special_project/g2_article.jpg" alt="Guardian article">
         {% for special-project-quote in site.data.special-project-quotes %}
           <figure>
             <blockquote cite="{{ special-project-quote.link }}">
