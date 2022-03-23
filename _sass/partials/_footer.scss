@@ -5,19 +5,30 @@
   padding-top: $spacing-xl;
   padding-bottom: $spacing-xl;
 
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+
+    @include media($small-screen) {
+      justify-content: space-between;
+      flex-direction: row;
+    }
+  }
+
   &__address-block {
-    display: inline-block;
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     &:nth-child(2) {
       margin-top: $spacing-sm;
     }
 
     @include media($small-screen) {
-      width: 49%;
-
+      width: 50%;
       &:nth-child(2) {
         text-align: right;
+        margin-top: 0;
       }
     }
   }

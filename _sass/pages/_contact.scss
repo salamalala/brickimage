@@ -6,9 +6,9 @@
   justify-content: center;
   flex-direction: column;
 
-  @include media($medium-screen) {
+  @include media($small-screen) {
     flex-direction: row;
-    align-items: center;
+    align-items: stretch
   }
 
   &__box {
@@ -16,12 +16,13 @@
     z-index: 1;
     margin-top: $spacing-xxxl;
 
-    @include media($medium-screen) {
+    @include media($small-screen) {
+      width: 50%;
       margin-top: 0;
     }
 
     &:first-child {
-      @include media($medium-screen) {
+      @include media($small-screen) {
         margin-bottom: 0;
         margin-right: $spacing-xl;
         text-align: right;
@@ -29,7 +30,7 @@
     }
 
     &:nth-child(2) {
-      @include media($medium-screen) {
+      @include media($small-screen) {
         margin-left: $spacing-xl;
       }
     }
@@ -42,16 +43,21 @@
     font-size: 12em;
     color: transparentize($orange, 0.6);
 
+    @include media($small-screen) {
+      top: -50px;
+      font-size: $font-size-xxl;
+    }
+
     @include media($medium-screen) {
       top: -70px;
-      font-size: $font-size-xxl;
+      font-size: $font-size-xxxl;
     }
   }
 
   &__uk .contact__country {
     left: 20px;
 
-    @include media($medium-screen) {
+    @include media($small-screen) {
       left: auto;
       right: 50px;
     }
@@ -60,29 +66,29 @@
   &__nl .contact__country {
     left: 20px;
 
-    @include media($medium-screen) {
+    @include media($small-screen) {
       left: 50px;
       right: 0;
     }
   }
 
   &__address {
-    @include display(flex);
-    @include flex-direction(column);
+    display: flex;
+    flex-direction: column;
     font-size: $font-size-md;
-    height: 100%
+    height: 100%;
   }
 
   &__post {
     @include flex(2 1 auto);
   }
 
-  &__place {
+  &__textLarge {
     font-size: $font-size-md;
   }
 
   &__link {
-    display: block;
+    margin-top: auto;
     color: $medium-grey;
     font-weight: 500;
   }
