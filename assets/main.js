@@ -45,9 +45,9 @@ var previousPosExamples = "";
 
 var subnavExamplesColor = function() {
 
-  var brickTinting = $("#brick-tinting").offset().top + (-100);
-  var stoneTinting = $("#stone-tinting").offset().top + (-100);
-  var specialProjects = $("#special-projects").offset().top + (-100);
+  var brickTinting = $("#brick-tinting").offset().top + (-200);
+  var stoneTinting = $("#stone-tinting").offset().top + (-200);
+  var specialProjects = $("#special-projects").offset().top + (-200);
   var currentPos = "";
 
   var $w = $(window).scroll(function(){
@@ -58,6 +58,7 @@ var subnavExamplesColor = function() {
       } else if ( $w.scrollTop() > brickTinting ) {
         currentPos = "brick";
       }
+
       if ( currentPos != previousPosExamples){
         if (currentPos == "special") {
           $('#subnav-special').css({"color":"#E5AB24"});
@@ -81,15 +82,15 @@ var previousPosAbout = "";
 
 var subnavAboutColor = function() {
 
-  var aboutTinting = $("#about-tinting").offset().top + (-100);
-  var aboutDyes = $("#about-dyes").offset().top + (-100);
-  var aboutBrickImage = $("#about-brick-image").offset().top + (-100);
+  var aboutTinting = $("#about-tinting").offset().top + (-200);
+  var aboutDyes = $("#about-dyes").offset().top + (-200);
+  var aboutBrickImage = $("#about-brick-image").offset().top + (-200);
   var currentPos = "";
 
   var $w = $(window).scroll(function(){
       if ( $w.scrollTop() > aboutBrickImage ){
         currentPos = "brickImage";
-      } else if ( $w.scrollTop() > aboutTinting ){
+      } else if ( $w.scrollTop() > aboutDyes ){
         currentPos = "dyes";
       } else if ( $w.scrollTop() > aboutTinting ){
         currentPos = "tinting";
